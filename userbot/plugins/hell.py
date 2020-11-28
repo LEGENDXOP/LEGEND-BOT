@@ -27,12 +27,12 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars 
 
 ALIVE_MESSAGE = Config.ALIVE_MSG
 if ALIVE_MESSAGE is None:
-   ALIVE_MESSAGE = "**🔱HellBot Zinda Tha....Zinda Hai....Aur Zinda Rahega🔱 \n\n\n**"
+   ALIVE_MESSAGE = "**🔱 LEGEND BOT Zinda Tha....Zinda Hai....Aur Zinda Rahega🔱 \n\n\n**"
    ALIVE_MESSAGE += "🤙__My Bot Status__🤙 \n\n\n"
    ALIVE_MESSAGE += f"Telethon: TELETHON-1.15.0 \n\n"
    ALIVE_MESSAGE += f"Python: PYTHON-3.8.5 \n\n"
    ALIVE_MESSAGE += "**I'll Be With You Master Till My Dyno Ends!!**☠ \n\n"
-   ALIVE_MESSAGE += f"Support Channel : @HellBot_Official \n\n"
+   ALIVE_MESSAGE += f"Support Channel : @hackerget0 \n\n"
    ALIVE_MESSAGE += f"MY BOSS : {DEFAULTUSER} \n\n "
                 
             
