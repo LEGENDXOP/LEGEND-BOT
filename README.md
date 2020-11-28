@@ -9,7 +9,7 @@
 This is a userbot made for telegram. I made this userbot with help of all other userbots available in telegram. All credits goes to its Respective Owners....
 
 This is the one and only official LEGEND BOT Userbot made by [@LEGENDX22](https://t.me/LEGENDX22) Also join support channel and group :- https://t.me/teamishere Enjoy Your Bot!!💝
-[![HellBot logo](https://telegra.ph/file/2165457cc7e428ff64919.jpg)](https://t.me/hellbot_official)
+[![LEGEND BOT logo](https://telegra.ph/file/97579e24481db3c11962b.jpg)](https://t.me/hellbot_official)
 
 
 # The owner would not be responsible for any kind of bans due to the bot...
