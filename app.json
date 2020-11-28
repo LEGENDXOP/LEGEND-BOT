@@ -1,7 +1,7 @@
 {
-  "name": "Hêllẞø†",
-  "description": "The best userbot made by @Kraken_The_BadASS. Made with Love And Phone And Hardwork and... Nhi aur kahi se to nhi bana....For Support Join @HellBot_Official ",
-  "logo": "https://telegra.ph/file/7decf235312af8536e9aa.jpg ",
+  "name": "LEGEND BOT",
+  "description": "The best userbot made by @LEGENDX22. Made with Love And Phone And Hardwork and... Nhi aur kahi se to nhi bana....For Support Join @HellBot_Official ",
+  "logo": "https://telegra.ph/file/97579e24481db3c11962b.jpg ",
     "keywords": [
     "telegram",
     "userbot",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/HellBoy-OP/HellBot/",
-  "website": "https://github.com/HellBoy-OP/HellBot/",
-  "success_url": "https://t.me/HellBot_Official",
+  "repository": "https://github.com/legendx22/LEGEND-BOT/",
+  "website": "https://github.com/legendx22/LEGEND-BOT/",
+  "success_url": "https://t.me/teamishere",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",
