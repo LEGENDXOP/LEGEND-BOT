@@ -1,6 +1,6 @@
 {
   "name": "LEGEND BOT",
-  "description": "The best userbot made by @LEGENDX22. Made with Love And Phone And Hardwork and... Nhi aur kahi se to nhi bana....For Support Join @HellBot_Official ",
+  "description": "The best userbot made by @LEGENDX22. Made with Love And Phone And Hardwork and... Nhi aur kahi se to nhi bana....For Support Join @teamishere ",
   "logo": "https://telegra.ph/file/97579e24481db3c11962b.jpg ",
     "keywords": [
     "telegram",
@@ -39,7 +39,7 @@
     },
     "ALIVE_PHOTTO": {
       "description": "put here any telegraph media link for alive pic.",
-      "value": "",
+      "value": ""https://telegra.ph/file/30139d6e38ef0b44e4c01.jpg",
       "required": false
     },
     "BIO_MSG": {
@@ -49,7 +49,7 @@
     },
     "PMPERMIT_PIC": {
       "description": "put here any telegraph media link for pmpermit custom pic.",
-      "value": "",
+      "value": ""https://telegra.ph/file/30139d6e38ef0b44e4c01.jpg",
       "required": true
     },
     "CUSTOM_PMPERMIT": {
