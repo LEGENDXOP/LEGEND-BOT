@@ -16,8 +16,8 @@ pm_caption += "➥ **👺🐚  т𝓔ˡ𝕖ţ𝐡𝕆Ⓝ 𝐕𝓔ŘsⓘØᑎ  �
 pm_caption += "➥ **🄿🅈🅃🄷🄾🄽 ♡☞:** `3.7.4` \n"
 pm_caption += "➥ **👊  𝔡𝔞t𝓪в𝓪ⓢέ  𝕊𝕥𝕒𝕥𝕦𝕤  ♗:**  `Functional`\n"
 pm_caption += f"➥ **//💥  ✎  𝓂𝕪 βỖⓈş  ☞  💀//** \n {DEFAULTUSER} \n"
+pm_caption += "➥ **👺🐚  🅻🅴🅶🅴🅽🅳 🅾️🆂👊♢:** `1.5.0` \n"
 
-pm_caption += "➥ **♕♟  𝕃𝕚𝕔𝕖𝕟𝕤𝕖 ♟♕** : [GNU General Public License v3.0](github.com/TeamLEGENDX/LegendBOT/blob/master/LICENSE)\n"
 pm_caption += " ♕  ⓜ𝕪 𝓒𝓗𝓐𝓝𝓝𝓔𝓛  ♕ 😎 \n [CHANNEL](https://t.me/hackerget0)\n\n"
 pm_caption += " Ⓜ️𝓎 ℂＲ𝑒Ａ𝕋Øⓡ 😎 \n [LEGEND X](https://t.me/legendx22)\n\n"
 pm_caption += " 𝑀𝒴 𝒢𝑅❁𝒰� 😎 \n [GROUP](https://t.me/teamishere)\n"
