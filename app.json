@@ -39,7 +39,7 @@
     },
     "ALIVE_PHOTTO": {
       "description": "put here any telegraph media link for alive pic.",
-      "value": ""https://telegra.ph/file/30139d6e38ef0b44e4c01.jpg",
+      "value": "",
       "required": false
     },
     "BIO_MSG": {
@@ -49,7 +49,7 @@
     },
     "PMPERMIT_PIC": {
       "description": "put here any telegraph media link for pmpermit custom pic.",
-      "value": ""https://telegra.ph/file/30139d6e38ef0b44e4c01.jpg",
+      "value": "",
       "required": true
     },
     "CUSTOM_PMPERMIT": {
