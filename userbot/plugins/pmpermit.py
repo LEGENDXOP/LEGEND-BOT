@@ -16,7 +16,7 @@ PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 HELLPIC = (
     PMPERMIT_PIC
     if PMPERMIT_PIC
-    else "https://telegra.ph/file/8b086b95491df9f0d4f58.jpg"
+    else "https://telegra.ph/file/5bc351a97fc65dbdfdf32.jpg"
 )
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
@@ -85,7 +85,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
-            if chat.id == 924138714:
+            if chat.id == 1100231654:
                 await event.edit(
                     "You tried to block my master😡. GoodBye for 100 seconds!🥱😴😪💤"
                 )
@@ -110,7 +110,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
-            if chat.id == 924138714:
+            if chat.id == 1100231654:
                 await event.edit("Sorry, I Can't Disapprove My Master")
             else:
                 if pmpermit_sql.is_approved(chat.id):
