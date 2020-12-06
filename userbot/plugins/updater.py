@@ -1,4 +1,4 @@
-#code by @sensei_nex , If you will change the credits you are the biggest mutherfucked 
+#code by @legendx22 , If you will change the credits you are the biggest mutherfucked 
 """Update UserBot code
 Syntax: .update"""
 
@@ -73,7 +73,7 @@ async def updater(message):
     )
 
     if not changelog:
-        await message.edit("**﹁﹁Updating LegendBOTt* \n**Version** : `2.0` \n**Telethon** : `1.15.0` \n**Status** : `«Pulling Updates»` \n『**Thank You For Using LegendBOT !**』")
+        await message.edit("**﹁﹁Updating LegendBOT** \n**Version** : `2.0` \n**Telethon** : `1.15.0` \n**Status** : `«Pulling Updates»` \n『**Thank You For Using LegendBOT !**』")
         await asyncio.sleep(5)
  
     message_one = NEW_BOT_UP_DATE_FOUND.format(
