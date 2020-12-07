@@ -1,4 +1,4 @@
-"""@telegraph Plugin For Lazy People
+"""@telegraph Utilities Fix by @Kraken_The_BadASS
 Available Commands:
 .telegraph media as reply to a media
 .telegraph text as reply to a large text"""
@@ -52,7 +52,7 @@ async def _(event):
                 end = datetime.now()
                 ms_two = (end - start).seconds
                 os.remove(downloaded_file_name)
-                await event.edit("Uploaded to https://telegra.ph{} in {} seconds.".format(media_urls[0], (ms + ms_two)), link_preview=True)
+                await event.edit("File uploaded ser By LEGEND BOT https://telegra.ph{} ".format(media_urls[0], (ms + ms_two)), link_preview=True)
         elif input_str == "text":
             user_object = await borg.get_entity(r_message.from_id)
             title_of_page = user_object.first_name # + " " + user_object.last_name
@@ -80,7 +80,7 @@ async def _(event):
             )
             end = datetime.now()
             ms = (end - start).seconds
-            await event.edit("Pasted to https://telegra.ph/{} in {} seconds.".format(response["path"], ms), link_preview=True)
+            await event.edit("Pasted ser https://telegra.ph/{} in {} seconds.".format(response["path"], ms), link_preview=True)
     else:
         await event.edit("Reply to a message to get a permanent telegra.ph link. (Inspired by @ControllerBot)")
 
