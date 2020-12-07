@@ -1,7 +1,5 @@
 
-# Port to UserBot
-# modified by @hellboi_atul
-# Copyright (C) 2020.
+# credits LEGENDX22
 
 from telethon import events
 import asyncio
