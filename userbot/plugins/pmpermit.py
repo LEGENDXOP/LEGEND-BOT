@@ -145,7 +145,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     out_file,
                     force_document=True,
                     allow_cache=False,
-                    caption="[HellBot]Current Approved PMs",
+                    caption="[LEGENDBOT]Current Approved PMs",
                     reply_to=event,
                 )
                 await event.delete()
