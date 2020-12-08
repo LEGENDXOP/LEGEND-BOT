@@ -1,45 +1,70 @@
+Skip to content
+TeamLEGENDX
+/
+LegendBOT
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+LegendBOT/userbot/plugins/alive.py
+@legendx22
+legendx22 Update alive.py
+ 5 contributors
+39 lines (32 sloc)  1.97 KB
+  
+#credits to @kraken_the_badass
+#beautification credits to @sensei_nex for @senseiMAXprojects
+
+#IMG CREDITS: @WhySooSerious
 import asyncio
 from telethon import events
-from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
-from userbot import ALIVE_NAME, hellversion
+from uniborg.util import admin_cmd
+from userbot import ALIVE_NAME
 from telethon.tl.types import ChannelParticipantsAdmins
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Hell User"
+# uptime = get_readable_time((time.time() - Lastupdate))
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "unknown"
 
-ludosudo = Config.SUDO_USERS
-
-if ludosudo:
-    sudou = "True"
-else:
-    sudou = "False"
-
-kraken = bot.uid
 
 PM_IMG = "https://telegra.ph/file/93f85e88789464793bc5c.jpg"
-pm_caption = "__**🔥🔥LEGEND BOT IS ON FIRE🔥🔥**__\n\n"
 
-pm_caption += f"               _MY MASTER__\n**『[{DEFAULTUSER}](tg://user?id={kraken})』**\n\n"
-
-pm_caption += "🛡️TELETHON🛡️ : `1.15.0` \n"
-
-pm_caption += f"😏LEGEND BOT😏       : __**{1.2.2**__\n"
-
-pm_caption += f"😤Sudo😤            : `{sudou}`\n"
-
-pm_caption += "⚠️CHANNEL⚠️   : [ᴊᴏɪɴ](https://t.me/hackerget0)\n"
-
-pm_caption += "😱OWNER😱    : [Nub Here](https://t.me/LEGENDX22)\n\n"
-
-pm_caption += "    [✨REPO✨](https://github.com/legendx22/LEGEND-BOT) 🤐  [LICENSE](https://github.com/legendx22/LEGEND-BOG/blob/master/LICENSE)"
-
-pm_caption += " 😡Haters apni GA** maraao😡\n\n"
-
-@bot.on(admin_cmd(outgoing=True, pattern="alive$"))
-@bot.on(sudo_cmd(pattern="alive$", allow_sudo=True))
-async def amireallyalive(alive):
+pm_caption = "➥ **💥🅻🅴🅶🅴🅽🅳 𝔹𝕆𝕋💥 IS:** `ONLINE`\n\n"
+pm_caption += "➥ **👺🐚  т𝓔ˡ𝕖ţ𝐡𝕆Ⓝ 𝐕𝓔ŘsⓘØᑎ  👊♢:** `1.18.0` \n"
+pm_caption += "➥ **🄿🅈🅃🄷🄾🄽 ♡☞:** `3.7.4` \n"
+pm_caption += "➥ **👊  𝔡𝔞t𝓪в𝓪ⓢέ  𝕊𝕥𝕒𝕥𝕦𝕤  ♗:**  `Functional`\n"
+pm_caption += f"➥ **//💥  ✎  𝓂𝕪 βỖⓈş  ☞  💀//** \n {DEFAULTUSER} \n"
+pm_caption += " ♕  ⓜ𝕪 𝓒𝓗𝓐𝓝𝓝𝓔𝓛  ♕ 😎 \n [CHANNEL](https://t.me/hackerget0)\n\n"
+pm_caption += " Ⓜ️𝓎 ℂＲ𝑒Ａ𝕋Øⓡ 😎 \n [LEGEND](https://t.me/legendx22)\n\n"
+pm_caption += " 𝑀𝒴 𝒢𝑅❁𝒰� 😎 \n [GROUP](https://t.me/teamishere)\n"
+pm_caption += "[🇮🇳 Deploy LEGEND SUPER  BOT 🇮🇳](https://github.com/legendx22/LEGEND-BOT)"
 
 
+@borg.on(admin_cmd(pattern=r"alive"))
+async def friday(alive):
     chat = await alive.get_chat()
-    await alive.delete()
     """ For .alive command, check if the bot is running.  """
     await borg.send_file(alive.chat_id, PM_IMG,caption=pm_caption)
-    await alive.delete() 
+    await alive.delete()
+
+    
+@borg.on(admin_cmd(pattern=r"Alive", allow_sudo=True))
+async def friday(alive):
+    chat = await alive.get_chat()
+    """ For .alive command, check if the bot is running.  """
+    await borg.send_file(alive.chat_id, PM_IMG,caption=pm_caption)
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
