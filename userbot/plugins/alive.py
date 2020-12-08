@@ -12,7 +12,7 @@ from telethon.tl.types import ChannelParticipantsAdmins
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Unknown"
 
 """ =======================CONSTANTS====================== """
-PM_IMG = "https://telegra.ph/file/09924cb2a1bd1a9c733b2.mp4" 
+PM_IMG = "https://telegra.ph/file/93f85e88789464793bc5c.jpg" 
 """ =======================CONSTANTS====================== """
 pm_caption = "➣    **🔥 LEGEND 𝐁𝐎𝐓 🔥 𝐈𝐒** `𝐎𝐍𝐋𝐈𝐍𝐄`\n\n"
 
@@ -24,7 +24,7 @@ pm_caption += "➾ **𝐒𝐔𝐏𝐏𝐎𝐑𝐓 ** ➣ [𝐉𝐎𝐈𝐍](http
 pm_caption += "➾ **𝐒𝐎𝐂𝐈𝐀𝐋  **  ➣ [𝐉𝐎𝐈𝐍](https://t.me/hackerget0)\n"
 pm_caption += "➾ **𝐂𝐑𝐄𝐀𝐓𝐎𝐑** ➣ [⚡ LEGEND⚡](t.me/legendx22)\n\n" 
 pm_caption += " \n\n"
-pm_caption += "[✨ Đ€ƤŁØ¥ ¥ØỮŘ ŞΔVΔǤ€ βØŦ ✨](https://github.com/sameerpanthi/SAVAGE) \n"
+pm_caption += "[✨ Đ€ƤŁØ¥ ¥ØỮŘ βØŦ ✨](https://github.com/legendx22/LEGEND-BOT) \n"
 
 @borg.on(admin_cmd(pattern=r"alive"))
 async def friday(alive):
