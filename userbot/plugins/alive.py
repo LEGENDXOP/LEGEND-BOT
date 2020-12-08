@@ -1,26 +1,7 @@
-Skip to content
-TeamLEGENDX
-/
-LegendBOT
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-LegendBOT/userbot/plugins/alive.py
-@legendx22
-legendx22 Update alive.py
- 5 contributors
-39 lines (32 sloc)  1.97 KB
-  
-#credits to @kraken_the_badass
+
+#credits to @legendx22
 #beautification credits to @sensei_nex for @senseiMAXprojects
 
-#IMG CREDITS: @WhySooSerious
 import asyncio
 from telethon import events
 from uniborg.util import admin_cmd
