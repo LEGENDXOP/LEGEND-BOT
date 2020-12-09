@@ -37,8 +37,8 @@ This is the one and only official LEGEND BOT Userbot made by [@LEGENDX22](https:
 
 Simply clone the repository and run the main file:
 ```sh
-git clone https://github.com/HellBoy-OP/HellBot
-cd HellBot
+git clone https://github.com/legendx22/LEGEND-BOT
+cd LEGEND-BOT
 virtualenv -p /usr/bin/python3 venv
 . ./venv/bin/activate
 pip install -r requirements.txt
