@@ -37,7 +37,7 @@
       "value": "",
       "required": false
     },
-    "ALIVE_PIC": {
+    "ALIVE_PHOTTO": {
       "description": "put here any telegraph media link for alive pic.",
       "value": "",
       "required": false
