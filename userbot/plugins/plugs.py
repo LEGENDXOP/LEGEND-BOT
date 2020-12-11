@@ -5,7 +5,7 @@
 
 """ Making A Shayri... 
     Command .rshayri
-    By @Kraken_The_BadASS """
+    By @LEGENDX22 """
 
 from telethon import events
 import asyncio
