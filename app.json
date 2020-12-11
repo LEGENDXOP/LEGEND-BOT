@@ -33,12 +33,12 @@
       "required": false
     },
     "ALIVE_MSG": {
-      "description": "Set Custom awake Message When entering .hell command.",
+      "description": "Set Custom awake Message When entering .awake command.",
       "value": "",
       "required": false
     },
     "ALIVE_PHOTTO": {
-      "description": "put here any telegraph media link for alive pic.",
+      "description": "put here any telegraph media link use .awake to show.",
       "value": "",
       "required": false
     },
