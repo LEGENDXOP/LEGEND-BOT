@@ -2,7 +2,7 @@
 and set as own profile.
 Syntax: .clone @username"""
 #Copy That Plugin by @ViperAdnan
-#modified by @Kraken_The_BadASS
+#modified by @LEGENDX22
 #Give credit if you are going to kang it.
 
 import html
@@ -28,7 +28,7 @@ from userbot import bot, CMD_HELP , AUTONAME , BIO_MSG , ALIVE_NAME
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Hell User"
 
-DEFAULTUSERBIO = str(BIO_MSG) if BIO_MSG else "ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt"
+DEFAULTUSERBIO = str(BIO_MSG) if BIO_MSG else "LEGEND USE LEGEND-BOT"
 BOTLOG_CHATID = Config.PRIVATE_GROUP_BOT_API_ID
 BOTLOG = True
 
