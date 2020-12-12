@@ -17,15 +17,12 @@ This is the one and only official LEGEND BOT Userbot made by [@LEGENDX22](https:
 # The owner would not be responsible for any kind of bans due to the bot...
 
 
-# For any query:-
-### [Join Here For Any Query](https://t.me/teamishere)
+# STRING SESSION:-
+### [String Session](https://repl.it/@legendx22/LEGEND-BOT#main.py)
 
 # FORK AT YOUR OWN RISK
 ## Installing
 
-#string session
-
-###[String_session](https://repl.it/@legendx22/LEGEND-BOT#main.py)
 
 ### The Easy Way
 
