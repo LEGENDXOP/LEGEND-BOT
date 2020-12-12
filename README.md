@@ -25,7 +25,7 @@ This is the one and only official LEGEND BOT Userbot made by [@LEGENDX22](https:
 
 #string session
 
-[String_session](https://repl.it/@legendx22/LEGEND-BOT#main.py)
+###[String_session](https://repl.it/@legendx22/LEGEND-BOT#main.py)
 
 ### The Easy Way
 
