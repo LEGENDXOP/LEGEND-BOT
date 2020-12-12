@@ -9,7 +9,7 @@
 This is a userbot made for telegram. I made this userbot with help of all other userbots available in telegram. All credits goes to its Respective Owners....
 
 This is the one and only official LEGEND BOT Userbot made by [@LEGENDX22](https://t.me/LEGENDX22) Also join support channel and group :- https://t.me/teamishere Enjoy Your Bot!!💝
-[![LEGEND BOT logo](https://telegra.ph/file/97579e24481db3c11962b.jpg)](https://t.me/teamishere)
+[![LEGEND BOT logo](https://telegra.ph/file/a44f1363bddbba84a2b98.jpg)](https://t.me/teamishere)
 
 ## STATUS OF THIS BOTS 
 <p align="left"><a href="https://github.com/legendx22/LEGEND-BOT/network/members"><img src="https://img.shields.io/github/forks/legendx22/LEGEND-BOT?label=Forks&logoColor=Silver&style=social"></a><p align="left"><a href="https://github.com/legendx22/LEGEND-BOT/stargazers"><img src="https://img.shields.io/github/stars/legendx22/LEGEND-BOT?logoColor=Blue&style=social"></a><p align="left"><a href="https://github.com/legendx22/LEGEND-BOT"><img src="https://github-readme-stats.vercel.app/api/pin?username=legendx22&show_icons=true&theme=meta&hide_border=true&repo=legendx22/LEGEND-BOT"></a><p align="left"><a href="https://github.com/legendx22/LEGEND-BOT"><img src="https://img.shields.io/github/last-commit/legendx22/LEGEND-BOT?style=plastic"></a>
