@@ -31,7 +31,7 @@ async def send(event):
         end = datetime.now()
         time_taken_in_ms = (end - start).seconds
         await pro.edit(
-            f"**⍟ Plugin name ≈** `{input_str}`\n**⍟ Uploaded in ≈** `{time_taken_in_ms} secs`\n**⍟ Uploaded by≈** [{DEFAULTUSER}](tg://user?id={kraken})\n"
+            f"** Plugin name ** `{input_str}`\n** Uploaded in ** `{time_taken_in_ms} secs`\n** Uploaded by** [{DEFAULTUSER}](tg://user?id={kraken})\n"
         )
         await asyncio.sleep(DELETE_TIMEOUT)
         await event.delete()
