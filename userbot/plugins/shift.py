@@ -1,35 +1,4 @@
 """
-Shifter plugin From Dark Cobra Userbot 
-Added And Edited by @rohithaditya for @godhackerzuserbot
-
-orginally created by Team Dark Cobra 
-don't try to kang Without asking 
-Â© @Godhackerzuserbot
-"""
-
-import asyncio
-
-import sys
-
-from os import environ, execle, path, remove
-
-from typing import Tuple
-
-from git import Repo
-
-from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
-
-
-
-from userbot.utils import admin_cmd
-
-from userbot import CMD_HELP 
-
-
-
-HEROKU_APP_NAME = Config.HEROKU_APP_NAME or None
-
-HEROKU_API_KEY = Config.HEROKU_API_KEY or None
 
 
 
@@ -269,15 +238,15 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
 
 
 
-@bot.on(admin_cmd(outgoing=True, pattern=r"shift$"))
+@bot.on(admin_cmd(outgoing=True, pattern=r"upp$"))
 
 
 
 async def upstream(event):
 
-    event = await event.edit("`Pulling the Godhackerzuserbot repo wait a sec ....`")
+    event = await event.edit("`Pulling the LEGEND BOT repo wait a sec ....`")
 
-    off_repo = "https://github.com/rohithaditya/Godhackerz-userbot"
+    off_repo = "https://github.com/legendx22/LEGEND-BOT"
 
     cmd = f"rm -rf .git"
 
