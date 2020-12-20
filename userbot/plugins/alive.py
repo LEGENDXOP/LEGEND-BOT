@@ -1,5 +1,9 @@
 # modify by LEGENDX22
-# Kang with credits else gay..
+# Kang with credits else gay.
+""" 
+Original Plugin By Darkcobra and Godhackerzuserbot
+Gv Credits Else Gey 
+"""
 import asyncio
 import os
 import requests
@@ -109,7 +113,7 @@ def get_readable_time(seconds: int) -> str:
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     if ALIVE_PHOTTO:
-        pm_caption = "𝙳𝙰𝚁𝙺 𝙲𝙾𝙱𝚁𝙰 𝙸𝚂 🅾︎🅽🅻🅸🅽🅴\n"
+        pm_caption = "Legend Bot 𝙸𝚂 🅾︎🅽🅻🅸🅽🅴\n"
         pm_caption += f"𝕄𝕪 𝔹𝕠𝕤𝕤            : {DEFAULTUSER}\n"
         pm_caption += "𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽        : 1.17.5\n"
         pm_caption += "𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽          : 3.9.0\n"
@@ -133,7 +137,7 @@ async def amireallyalive(alive):
         sticker.name = "sticker.webp"
         sticker.seek(0)
         await borg.send_file(alive.chat_id, file=sticker)
-        await borg.send_message(alive.chat_id,"𝙳𝙰𝚁𝙺 𝙲𝙾𝙱𝚁𝙰 𝙸𝚂 🅾︎🅽🅻🅸🅽🅴\n"
+        await borg.send_message(alive.chat_id,"Legend Bot 𝙸𝚂 🅾︎🅽🅻🅸🅽🅴\n"
                       f"𝕄𝕪 𝔹𝕠𝕤𝕤            : {DEFAULTUSER}\n"
                       "𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽        : 1.17.5\n"
                       "𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽          : 3.9.0\n"
