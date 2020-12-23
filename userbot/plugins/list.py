@@ -59,7 +59,7 @@ async def lst(event):
                 elif contents.endswith((".apk", ".xapk")):
                     files += "📱 " + f"{contents}\n"
                 elif contents.endswith((".py")):
-                    files += "🐍 " + f"{contents}\n"
+                    files += "⚡ " + f"{contents}\n"
                 else:
                     files += "📄 " + f"{contents}\n"
             else:
@@ -85,7 +85,7 @@ async def lst(event):
         elif path.endswith((".apk", ".xapk")):
             mode = "📱 "
         elif path.endswith((".py")):
-            mode = "🐍 "
+            mode = "⚡ "
         else:
             mode = "📄 "
         time.ctime(os.path.getctime(path))
