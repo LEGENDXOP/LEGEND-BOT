@@ -18,7 +18,7 @@ import re
 from telethon import Button, custom, events
 from telethon.tl.functions.users import GetFullUserRequest
 
-from jarvis import bot
+from userbot import bot
 from userbot.plugins.sql_helper.blacklist_assistant import (
     add_nibba_in_db,
     is_he_added,
