@@ -1,3 +1,6 @@
+#make by @LEGENDX22
+#kang with credits else gay
+
 from pokedex import pokedex
 
 from userbot import CMD_HELP
