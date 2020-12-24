@@ -7,7 +7,7 @@ from telethon import TelegramClient
 from userbot.helpers import functions as simpdef
 
 from var import Var
-from .function import hubxfunction as topfunc
+from .function import lxfunction as topfunc
 
 StartTime = time.time()
 legendversion = "2.0" 
