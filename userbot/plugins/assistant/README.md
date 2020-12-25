@@ -1,8 +1,8 @@
 # EXAMPLE CODE FOR ASSISTANT MODULE/PLUGIN
 
 ```python3
-from fridaybot.Configs import Config
-from fridaybot import bot
+from userbot.Configs import Config
+from userbot import bot
 @assistant_cmd("commandhere", is_args=True)
 @only_pvt
 async def shit(event):
