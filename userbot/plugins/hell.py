@@ -1,44 +1,85 @@
-#Hello guys... Nub here @Kraken_the_badass
-#Pro is @Hellboi_atul. Who never kanged a single plugin...
-"""Check if userbot working or not . 
+import time
 
-"""
-import os
-import asyncio
-from telethon import events
-from telethon.tl.types import ChannelParticipantsAdmins
-from userbot import ALIVE_NAME, CMD_HELP
-from userbot.utils import admin_cmd
-from telethon import version
-from math import ceil
-import json
-import random
-import re
-from telethon import events, errors, custom
-import io
-from platform import python_version, uname
-
-ALIVE_PIC = Config.ALIVE_PHOTTO
-if ALIVE_PIC is None:
-   ALIVE_PIC = "https://telegra.ph/file/f34675b4e94d4290c0b6b.mp4"
+from userbot import ALIVE_NAME, StartTime, legendversion
+from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
+async def reply_id(event):
+    reply_to_id = None
+    if event.sender_id in Config.SUDO_USERS:
+        reply_to_id = event.id
+    if event.reply_to_msg_id:
+        reply_to_id = event.reply_to_msg_id
+    return reply_to_id
 
-ALIVE_MESSAGE = Config.ALIVE_MSG
-if ALIVE_MESSAGE is None:
-   ALIVE_MESSAGE = "**🔱 LEGEND BOT Zinda Tha....Zinda Hai....Aur Zinda Rahega🔱 \n\n\n**"
-   ALIVE_MESSAGE += "🤙__My Bot Status__🤙 \n\n\n"
-   ALIVE_MESSAGE += f"Telethon: TELETHON-1.15.0 \n\n"
-   ALIVE_MESSAGE += f"Python: PYTHON-3.8.5 \n\n"
-   ALIVE_MESSAGE += "**I'll Be With You Master Till My Dyno Ends!!**☠ \n\n"
-   ALIVE_MESSAGE += f"Support Channel : @hackerget0 \n\n"
-   ALIVE_MESSAGE += f"MY BOSS : {DEFAULTUSER} \n\n "
-                
-            
-#@command(outgoing=True, pattern="^.hell$")
-@command(outgoing=True, pattern="^.hell$")
-async def amireallyalive(awake):
-    """ For .hell command, check if the bot is running.  """
-    await awake.delete() 
-    await borg.send_file(awake.chat_id, ALIVE_PIC,caption=ALIVE_MESSAGE)
+
+DEFAULTUSER = ALIVE_NAME or "LEGEND"
+HELL_IMG = Config.ALIVE_PHOTTO
+CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "LEGEND"
+
+USERID = bot.uid
+
+mention = f"[{DEFAULTUSER}](tg://user?id={USERID})"
+
+
+def get_readable_time(seconds: int) -> str:
+    count = 0
+    ping_time = ""
+    time_list = []
+    time_suffix_list = ["s", "m", "h", "days"]
+
+    while count < 4:
+        count += 1
+        if count < 3:
+            remainder, result = divmod(seconds, 60)
+        else:
+            remainder, result = divmod(seconds, 24)
+        if seconds == 0 and remainder == 0:
+            break
+        time_list.append(int(result))
+        seconds = int(remainder)
+
+    for x in range(len(time_list)):
+        time_list[x] = str(time_list[x]) + time_suffix_list[x]
+    if len(time_list) == 4:
+        ping_time += time_list.pop() + ", "
+
+    time_list.reverse()
+    ping_time += ":".join(time_list)
+
+    return ping_time
+
+
+uptime = get_readable_time((time.time() - StartTime))
+
+
+@bot.on(admin_cmd(outgoing=True, pattern="hell$"))
+@bot.on(sudo_cmd(pattern="hell$", allow_sudo=True))
+async def amireallyalive(alive):
+    if alive.fwd_from:
+        return
+    reply_to_id = await reply_id(alive)
+
+    if HELL_IMG:
+        hell_caption = f"**{CUSTOM_ALIVE_TEXT}**\n\n"
+        hell_caption += f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n"
+        hell_caption += f"__**BOT STATUS**__\n\n"
+        hell_caption += f"**★ Telethon version :** `1.15.0`\n"
+        hell_caption += f"**★ LEGEND VERSION :**`{legendversion}`\n"
+        hell_caption += f"**★ Uptime :** `{uptime}\n`"
+        hell_caption += f"**★ Master:** {mention}\n"
+        await alive.client.send_file(
+            alive.chat_id, HELL_IMG, caption=hell_caption, reply_to=reply_to_id
+        )
+        await alive.delete()
+    else:
+        await edit_or_reply(
+            alive,
+            f"**{CUSTOM_ALIVE_TEXT}**\n\n"
+            f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ \n"
+            f"__**BOT STATUS**__\n\n"
+            f"**★ Telethon Version :** `1.15.0`\n"
+            f"**★ LEGEND VERSION:** `{legendversion}`\n"
+            f"**★ Uptime :** `{uptime}\n`"
+            f"**★ Master:** {mention}\n",
+        )

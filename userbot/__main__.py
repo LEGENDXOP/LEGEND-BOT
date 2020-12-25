@@ -1,3 +1,4 @@
+import os
 from userbot import bot
 from sys import argv
 import sys
@@ -5,11 +6,13 @@ from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 import os
 from telethon import TelegramClient
 from var import Var
-from userbot.utils import load_module
+from userbot.utils import load_module, start_assistant
 from userbot import LOAD_PLUG, BOTLOG_CHATID, LOGS
 from pathlib import Path
 import asyncio
 import telethon.utils
+
+LOAD_ASSISTANT = os.environ.get("LOAD_ASSISTANT", True)
 
 async def add_bot(bot_token):
     await bot.start(bot_token)
@@ -49,7 +52,20 @@ for name in files:
 
 import userbot._core
 
-print("Aree On Ho Gaya Bhenchod!! Abb jake .alive likh ke dekho!! Abb Jaao aur sabki maroo.... Join @HellBot_Official for any help..")
+print("➠ The most Powerful LegendBOT is on fire 🔥. Check .alive to test that bot is functioning or not . Join http://t.me/teamishere for any assistance 👀")
+
+
+if LOAD_ASSISTANT == True:
+    path = "userbot/plugins/assistant/*.py"
+    files = glob.glob(path)
+    for name in files:
+        with open(name) as f:
+            path1 = Path(f.name)
+            shortname = path1.stem
+            start_assistant(shortname.replace(".py", ""))
+else:
+    print("Assitant is Not Loading As U Have Disabled")
+
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()

@@ -36,6 +36,7 @@ justwatch
 lxml
 oauth2client
 patool
+pokedex.py==1.1.2
 psycopg2
 psycopg2-binary
 PyLyrics

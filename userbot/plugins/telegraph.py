@@ -1,4 +1,4 @@
-"""@telegraph Utilities Fix by @Kraken_The_BadASS
+"""@telegraph Utilities Fix by @LEGENDX22
 Available Commands:
 .telegraph media as reply to a media
 .telegraph text as reply to a large text"""
@@ -52,7 +52,7 @@ async def _(event):
                 end = datetime.now()
                 ms_two = (end - start).seconds
                 os.remove(downloaded_file_name)
-                await event.edit("File uploaded ser By Hêllẞø† https://telegra.ph{} ".format(media_urls[0], (ms + ms_two)), link_preview=True)
+                await event.edit("File uploaded ser By LEGEND BOT https://telegra.ph{} ".format(media_urls[0], (ms + ms_two)), link_preview=True)
         elif input_str == "text":
             user_object = await borg.get_entity(r_message.from_id)
             title_of_page = user_object.first_name # + " " + user_object.last_name

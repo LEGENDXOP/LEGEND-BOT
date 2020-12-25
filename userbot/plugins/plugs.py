@@ -1,11 +1,8 @@
-#Made By @Kraken_The_BadASS. Keep Credit if you are gonna copy paste it. LOL NOOBS....
-#Exclusive plugins from my channel @testpy12 
-#Also some from my bro's channel @pyforub......(sawan me lagg gai aag🔥🔥🔥🔥🔥🔥🔥🔥)
-#Now in hellbot....
+#Made By @LEGENDX22
 
 """ Making A Shayri... 
     Command .rshayri
-    By @Kraken_The_BadASS """
+    By @LEGENDX22 """
 
 from telethon import events
 import asyncio

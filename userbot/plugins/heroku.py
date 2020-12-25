@@ -176,7 +176,7 @@ async def _(dyno):
             dyno.chat_id,
             "logs.txt",
             reply_to=dyno.id,
-            caption="HellBot logs of 100+ lines",
+            caption="LEGEND BOT logs of 100+ lines",
         )
         
         await asyncio.sleep(5)
