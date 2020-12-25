@@ -2,7 +2,7 @@ from telethon import events, utils
 from telethon.tl import types
 
 from userbot import bot
-from userbot.Config import Config
+from ..Config import Config
 from userbot.plugins.sql_helper.snips_sql import (
     add_snip,
     get_all_snips,
