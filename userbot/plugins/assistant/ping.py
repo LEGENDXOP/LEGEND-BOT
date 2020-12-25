@@ -1,21 +1,15 @@
-#    Copyright (C) Midhun KM 2020
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
+# Copyright (C) Midhun KM
 #
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
-#
-#    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
+# Please Don't Kang Without Credits
+# A Plugin For Assistant Bot
+# x0x
 
 import time
 from datetime import datetime
 
-from fridaybot import Lastupdate
+from telethon import events
+
+from userbot import Lastupdate, bot
 
 
 def get_readable_time(seconds: int) -> str:
@@ -46,8 +40,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-@assistant_cmd("ping", is_args=False)
-@peru_only
+@tgbot.on(events.NewMessage(pattern="^/ping", func=lambda e: e.sender_id == bot.uid))
 async def _(event):
     start = datetime.now()
     end = datetime.now()
@@ -55,5 +48,5 @@ async def _(event):
     uptime = get_readable_time((time.time() - Lastupdate))
     await tgbot.send_message(
         event.chat_id,
-        f"**█▀█ █▀█ █▄░█ █▀▀ █ \n█▀▀ █▄█ █░▀█ █▄█ ▄**\n ➲ `{ms}` \n ➲ `{uptime}`",
+        f"**╔═══╗╔══╗╔═╗─╔╗╔═══╗\n║╔═╗║╚╣─╝║║╚╗║║║╔═╗║\n║╚═╝║─║║─║╔╗╚╝║║║─╚╝\n║╔══╝─║║─║║╚╗║║║║╔═╗\n║║───╔╣─╗║║─║║║║╚╩═║\n╚╝───╚══╝╚╝─╚═╝╚═══╝**\n ➲ `{ms}` \n ➲ `{uptime}`",
     )

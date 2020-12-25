@@ -7,9 +7,12 @@ from telethon import TelegramClient
 from userbot.helpers import functions as simpdef
 
 from var import Var
+from .function import lxfunction as topfunc
 
 StartTime = time.time()
 legendversion = "2.0" 
+
+Lastupdate = time.time()
 
 os.system("pip install --upgrade pip")
 if Var.STRING_SESSION:
