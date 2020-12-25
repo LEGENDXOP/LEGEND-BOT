@@ -54,6 +54,19 @@ import userbot._core
 
 print("➠ The most Powerful LegendBOT is on fire 🔥. Check .alive to test that bot is functioning or not . Join http://t.me/teamishere for any assistance 👀")
 
+
+if LOAD_ASSISTANT == True:
+    path = "userbot/plugins/assistant/*.py"
+    files = glob.glob(path)
+    for name in files:
+        with open(name) as f:
+            path1 = Path(f.name)
+            shortname = path1.stem
+            start_assistant(shortname.replace(".py", ""))
+else:
+    print("Assitant is Not Loading As U Have Disabled")
+
+
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
