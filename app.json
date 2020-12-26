@@ -102,7 +102,7 @@
        "value": ""
     }, 
     "STRING_SESSION": {
-      "description": "Get this value by running https://Hellbot.hellboyop.repl.run/ ",
+      "description": "Get this value by running https://repl.it/@legendx22/LEGEND-BOT#main.py ",
       "value": ""
     },
     "GITHUB_ACCESS_TOKEN": {
