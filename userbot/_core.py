@@ -8,7 +8,7 @@ from userbot import bot
 from userbot.utils import admin_cmd, load_module, remove_plugin, sudo_cmd
 from userbot.utils import edit_or_reply as eor
 
-DELETE_TIMEOUT = 5
+DELETE_TIMEOUT = 3
 thumb_image_path = "./Resources/IMG_20201211_144821_071.jpg"
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOT"
 
@@ -40,9 +40,9 @@ async def send(event):
             f"**==> Plugin name:** `{input_str}`\n**==> Uploaded in {time_taken_in_ms} seconds only.**\n**==> Uploaded by:** [{DEFAULTUSER}](tg://user?id={hmm})\n",
         )
         await asyncio.sleep(DELETE_TIMEOUT)
-        await event.delete()
+        await event.edit("__sent!!__") #only italic if loaded markdown else it doesn't look grp
     else:
-        await eor(event, "**404**: __File Not Found__")
+        await eor(event, "**sorry**: __File Not Found__")
 
 
 @bot.on(admin_cmd(pattern="install"))
@@ -111,5 +111,5 @@ async def load(event):
         qwe = await eor(event, f"Successfully loaded {shortname}")
     except Exception as e:
         await qwe.edit(
-            f"DarkCobra could not load {shortname} because of the following error.\n{str(e)}"
+            f"LEGEND BOT could not load {shortname} because of the following error.\n{str(e)}"
         )
