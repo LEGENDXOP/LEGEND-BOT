@@ -12,6 +12,9 @@ from pathlib import Path
 import asyncio
 import telethon.utils
 
+sed = logging.getLogger("userbot")
+
+
 LOAD_ASSISTANT = os.environ.get("LOAD_ASSISTANT", True)
 
 async def add_bot(bot_token):
