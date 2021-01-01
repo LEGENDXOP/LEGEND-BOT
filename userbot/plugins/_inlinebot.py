@@ -1,203 +1,98 @@
-from math import ceil
-from re import compile
+from userbot import CMD_LIST
+from userbot import ALIVE_NAME
+from userbot.utils import admin_cmd, sudo_cmd
+from platform import uname
+import sys
+from telethon import events, functions, __version__
 
-from telethon.events import InlineQuery, callbackquery
-from telethon.sync import custom
-from telethon.tl.functions.channels import JoinChannelRequest
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "@Dark_cobra_support_group"
 
-from userbot import *
-from userbot.cmdhelp import *
-from userbot.utils import *
-
-# thats how a lazy guy imports
-# hellbot
-
-def button(page, modules):
-    Row = 7
-    Column = 3
-
-    modules = sorted([modul for modul in modules if not modul.startswith("_")])
-    pairs = list(map(list, zip(modules[::2], modules[1::2])))
-    if len(modules) % 2 == 1:
-        pairs.append([modules[-1]])
-    max_pages = ceil(len(pairs) / Row)
-    pairs = [pairs[i : i + Row] for i in range(0, len(pairs), Row)]
-    buttons = []
-    for pairs in pairs[page]:
-        buttons.append(
-            [
-                custom.Button.inline("🔸 " + pair, data=f"Information[{page}]({pair})")
-                for pair in pairs
-            ]
-        )
-
-    buttons.append(
-        [
-            custom.Button.inline(
-                "◀️ ᏰᎯᏣᏦ", data=f"page({(max_pages - 1) if page == 0 else (page - 1)})"
-            ),
-            custom.Button.inline(
-              "• ❌ •", data="close"
-            ),
-            custom.Button.inline(
-                "ᏁᏋﾒᎿ ▶️", data=f"page({0 if page == (max_pages - 1) else page + 1})"
-            ),
-        ]
-    )
-    return [max_pages, buttons]
-    # Changing this line may give error in bot as i added some special cmds in hellbot channel to get this module work...
-
-    modules = CMD_HELP
-if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
-    @tgbot.on(InlineQuery)  # pylint:disable=E0602
-    async def inline_handler(event):
-        builder = event.builder
-        result = None
-        query = event.text
-        if event.query.user_id == bot.uid and query == "@HellBot_Official":
-            rev_text = query[::-1]
-            veriler = button(0, sorted(CMD_HELP))
-            result = await builder.article(
-                f"Hey! Only use .help please",
-                text=f"**Running HellBot**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
-                buttons=veriler[1],
-                link_preview=False,
-            )
-        elif query.startswith("http"):
-            part = query.split(" ")
-            result = builder.article(
-                "File uploaded",
-                text=f"**File uploaded successfully to {part[2]} site.\n\nUpload Time : {part[1][:3]} second\n[‏‏‎ ‎]({part[0]})",
-                buttons=[[custom.Button.url("URL", part[0])]],
-                link_preview=True,
-            )
-        else:
-            result = builder.article(
-                "@HellBot_Official",
-                text="""**Hey! This is [Hêllẞø†.](https://t.me/HellBot_Official) \nYou can know more about me from the links given below 👇**""",
-                buttons=[
-                    [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/HellBot_Official"),
-                        custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/HellBot_Official_Chat"
-                        ),
-                    ],
-                    [
-                        custom.Button.url(
-                            "✨ REPO ✨", "https://github.com/HellBoy-OP/HellBot"),
-                        custom.Button.url
-                    (
-                            "🔰 TUTORIAL 🔰", "https://youtu.be/M2FQJq_sHp4"
+#@command(pattern="^.help ?(.*)")
+@borg.on(admin_cmd(pattern=r"help ?(.*)", outgoing=True))
+@borg.on(sudo_cmd(pattern=r"help ?(.*)", outgoing=True, allow_sudo=True))
+async def cmd_list(event):
+    if not event.text[0].isalpha() and event.text[0] not in ("/" , "#", "-", "_", "@"):
+        tgbotusername = Var.TG_BOT_USER_NAME_BF_HER
+        input_str = event.pattern_match.group(1)
+        if tgbotusername is None or input_str == "text":
+            string = ""
+            for i in CMD_LIST:
+                string += "⚡️" + i + "\n"
+                for iter_list in CMD_LIST[i]:
+                    string += "    `" + str(iter_list) + "`"
+                    string += "\n"
+                string += "\n"
+            if len(string) > 69:
+                with io.BytesIO(str.encode(string)) as out_file:
+                    out_file.name = "cmd.txt"
+                    await bot.send_file(
+                        event.chat_id,
+                        out_file,
+                        force_document=True,
+                        allow_cache=False,
+                        caption="**COMMANDS** In LEGEND BOT",
+                        reply_to=reply_to_id
                     )
-                    ],
-                ],
-                link_preview=False,
-            )
-        await event.answer([result] if result else None)
-
-    @tgbot.on(callbackquery.CallbackQuery(data=compile(b"page\((.+?)\)")))
-    async def page(event):
-        if not event.query.user_id == bot.uid:
-            return await event.answer(
-                "Hoo gya aapka. Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. © Hêllẞø† ™",
-                cache_time=0,
-                alert=True,
-            )
-        page = int(event.data_match.group(1).decode("UTF-8"))
-        veriler = button(page, CMD_HELP)
-        await event.edit(
-            f"**Legenday AF** [Hêllẞøt](https://t.me/HellBot_Official) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
-            buttons=veriler[1],
-            link_preview=False,
-        )
-        
-    @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
-    async def on_plug_in_callback_query_handler(event):
-        if event.query.user_id == bot.uid:
-            await event.edit(
-                "⚜️Hêllẞø† Menu Provider Is now Closed⚜️\n\n      © Hêllẞø† ™"
-            )
-          
-    @tgbot.on(
-        callbackquery.CallbackQuery(data=compile(b"Information\[(\d*)\]\((.*)\)"))
-    )
-    async def Information(event):
-        if not event.query.user_id == bot.uid:
-            return await event.answer(
-                "Hoo gya aapka. Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. © Hêllẞø† ™",
-                cache_time=0,
-                alert=True,
-            )
-
-        page = int(event.data_match.group(1).decode("UTF-8"))
-        commands = event.data_match.group(2).decode("UTF-8")
-        try:
-            buttons = [
-                custom.Button.inline(
-                    "🔹 " + cmd[0], data=f"commands[{commands}[{page}]]({cmd[0]})"
-                )
-                for cmd in CMD_HELP_BOT[commands]["commands"].items()
-            ]
-        except KeyError:
-            return await event.answer(
-                "No Description is written for this plugin", cache_time=0, alert=True
-            )
-
-        buttons = [buttons[i : i + 2] for i in range(0, len(buttons), 2)]
-        buttons.append([custom.Button.inline("◀️ ᏰᎯᏣᏦ", data=f"page({page})")])
-        await event.edit(
-            f"**📗 File:** `{commands}`\n**🔢 Number of commands :** `{len(CMD_HELP_BOT[commands]['commands'])}`",
-            buttons=buttons,
-            link_preview=False,
-        )
-
-    @tgbot.on(
-        callbackquery.CallbackQuery(data=compile(b"commands\[(.*)\[(\d*)\]\]\((.*)\)"))
-    )
-    async def commands(event):
-        if not event.query.user_id == bot.uid:
-            return await event.answer(
-                "Hoo gya aapka. Kabse tapar tapar dabae jaa rhe h. Khudka bna lo na agr chaiye to. © Hêllẞø† ™",
-                cache_time=0,
-                alert=True,
-            )
-
-        cmd = event.data_match.group(1).decode("UTF-8")
-        page = int(event.data_match.group(2).decode("UTF-8"))
-        commands = event.data_match.group(3).decode("UTF-8")
-
-        result = f"**📗 File:** `{cmd}`\n"
-        if CMD_HELP_BOT[cmd]["info"]["info"] == "":
-            if not CMD_HELP_BOT[cmd]["info"]["warning"] == "":
-                result += f"**⬇️ Official:** {'✅' if CMD_HELP_BOT[cmd]['info']['official'] else '❌'}\n"
-                result += f"**⚠️ Warning :** {CMD_HELP_BOT[cmd]['info']['warning']}\n\n"
+                    await event.delete()
             else:
-                result += f"**⬇️ Official:** {'✅' if CMD_HELP_BOT[cmd]['info']['official'] else '❌'}\n\n"
+                await event.edit(string)
+        elif input_str:
+            if input_str in CMD_LIST:
+                string = "Commands found in {}:\n".format(input_str)
+                for i in CMD_LIST[input_str]:
+                    string += "  " + i
+                    string += "\n"
+                await event.edit(string)
+            else:
+                await event.edit(input_str + " is not a valid plugin!")
         else:
-            result += f"**⬇️ Official:** {'✅' if CMD_HELP_BOT[cmd]['info']['official'] else '❌'}\n"
-            if not CMD_HELP_BOT[cmd]["info"]["warning"] == "":
-                result += f"**⚠️ Warning:** {CMD_HELP_BOT[cmd]['info']['warning']}\n"
-            result += f"**ℹ️ Info:** {CMD_HELP_BOT[cmd]['info']['info']}\n\n"
+            help_string = f"""Userbot Helper.. Provided by 🔱{DEFAULTUSER}🔱 \n
+`Userbot Helper to reveal all the commands`\n__Do .help plugin_name for commands, in case popup doesn't appear.__"""
+            results = await bot.inline_query(  # pylint:disable=E0602
+                tgbotusername,
+                help_string
+            )
+            await results[0].click(
+                event.chat_id,
+                reply_to=event.reply_to_msg_id,
+                hide_via=True
+            )
+            await event.delete()
+            
+@borg.on(admin_cmd(pattern="dc"))  # pylint:disable=E0602
+async def _(event):
+    if event.fwd_from:
+        return
+    result = await borg(functions.help.GetNearestDcRequest())  # pylint:disable=E0602
+    await event.edit(result.stringify())
 
-        command = CMD_HELP_BOT[cmd]["commands"][commands]
-        if command["params"] is None:
-            result += f"**🛠 commands:** `{COMMAND_HAND_LER[:1]}{command['command']}`\n"
+
+@borg.on(admin_cmd(pattern="config"))  # pylint:disable=E0602
+async def _(event):
+    if event.fwd_from:
+        return
+    result = await borg(functions.help.GetConfigRequest())  # pylint:disable=E0602
+    result = result.stringify()
+    logger.info(result)  # pylint:disable=E0602
+    await event.edit("Telethon UserBot powered LEGEND_BOT")
+
+
+@borg.on(admin_cmd(pattern="syntax (.*)"))
+async def _(event):
+    if event.fwd_from:
+        return
+    plugin_name = event.pattern_match.group(1)
+
+    if plugin_name in CMD_LIST:
+        help_string = CMD_LIST[plugin_name].__doc__
+        unload_string = f"Use `.unload {plugin_name}` to remove this plugin.\n           © Dark Cobra"
+        
+        if help_string:
+            plugin_syntax = f"Syntax for plugin **{plugin_name}**:\n\n{help_string}\n{unload_string}"
         else:
-            result += f"**🛠 commands:** `{COMMAND_HAND_LER[:1]}{command['command']} {command['params']}`\n"
+            plugin_syntax = f"No DOCSTRING has been setup for {plugin_name} plugin."
+    else:
 
-        if command["example"] is None:
-            result += f"**💬 Explanation:** `{command['usage']}`\n\n"
-        else:
-            result += f"**💬 Explanation:** `{command['usage']}`\n"
-            result += f"**⌨️ For Example:** `{COMMAND_HAND_LER[:1]}{command['example']}`\n\n"
+        plugin_syntax = "Enter valid **Plugin** name.\nDo `.plinfo` or `.help` to get list of valid plugin names."
 
-        await event.edit(
-            result,
-            buttons=[
-                custom.Button.inline("◀️ ᏰᎯᏣᏦ", data=f"Information[{page}]({cmd})")
-            ],
-            link_preview=False,
-        )
-
-
-# Ask owner before using it in your codes
+    await event.edit(plugin_syntax)
