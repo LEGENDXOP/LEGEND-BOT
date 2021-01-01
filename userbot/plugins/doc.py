@@ -34,3 +34,6 @@ async def get(event):
         os.remove(name)
     else:
         await event.edit("reply to text message as `.ttf <file name>`")
+
+CMD_HELP.update({
+    "Doc":"tell you later 😂"})
