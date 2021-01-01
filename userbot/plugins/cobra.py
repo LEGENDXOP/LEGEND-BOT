@@ -1,6 +1,6 @@
 
 #modify by legendx22
-#hehehhe
+#credits team dc
 #Making The Back Command Was The Toughest Work #by @Shivam_Patel,@The_Siddharth_Nigam,@danish_00,@ProgrammingError also v changed Pop up or inline help to text
 #A stark bhai chori karna aaya ho kya friday me ek bar back btn kang kar k man nahi bhara 
 #Agar stark nahi ho to kon hai be tu jo bhi hai kang karna he aaya hai mera back , open btn so get lost
@@ -87,8 +87,8 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             
             await event.edit(buttons=dc)
         else:
-              TheDark = "Please get your own Userbot😁😁,for more info visit @teamishere! 😎😎"
-              await event.answer(TheDark, cache_time=0, alert=True)
+              Thelegend = "Please get your own Userbot😁😁,for more info visit @teamishere! 😎😎"
+              await event.answer(Thelegend, cache_time=0, alert=True)
  #hehehehehhehhehhehe   
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
@@ -115,7 +115,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         global shivam_sh1vam
         shivam_sh1vam="{}".format(plugin_name)
         help_string = "Commands found in {}:\n".format(plugin_name)
-        k = "💠🔮💎"
+        k = "💠🔰💎"
         u = 0
         for i in CMD_LIST[plugin_name]:
             u += 1
@@ -125,7 +125,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                 f"**📤 PLUGIN NAME 📤 :** `{plugin_name}` \n\n{CMD_HELP[plugin_name]}"
             )
         else:
-            help_string += "😁"
+            help_string += "❣️"
 
         reply_pop_up_alert = help_string
         reply_pop_up_alert += (
