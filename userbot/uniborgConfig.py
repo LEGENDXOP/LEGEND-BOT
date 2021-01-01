@@ -141,10 +141,18 @@ if ENV:
         UPSTREAM_REPO = os.environ.get(
             "UPSTREAM_REPO", "https://github.com/HellBoy-OP/HellBot"
         )
-        EXTRA_HELLBOT = os.environ.get("EXTRA_HELLBOT", -1001221881562)
         PM_DATA = os.environ.get("PM_DATA", "ENABLE")
-        
+      #ASSISTANT
+        ASSISTANT_LOG = int(os.environ.get("ASSISTANT_LOG", False))
+        ENABLE_ASSISTANTBOT = os.environ.get("ENABLE_ASSISTANTBOT", "ENABLE")
+        ASSISTANT_START_PIC = os.environ.get(
+        "ASSISTANT_START_PIC",
+        "https://www.logolynx.com/images/logolynx/72/7257d2ac93b97c8a2c7308266052df13.png",
+        )
+        BOT_HANDLER = os.environ.get("BOT_HANDLER", "^/")
+
 else:
     class Config(object):
         DB_URI = None
+        
        
