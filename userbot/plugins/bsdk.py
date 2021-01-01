@@ -43,3 +43,6 @@ async def _(event):
          
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 18])
+
+CMD_HELP.update({
+    "bsdk":"gali plugin h yrr use .bsdk"})
