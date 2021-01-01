@@ -10,8 +10,8 @@ from telethon import events
 
 
 
-@borg.on(admin_cmd(pattern="trt ?(.*)"))
-@borg.on(events.NewMessage(pattern=r"\.trt ?(.*)",incoming=True))
+@borg.on(admin_cmd(pattern="tr ?(.*)"))
+@borg.on(events.NewMessage(pattern=r"\.tr ?(.*)",incoming=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -36,7 +36,7 @@ async def _(event):
         after_tr_text = translated.text
         # TODO: emojify the :
         # either here, or before translation
-        output_str = """**Translated By Hêllẞø†** 
+        output_str = """**Translated By LEGEND BOT** 
          Source **( {} )**
          Translation **( {} )**
          {}""".format(
