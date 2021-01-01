@@ -1,4 +1,7 @@
-#credits to @mrconfused 
+#credits to @legendx22
+"""
+Userbot module aage ni pta kuch
+"""
 import io
 import sys
 import traceback
