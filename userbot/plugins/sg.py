@@ -1,6 +1,5 @@
 # -0,0 +1,96 @@
-# Made For DARK COBRA and TELEBOT...
-# Made by team cobra with @xditya
+# Made by legendx22
 # Retrieves the name history and the username history of the replied user.
 import datetime
 from telethon import events
@@ -47,7 +46,7 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "sangmata": "__**PLUGIN NAME :** sangmata__\
+        "sg": "__**PLUGIN NAME :** sg__\
     \n\n📌** CMD ★** `.sg`\
     \n**USAGE   ★  **Retrieves the name and username history of the replied user even if he has forwarded message privacy..! This may not always work as perfect it should be..if doesn't then try once again.."
     }
