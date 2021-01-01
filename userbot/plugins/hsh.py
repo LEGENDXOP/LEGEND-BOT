@@ -31,7 +31,7 @@ from telethon.tl.types import (
     UserStatusRecently,
 )
 from telethon.utils import get_input_location
-
+from userbot import CMD_HELP
 from ..utils import admin_cmd, edit_or_reply, sudo_cmd
 
 
@@ -64,5 +64,7 @@ async def _(event):
             else:
                 p += 1
         await et.edit("{}: {} unbanned".format(event.chat_id, p))
+CMD_HELP.update({
+    "hsh":"this is unban all plugin use .unbanall to unbanall banned members "})
 
 
