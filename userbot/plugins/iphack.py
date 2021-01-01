@@ -41,8 +41,8 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "iplookup": "**IP LOOKUP**\
-\n\n**Syntax : **`.iplookup <ip address>`\
+        "iphack": "**IP HACK**\
+\n\n**Syntax : **`.ip <ip address>`\
 \n**Usage :** Gives details about the ip address."
     }
 )
