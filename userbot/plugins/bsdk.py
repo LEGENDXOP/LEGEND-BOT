@@ -3,7 +3,7 @@
 Available Commands:
 .bsdk"""
 
-from telethon import eventsr 
+from telethon import events
 
 import asyncio
 
