@@ -5,14 +5,11 @@ import time
 from telethon.sessions import StringSession
 from telethon import TelegramClient
 from userbot.helpers import functions as simpdef
-
+from userbot.uniborgConfig import Config
 from var import Var
-from .function import lxfunction as topfunc
 
 StartTime = time.time()
 legendversion = "2.0" 
-
-Lastupdate = time.time()
 
 os.system("pip install --upgrade pip")
 if Var.STRING_SESSION:
@@ -26,13 +23,15 @@ else:
 CMD_LIST = {}
 # for later purposes
 CMD_HELP = {}
+CMD_HELP_BOT = {}
+BRAIN_CHECKER = []
 INT_PLUG = ""
 LOAD_PLUG = {}
 
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
 
-CAT_ID = ["1289422521"]
+hell_ID = ["924138714"]
 
 """ PPE initialization. """
 
@@ -78,7 +77,9 @@ if bool(ENV):
     # Userbot logging feature switch.
     BOTLOG = sb(os.environ.get("BOTLOG", "False"))
     LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
-    
+    PATTERNS = os.environ.get("PATTERNS", ".;!,")
+    COMMAND_HAND_LER = os.environ.get("COMMAND_HAND_LER", r"\.")
+  
     # Bleep Blop, this is a bot ;)
     PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
 
@@ -196,3 +197,5 @@ AFKREASON = None
 SUDO_LIST = {}
 
 
+from userbot.helpers import *
+from userbot.helpers import functions as helldef
