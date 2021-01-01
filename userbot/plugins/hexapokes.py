@@ -2,7 +2,7 @@
 
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-from userbot import ALIVE_NAME
+from userbot import ALIVE_NAME, CMD_HELP
 from userbot.utils import admin_cmd
 
 naam = str(ALIVE_NAME)
@@ -48,3 +48,6 @@ async def _(event):
                 await event.delete()
             except YouBlockedUserError:
                 await event.edit("Error: unblock @hexamonbot `and try again!")
+CMD_HELP.update({
+    "hexapokes":"type .mypokes to get your all hexa pokes"})
+
