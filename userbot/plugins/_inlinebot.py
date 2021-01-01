@@ -5,7 +5,7 @@ from platform import uname
 import sys
 from telethon import events, functions, __version__
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "@Dark_cobra_support_group"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "@teamishere"
 
 #@command(pattern="^.help ?(.*)")
 @borg.on(admin_cmd(pattern=r"help ?(.*)", outgoing=True))
