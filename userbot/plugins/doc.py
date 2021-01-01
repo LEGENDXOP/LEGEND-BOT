@@ -35,5 +35,3 @@ async def get(event):
     else:
         await event.edit("reply to text message as `.ttf <file name>`")
 
-CMD_HELP.update({
-    "Doc":"tell you later 😂"})
