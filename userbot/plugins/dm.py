@@ -1,3 +1,8 @@
+#make for dm
+"""
+Userbot module to help you dm msg
+"""
+
 from telethon import *
 
 from userbot import CMD_HELP
