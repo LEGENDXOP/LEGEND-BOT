@@ -1,9 +1,8 @@
-#Ported to Hêllẞø† by @Kraken_The_BadASS
-#Thanks to @starkxd for this pluhin
-#Keep credit bitches...
+
 
 
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
+from userbot import CMD_HELP
 from userbot.utils import admin_cmd
 import html
 from telethon import events
@@ -210,3 +209,5 @@ async def handler(rkG):
                  except:       
                     rkG.reply("`No Permission To Ban`")                   
                     return 
+CMD_HELP.update({
+    "gban":"gban any user using username or tag dont use id "})
