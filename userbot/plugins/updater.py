@@ -7,6 +7,7 @@ from contextlib import suppress
 import os
 import sys
 import asyncio
+from userbot import CMD_HELP
 from userbot.utils import admin_cmd
 
 # -- Constants -- #
@@ -145,3 +146,7 @@ async def deploy_start(bot, message, refspec, remote):
     remote.push(refspec=refspec)
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
+
+CMD_HELP.update({
+    "Updater":"this is only updater made by @legendx22 use .update"})
+
