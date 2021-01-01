@@ -1,5 +1,5 @@
 from telethon import events
-
+from userbot import ALIVE_NAME
 from userbot import bot, legendversion
 
 PM_IMG = "https://telegra.ph/file/a44f1363bddbba84a2b98.jpg"
@@ -10,7 +10,7 @@ pm_caption += "➥ **Python:** `3.7.4` \n"
 pm_caption += "➥ **Database Status:**  `Functional`\n"
 pm_caption += "➥ **Current Branch** : `main`\n"
 pm_caption += f"➥ **Version** : `{legendversion}`\n"
-pm_caption += f"➥ **My Boss** : \n"
+pm_caption += f"➥ **My Boss** : {DEFAULTUSER} \n"
 pm_caption += "➥ **Heroku Database** : `AWS - Working Properly`\n\n"
 pm_caption += "➥ **License** : [GNU General Public License v3.0](github.com/ahirearyan2/HyperUserBot-X/blob/main/LICENSE)\n"
 pm_caption += "➥ **Copyright** : By [TEAM LEGEND BOT](https://github.com/legendx22/LEGEND-BOT)\n"
