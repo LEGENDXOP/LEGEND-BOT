@@ -1,11 +1,11 @@
-#originally created by @danish_00
+#originally created by legendx22
 
-#team cobra
+#team LEGEND
 from asyncio import sleep
 from telethon.tl.types import ChatBannedRights, ChannelParticipantsAdmins, ChatAdminRights
 from telethon.tl.functions.channels import EditBannedRequest
 from userbot.utils import admin_cmd
-from userbot import bot
+from userbot import bot, CMD_HELP
 
 
 @bot.on(admin_cmd(pattern=r"allban", outgoing=True))
@@ -29,3 +29,6 @@ async def testing(event):
             await event.edit(str(e))
         await sleep(.5)
     await event.edit("Nothing Happend here🙃🙂")
+
+CMD_HELP.update({
+    "all ban":"this plugin is all ban members "})
