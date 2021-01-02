@@ -26,7 +26,7 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "Filext": ".filext\
+        "filext": ".filext\
 \nUsage: meko ni pta khud use krke dekhle 🙄.\
 "
     }
