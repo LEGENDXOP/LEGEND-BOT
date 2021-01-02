@@ -5,6 +5,7 @@
 from PIL import Image, ImageFont, ImageDraw
 import textwrap
 import os
+from userbot import CMD_HELP
 from userbot.utils import admin_cmd, sudo_cmd
 from var import Var
 # how a lazy guy ports.
@@ -94,4 +95,12 @@ async def drawText(image_path, text):
     webp_file = os.path.join(Var.TEMP_DOWNLOAD_DIRECTORY, image_name)
     img.save(webp_file, "webp")
     return webp_file
+CMD_HELP.update(
+    {
+        "Memify": ".memify (text)\
+\nUsage: print your text on photo or sticker.\
+"
+    }
+)
+
 
