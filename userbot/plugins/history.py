@@ -40,7 +40,7 @@ async def _(event):
             await event.edit(f"{response.message.message}")
 CMD_HELP.update(
     {
-        "History": "**Plugin : **`history`\
+        "history": "**Plugin : **`history`\
     \n\n**Syntax : **`.history`\
     \n**Function : **this plugin not show full history of user try .sg"
     }
