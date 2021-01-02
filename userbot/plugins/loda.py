@@ -24,7 +24,8 @@ async def _(event):
 
 CMD_HELP.update(
     {
-    \n\n📌** CMD ★** `.cmd`\
-    \n**USAGE   ★  **usage"
+        "loda": "**Plugin : **`loda`\
+    \n\n**Syntax : **`.loda`\
+    \n**Function : **funny Plugin made by @LEGENDX22"
     }
 )
