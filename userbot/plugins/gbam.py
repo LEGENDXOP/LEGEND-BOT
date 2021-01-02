@@ -51,3 +51,12 @@ async def gbun(event):
         mention = "`Warning!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By Admin...\nReason: Not Given `"
         await event.reply(mention)
     await event.delete()
+
+CMD_HELP.update(
+    {
+        "Gbam": ".gbam\
+\nUsage: fake gban plug-in 😂.\
+"
+    }
+)
+
