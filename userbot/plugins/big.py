@@ -48,3 +48,11 @@ async def _(event):
         	
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 40])
+CMD_HELP.update(
+    {
+        "Big": ".bigoof\
+\nUsage: backchodi use krke dekhlo.\
+"
+    }
+)
+
