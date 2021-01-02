@@ -331,4 +331,4 @@ async def _(event):
     await event.edit("`Here is Your G-Drive Folder link : `\n"+folder_link)
 
 CMD_HELP.update({
-    "Gdrive":"Abhi to mene bhi use ni kiya saar use krke bata ta hu ok"})
+    "gdrive":"Abhi to mene bhi use ni kiya saar use krke bata ta hu ok"})
