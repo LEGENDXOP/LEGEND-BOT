@@ -10,7 +10,6 @@ from os.path import basename, join
 from textwrap import wrap
 from typing import Optional, Tuple
 
-import numpy as np
 
 try:
     from colour import Color as asciiColor
