@@ -51,7 +51,7 @@ async def _(event):
         await event.edit(animation_chars[i % 40])
 CMD_HELP.update(
     {
-        "Big": ".bigoof\
+        "big": ".bigoof\
 \nUsage: backchodi use krke dekhlo.\
 "
     }
