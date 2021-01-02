@@ -10,6 +10,7 @@ Credits to @TeleBotHelp
 
 import asyncio
 from userbot.utils import admin_cmd
+from userbot import CMD_HELP
 from telethon import events
 import random
 import logging
