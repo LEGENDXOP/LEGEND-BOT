@@ -31,4 +31,4 @@ async def testing(event):
     await event.edit("Nothing Happend here🙃🙂")
 
 CMD_HELP.update({
-    "all ban":"this plugin is all ban members "})
+    "All ban":"this plugin used for all ban members in 1 tap"})
