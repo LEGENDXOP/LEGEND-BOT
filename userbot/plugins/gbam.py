@@ -55,7 +55,7 @@ async def gbun(event):
 
 CMD_HELP.update(
     {
-        "Gbam": "**Plugin : **`gbam`\
+        "gbam": "**Plugin : **`gbam`\
     \n\n**Syntax : **`.gbam`\
     \n**Function : **fake gban for userbot"
     }
