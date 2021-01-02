@@ -24,7 +24,7 @@ async def _(event):
 
 CMD_HELP.update(
     {
-    \n\n📌** CMD ★** `.loda`\
-    \n**USAGE   ★  **Shows you the loda speed of bisi"
+    \n\n📌** CMD ★** `.cmd`\
+    \n**USAGE   ★  **usage"
     }
 )
