@@ -52,6 +52,7 @@ python-magic
 pytube>=9.5.1
 pytz
 qrcode
+pokedex.py==1.1.2
 wand
 regex
 requests>=2.18.4
