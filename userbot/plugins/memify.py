@@ -97,7 +97,7 @@ async def drawText(image_path, text):
     return webp_file
 CMD_HELP.update(
     {
-        "Memify": ".memify (text)\
+        "memify": ".memify (text)\
 \nUsage: print your text on photo or sticker.\
 "
     }
