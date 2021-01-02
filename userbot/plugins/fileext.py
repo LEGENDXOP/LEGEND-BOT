@@ -3,6 +3,7 @@ Syntax: .filext EXTENSION"""
 from telethon import events
 import requests
 from bs4 import BeautifulSoup
+from userbot import CMD_HELP
 from uniborg.util import admin_cmd
 
 
@@ -22,3 +23,12 @@ async def _(event):
         await event.edit("**File Extension**: `{}`\n**Description**: `{}`".format(input_str, ext_details))
     else:
         await event.edit("https://www.fileext.com/ responded with {} for query: {}".format(status_code, input_str))
+
+CMD_HELP.update(
+    {
+        "Filext": ".filext\
+\nUsage: meko ni pta khud use krke dekhle 🙄.\
+"
+    }
+)
+
