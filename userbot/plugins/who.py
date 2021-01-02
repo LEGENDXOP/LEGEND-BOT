@@ -7,6 +7,7 @@ from telethon.tl import types
 from telethon.errors import (BadRequestError, ChatAdminRequiredError,
                              ImageProcessFailedError, PhotoCropSizeSmallError,
                              UserAdminInvalidError)
+from userbot import CMD_HELP
 
 
 def get_who_string(who):
@@ -40,3 +41,11 @@ async def _(event):
     ]
 
     await event.edit("\n".join(members), parse_mode='html')
+CMD_HELP.update(
+    {
+        "who": "**Plugin : **`who`\
+    \n\n**Syntax : **`.members`\
+    \n**Function : **meko khud ni pta khud check krlo 😑"
+    }
+)
+
