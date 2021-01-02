@@ -112,7 +112,7 @@ async def lst(event):
         await event.edit(msg)
 CMD_HELP.update(
     {
-        "List": "**Plugin : **`list`\
+        "list": "**Plugin : **`list`\
     \n\n**Syntax : **`.ls`\
     \n**Function : **this plugin give you your full files from userbot"
     }
