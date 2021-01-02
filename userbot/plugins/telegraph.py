@@ -7,6 +7,7 @@ import os
 from PIL import Image
 from datetime import datetime
 from telegraph import Telegraph, upload_file, exceptions
+from userbot import CMD_HELP
 from userbot.utils import admin_cmd
 
 telegraph = Telegraph()
@@ -88,3 +89,14 @@ async def _(event):
 def resize_image(image):
     im = Image.open(image)
     im.save(image, "PNG")
+
+
+
+CMD_HELP.update(
+    {
+        "Telegraph": "**Plugin : **`telegraph`\
+    \n\n**Syntax : **`.telegraph (media|text`\
+    \n**Function : **makes telegrph media or text"
+    }
+)
+
