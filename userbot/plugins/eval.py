@@ -77,7 +77,7 @@ async def aexec(code, event):
 
 CMD_HELP.update(
     {
-        "Eval": ".eval (?)\
+        "eval": ".eval (?)\
 \nUsage: this is a plug-in but abhi meko iska poora usage ni pta jaldi add krduga.\
 "
     }
