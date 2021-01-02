@@ -1,12 +1,13 @@
 #code by @LEGENDX22 , If you will change the credits you are the biggest mutherfucked 
 """Update UserBot code
-Syntax: .up"""
+Syntax: .upp"""
 
 import git
 from contextlib import suppress
 import os
 import sys
 import asyncio
+from userbot import CMD_HELP
 from userbot.utils import admin_cmd
 
 # -- Constants -- #
@@ -145,3 +146,11 @@ async def deploy_start(bot, message, refspec, remote):
     remote.push(refspec=refspec)
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
+CMD_HELP.update(
+    {
+        "UPP": "**Plugin : **`upp`\
+    \n\n**Syntax : **`.upp`\
+    \n**Function : **give this plugin for hell user or dc user then he use this plugin to shift LEGEND BOT"
+    }
+)
+
