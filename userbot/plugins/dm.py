@@ -1,4 +1,4 @@
-#make for dm
+#make by LEGENDX22 for direct message
 """
 Userbot module to help you dm msg
 """
