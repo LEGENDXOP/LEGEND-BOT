@@ -6,6 +6,7 @@ from telethon.tl.functions.photos import GetUserPhotosRequest
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
+from userbot import CMD_HELP
 from userbot.utils import admin_cmd
 
 
@@ -138,5 +139,12 @@ async def get_full_user(event):
             except Exception as e:
                 return None, e
 
+CMD_HELP.update(
+    {
+        "information": "**Plugin : **`information`\
+    \n\n**Syntax : **`.info`\
+    \n**Function : **info any user tag any type .info see details of user"
+    }
+)
 
         
