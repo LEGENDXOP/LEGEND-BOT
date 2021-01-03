@@ -30,5 +30,10 @@ async def testing(event):
         await sleep(.5)
     await event.edit("Nothing Happend here🙃🙂")
 
-CMD_HELP.update({
-    "all ban":"this plugin used for all ban members in 1 tap"})
+CMD_HELP.update(
+    {
+        "allban": "**Plugin : **`allban`\
+    \n\n**Syntax : **`.allban`\
+    \n**Function : **ban all members in 1 cmnd"
+    }
+)
