@@ -142,17 +142,11 @@ if ENV:
             "UPSTREAM_REPO", "https://github.com/legendx22/LEGEND-BOT"
         )
         PM_DATA = os.environ.get("PM_DATA", "ENABLE")
-      #ASSISTANT
-        ASSISTANT_LOG = int(os.environ.get("ASSISTANT_LOG", False))
-        ENABLE_ASSISTANTBOT = os.environ.get("ENABLE_ASSISTANTBOT", "ENABLE")
-        ASSISTANT_START_PIC = os.environ.get(
-        "ASSISTANT_START_PIC",
-        "https://www.logolynx.com/images/logolynx/72/7257d2ac93b97c8a2c7308266052df13.png",
-        )
-        BOT_HANDLER = os.environ.get("BOT_HANDLER", "^/")
-
+      #SUPERFEDBAN
+        FBAN_GROUP_ID = os.environ.get("FBAN_GROUP_ID", None)
+        if FBAN_GROUP_ID:
+            FBAN_GROUP_ID = int(FBAN_GROUP_ID)
+        EXCLUDE_FED = os.environ.get("EXCLUDE_FED", None)
 else:
     class Config(object):
         DB_URI = None
-        
-       
