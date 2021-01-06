@@ -1,4 +1,5 @@
-# Inspired By @xdityas code and Modified By @krish1303y
+#codes by LEGENDX22 best codes by LEGEND X
+#kang keep credits
 
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
@@ -47,7 +48,7 @@ async def _(event):
                 await event.delete()
             except YouBlockedUserError:
                 await event.edit("Error: unblock @Carol5_bot `and try again!")
-
+#made by LEGENDX22
 @borg.on(admin_cmd("ch ?(.*)"))
 async def _(event):
     if event.fwd_from:
