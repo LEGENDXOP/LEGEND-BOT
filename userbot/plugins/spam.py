@@ -1,11 +1,9 @@
-# Copyright (C) 2019 The Raphielscape Company LLC.
-#
-# Licensed under the Raphielscape Public License, Version 1.b (the "License");
-# you may not use this file except in compliance with the License.
-#
+# By dark cobra for Dark cobra with logger support
+# Kang with credits..
 
 import asyncio
 from asyncio import wait
+from userbot import CMD_HELP
 
 
 from userbot.events import register
@@ -50,22 +48,25 @@ async def bigspam(e):
                 )
         
         
-@register(outgoing=True, pattern="^.picspam")
+
+@register(outgoing=True, pattern="^.mspam")
 async def tiny_pic_spam(e):
+    reply = await e.get_reply_message()
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         message = e.text
         text = message.split()
         counter = int(text[1])
-        link = str(text[2])
+        media = await e.client.download_media(reply)
         for i in range(1, counter):
-            await e.client.send_file(e.chat_id, link)
+            await e.client.send_file(e.chat_id, media)
         await e.delete()
         if LOGGER:
             await e.client.send_message(
                 LOGGER_GROUP,
-                "#PICSPAM \n\n"
-                "PicSpam was executed successfully"
+                "#MEDIASPAM \n\n"
+                "MediaSpam was executed successfully boss"
                 )
+
 @register(outgoing=True, pattern="^.delayspam (.*)")
 async def spammer(e):
     spamDelay = float(e.pattern_match.group(1).split(' ', 2)[0])
@@ -74,47 +75,22 @@ async def spammer(e):
     await e.delete()
     for i in range(1, counter):
         await e.respond(spam_message)
-        await sleep(spamDelay)
+        await asyncio.sleep(spamDelay)
     if LOGGER:
         await e.client.send_message(
             LOGGER_GROUP, "#DelaySPAM\n"
             "DelaySpam was executed successfully")
-        
             
-@register(outgoing=True, pattern="^.mspam (.*)")
 
-async def tiny_pic_spam(e):
-
-  sender = await e.get_sender() ; me = await e.client.get_me()
-
-  if not sender.id == me.id and not FULL_SUDO:
-
-       return await e.reply("`Sorry sudo users cant access this command..`")
-
-  try:
-
-       await e.delete()
-
-  except:
-
-    	pass
-    
-  try:
-
-    counter = int(e.pattern_match.group(1).split(' ', 1)[0])
-
-    reply_message = await e.get_reply_message() 
-
-    if not reply_message or not e.reply_to_msg_id or not reply_message.media or not reply_message.media:
-
-       return await e.edit("```Reply to a pic/sticker/gif/video message```")
-
-    message = reply_message.media
-
-    for i in range(1, counter):
-
-        await e.client.send_file(e.chat_id, message)
-
-  except:      
-
-        return await e.reply(f"**Error**\nUsage `!mspam <count> reply to a sticker/gif/photo/video`")
+CMD_HELP.update(
+    {
+        "spam": ".spam <no of msgs> <your msg>"
+        "\nUsage: spams the current chat, the current limit for this is from 1 to 99.\n\n"
+        ".bigspam <no of msgs> <your msg>"
+        "\nUsage: Spams the current chat, the current limit is above 100.\n\n"
+        ".mspam <no of spam> (with reply to media)"
+        "\nUsage: Spams the current chat with number you did put in <no of spam>.\n\n"
+        ".delayspam <delay time> <count> <msg>"
+        "\nUsage: Spams the current chat with with the input msgs with a delay time that has been given as its input.\n\n"
+    }
+)
