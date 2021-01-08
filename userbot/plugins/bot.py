@@ -52,14 +52,14 @@ if TG_BOT_USER_NAME_BF_HER is not None:
             elif ALIVE_PHOTTO:
                 result = builder.document(
                     ALIVE_PHOTTO,
-                    title="LEGEND-BOT",
+                    title="LEGEND BOT",
                     text=legend_text,
                     buttons=buttons,
                     link_preview=False,
                 )
             else:
                 result = builder.article(
-                    title="LEGEND-BOT",
+                    title="LEGEND BOT",
                     text=legend_text,
                     buttons=buttons,
                     link_preview=False,
