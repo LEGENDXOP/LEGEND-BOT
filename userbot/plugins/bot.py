@@ -1,8 +1,4 @@
-# Thanks to @Shivam_Patel Bro
-# Thanks to Sipak .. 
-# Idea by @Shivam_Patel 
-# Made by @Shivam_Patel & @ProgrammingError ....TEAM DC
-# Kang with credits else gay...
+# make by @LEGENDX22
 # inline alive
 import asyncio
 import os
