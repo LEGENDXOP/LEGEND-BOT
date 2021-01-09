@@ -26,12 +26,12 @@ if ALIVE_PHOTTO is None:
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
 
 
-ALIVE_MESSAGE= " ⚡ LEGEND BOT  IS ON 🔥 FIRE ⚜️ \n\n"
+ALIVE_MESSAGE= " ⚡ LEGEND BOT ⚡  IS ON 🔥 FIRE ⚜️ \n\n"
 ALIVE_MESSAGE += "🔱 SYSTEM STATUS🔱\n"
 ALIVE_MESSAGE += "🔱TELETHON VERSION🔱 : 6.0.9\n :o: Python: 3.7.4\n"
 ALIVE_MESSAGE += "🔱DATABASE STATUS🔱 : Functional\n"
 ALIVE_MESSAGE += "🔱Current Branch🔱 : Master\n"
-ALIVE_MESSAGE += "🔱LEGEND OS OS🔱 :   2.2.2`\n"
+ALIVE_MESSAGE += "🔱LEGEND OS🔱 :   2.0.2`\n"
 ALIVE_MESSAGE += f"⚜️ MY BOSS ⚜️: {DEFAULTUSER} \n"
 ALIVE_MESSAGE += "⚜️MADE BY⚜️ 😎 : [LEGEND X](https://t.me/legendx22)\n\n"
 ALIVE_MESSAGE += ":⚜️Deploy⚜️ **LEGEND BOT** : [ℝ𝕖𝕡𝕠](https://github.com/legendx22/LEGEND-BOT)\n"           
