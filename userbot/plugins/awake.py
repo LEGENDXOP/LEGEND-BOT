@@ -33,7 +33,7 @@ ALIVE_MESSAGE += "🔱DATABASE STATUS🔱 : Functional\n"
 ALIVE_MESSAGE += "🔱Current Branch🔱 : Master\n"
 ALIVE_MESSAGE += "🔱LEGEND OS OS🔱 :   2.2.2`\n"
 ALIVE_MESSAGE += f"⚜️ MY BOSS ⚜️: {DEFAULTUSER} \n"
-ALIVE_MESSAGE += "⚜️MADE BY⚜️:sunglasses: : [LEGEND X](https://t.me/legendx22)\n\n"
+ALIVE_MESSAGE += "⚜️MADE BY⚜️ 😎 : [LEGEND X](https://t.me/legendx22)\n\n"
 ALIVE_MESSAGE += ":⚜️Deploy⚜️ **LEGEND BOT** : [ℝ𝕖𝕡𝕠](https://github.com/legendx22/LEGEND-BOT)\n"           
 #make by LEGEND X bht mehnat lag gayi yrr but banhi gaya 😅           
 #@command(outgoing=True, pattern="^.awake$")
@@ -42,3 +42,12 @@ async def amireallyalive(awake):
    """ For .awake command, check if the bot is running.  """
    await awake.delete() 
    await borg.send_file(awake.chat_id, ALIVE_PHOTTO,caption=ALIVE_MESSAGE)
+
+CMD_HELP.update(
+    {
+        "awake": "**Plugin : **`awake`\
+    \n\n**Syntax : **`.awake`\
+    \n**Function : **you can set here costom alive pic .set var ALIVE_PHOTTO (Telegraph link)"
+    }
+)
+
