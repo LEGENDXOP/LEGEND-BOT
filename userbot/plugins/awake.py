@@ -26,15 +26,15 @@ if ALIVE_PHOTTO is None:
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
 
 
-ALIVE_MESSAGE= ":warning: DARK BOT  IS ON :fire: FIRE :warning: \n\n"
-ALIVE_MESSAGE += ":small_orange_diamond:SYSTEM STATUS\n"
-ALIVE_MESSAGE += ":small_blue_diamond:TELETHON VERSION : 6.0.9\n :o: Python: 3.7.4\n"
-ALIVE_MESSAGE += ":small_orange_diamond:DATABASE STATUS  : Functional\n"
-ALIVE_MESSAGE += ":small_blue_diamond:Current Branch : Master\n"
-ALIVE_MESSAGE += ":small_orange_diamond:LEGEND OS OS :   2.2.2`\n"
-ALIVE_MESSAGE += f":small_blue_diamond: MY BOSS : {DEFAULTUSER} \n"
-ALIVE_MESSAGE += ":small_orange_diamond:MADE BY :sunglasses: : [LEGEND X](https://t.me/legendx22\n\n"
-ALIVE_MESSAGE += ":small_red_triangle_down:Deploy **LEGEND BOT** : [ℝ𝕖𝕡𝕠](https://github.com/legendx22/LEGEND-BOT\n"           
+ALIVE_MESSAGE= " ⚡ DARK BOT  IS ON 🔥 FIRE ⚜️ \n\n"
+ALIVE_MESSAGE += "🔱 SYSTEM STATUS🔱\n"
+ALIVE_MESSAGE += "🔱TELETHON VERSION🔱 : 6.0.9\n :o: Python: 3.7.4\n"
+ALIVE_MESSAGE += "🔱DATABASE STATUS🔱 : Functional\n"
+ALIVE_MESSAGE += "🔱Current Branch🔱 : Master\n"
+ALIVE_MESSAGE += "🔱LEGEND OS OS🔱 :   2.2.2`\n"
+ALIVE_MESSAGE += f"⚜️ MY BOSS ⚜️: {DEFAULTUSER} \n"
+ALIVE_MESSAGE += "⚜️MADE BY⚜️:sunglasses: : [LEGEND X](https://t.me/legendx22)\n\n"
+ALIVE_MESSAGE += ":⚜️Deploy⚜️ **LEGEND BOT** : [ℝ𝕖𝕡𝕠](https://github.com/legendx22/LEGEND-BOT)\n"           
 #make by LEGEND X bht mehnat lag gayi yrr but banhi gaya 😅           
 #@command(outgoing=True, pattern="^.awake$")
 @borg.on(admin_cmd(pattern=r"awake"))
