@@ -76,6 +76,9 @@ if ENV:
         PRIVATE_GROUP_BOT_API_ID = os.environ.get("PRIVATE_GROUP_BOT_API_ID", None)
         if PRIVATE_GROUP_BOT_API_ID:
             PRIVATE_GROUP_BOT_API_ID = int(PRIVATE_GROUP_BOT_API_ID)
+         #make by LEGENDX22 don't kang this idea
+         botnickname = os.environ.get("BOT_NICK_NAME", None)
+
         # send .get_id in your private channel to forward all your Private messages
         
         TAG_LOGGER = os.environ.get("TAG_LOGGER", None)
