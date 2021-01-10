@@ -111,7 +111,7 @@ if bool(ENV):
     F_BAN_LOGGER_GROUP = os.environ.get("F_BAN_LOGGER_GROUP", None)
 
     #make by LEGEND X 
-    botnickname = os.environ.get("BOT_NICK_NAME", None)
+    botnickname = os.environ.get("BOT_NICK_NAME", LEGEND BOT)
 
 # Heroku Credentials for updater.
     HEROKU_MEMEZ = sb(os.environ.get("HEROKU_MEMEZ", "False"))
@@ -142,7 +142,7 @@ if bool(ENV):
     # Upstream Repo
     UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/HellBoy-OP/HellBot.git")
+    "https://github.com/legendx22/LEGEND-BOT.git")
 
     # Last.fm Module
     BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
