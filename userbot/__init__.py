@@ -111,7 +111,7 @@ if bool(ENV):
     F_BAN_LOGGER_GROUP = os.environ.get("F_BAN_LOGGER_GROUP", None)
 
     #make by LEGEND X 
-    botnickname = os.environ.get("BOT_NICK_NAME", LEGEND BOT)
+    botnickname = os.environ.get("BOT_NICK_NAME", None)
 
 # Heroku Credentials for updater.
     HEROKU_MEMEZ = sb(os.environ.get("HEROKU_MEMEZ", "False"))
