@@ -22,6 +22,8 @@ emoji
 gTTS-token>=1.1.3
 opencv-python--headless
 gTTS>=2.0.1
+opencv-python--headless
+scapy
 gitpython
 google-api-python-client==1.8.0
 google-auth-oauthlib
