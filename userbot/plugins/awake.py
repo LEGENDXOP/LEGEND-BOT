@@ -27,7 +27,6 @@ if ALIVE_PHOTTO is None:
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
 
-uptime = 2.2.2
 global ghanti
 tag = borg.uid
 ALIVE_MESSAGE= " ⚡ LEGEND BOT ⚡  IS ON 🔥 FIRE ⚜️ \n\n"
@@ -35,7 +34,7 @@ ALIVE_MESSAGE += "🔱 SYSTEM STATUS🔱\n"
 ALIVE_MESSAGE += "🔱TELETHON VERSION🔱 : 6.0.9\n⭕ Python: 3.7.4\n"
 ALIVE_MESSAGE += "🔱DATABASE STATUS🔱 : Functional\n"
 ALIVE_MESSAGE += "🔱Current Branch🔱 : Master\n"
-ALIVE_MESSAGE += "🔱LEGEND OS🔱 :   `{uptime}`\n"
+ALIVE_MESSAGE += "🔱LEGEND OS🔱 :   `2.2.5`\n"
 #op Bolte uptime add krna h
 ALIVE_MESSAGE += f"⚜️ MY BOSS ⚜️: [{DEFAULTUSER}](tg://user?id={tag})\n"
 ALIVE_MESSAGE += "⚜️MADE BY⚜️ 😎 : [LEGEND X](https://t.me/legendx22)\n\n"
