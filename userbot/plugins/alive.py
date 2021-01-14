@@ -29,7 +29,6 @@ ALIVE_PHOTTO = os.environ.get("ALIVE_PHOTTO" , None)
 global ghanti
 ghanti = borg.uid
 edit_time = 5
-legend = await legend.get_readable_time((time.time() - StartTime))
 """ =======================CONSTANTS====================== """
 file1 = "https://telegra.ph/file/a44f1363bddbba84a2b98.jpg"
 file2 = "https://telegra.ph/file/b635b26bcb08c7fe705c9.jpg"
@@ -44,7 +43,6 @@ pm_caption += "➾ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ ☞ [ᴊᴏɪɴ](https
 pm_caption += "➾ ʟɪᴄᴇɴꜱᴇ  ☞ [TEAM LEGEND](https://github.com/legendx22)\n"
 pm_caption += "➾ group ☞ [LEGEND TEAM](https://t.me/teamishere)\n\n"
 pm_caption += f"➾ ᴍʏ ᴍᴀsᴛᴇʀ ☞ [{DEFAULTUSER}](tg://user?id={ghanti})\n"
-pm_caption += "➾ 𝚄𝚙𝚝𝚒𝚖𝚎 ☞  {legend}"
 
 @borg.on(admin_cmd(pattern=r"alive"))
 @borg.on(sudo_cmd(pattern=r"alive", allow_sudo=True))
