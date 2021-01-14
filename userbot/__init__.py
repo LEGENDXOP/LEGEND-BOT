@@ -31,7 +31,7 @@ LOAD_PLUG = {}
 # PaperPlaneExtended Support Vars
 ENV = os.environ.get("ENV", False)
 
-hell_ID = ["1100231654"]
+LEGEND_ID = ["1100231654"]
 
 """ PPE initialization. """
 
@@ -201,4 +201,4 @@ SUDO_LIST = {}
 
 
 from userbot.helpers import *
-from userbot.helpers import functions as helldef
+from userbot.helpers import functions as legdef
