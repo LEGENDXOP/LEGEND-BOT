@@ -4,10 +4,12 @@
 #make by @LEGENDX22 don't kang this plugin
 # if you kang then keep credits
 import os
+import time
 import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
-from userbot import ALIVE_NAME, CMD_HELP
+from userbot import ALIVE_NAME, StartTime, CMD_HELP
+rrom . legend
 from userbot.utils import admin_cmd
 from telethon import version
 from math import ceil
@@ -25,13 +27,14 @@ if ALIVE_PHOTTO is None:
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
 
+uptime = await legend.get_readable_time((time.time() - StartTime))
 
 ALIVE_MESSAGE= " ⚡ LEGEND BOT ⚡  IS ON 🔥 FIRE ⚜️ \n\n"
 ALIVE_MESSAGE += "🔱 SYSTEM STATUS🔱\n"
-ALIVE_MESSAGE += "🔱TELETHON VERSION🔱 : 6.0.9\n ⭕ Python: 3.7.4\n"
+ALIVE_MESSAGE += "🔱TELETHON VERSION🔱 : 6.0.9\n⭕ Python: 3.7.4\n"
 ALIVE_MESSAGE += "🔱DATABASE STATUS🔱 : Functional\n"
 ALIVE_MESSAGE += "🔱Current Branch🔱 : Master\n"
-ALIVE_MESSAGE += "🔱LEGEND OS🔱 :   2.0.2\n"
+ALIVE_MESSAGE += "🔱LEGEND TIME🔱 :   `{uptime}`\n"
 #op Bolte uptime add krna h 
 ALIVE_MESSAGE += f"⚜️ MY BOSS ⚜️: {DEFAULTUSER} \n"
 ALIVE_MESSAGE += "⚜️MADE BY⚜️ 😎 : [LEGEND X](https://t.me/legendx22)\n\n"
