@@ -37,13 +37,13 @@ async def amireallyalive(awake):
    """ For .awake command, check if the bot is running.  """
    tag = borg.uid
    uptm = await legend.get_readable_time((time.time() - StartTime))
-   ALIVE_MESSAGE= " ⚡ LEGEND BOT ⚡  IS ON 🔥 FIRE ⚜️ \n\n"
+   ALIVE_MESSAGE= " ⚡ LEGEND BOT ⚡  IS ON 🔥 FIRE 🔥 \n\n"
    ALIVE_MESSAGE += "🔱 SYSTEM STATUS🔱\n"
    ALIVE_MESSAGE += "🔱TELETHON VERSION🔱 : 6.0.9\n⭕ Python: 3.7.4\n"
    ALIVE_MESSAGE += "🔱DATABASE STATUS🔱 : Functional\n"
    ALIVE_MESSAGE += "🔱Current Branch🔱 : Master\n"
-   ALIVE_MESSAGE += "🔱OS🔱 :   `2.2.5`\n"
-   ALIVE_MESSAGE += f"🔱UPTIME🔱 : {uptm}"
+   ALIVE_MESSAGE += "🔱VERSION🔱 :   `2.2.5`\n"
+   ALIVE_MESSAGE += f"🔱UPTIME🔱 : `{uptm}`"
    ALIVE_MESSAGE += f"⚜️ MY BOSS ⚜️: [{DEFAULTUSER}](tg://user?id={tag})\n"
    ALIVE_MESSAGE += "⚜️MADE BY⚜️ 😎 : [LEGEND X](https://t.me/legendx22)\n\n"
    ALIVE_MESSAGE += ":⚜️Deploy⚜️ **LEGEND BOT** : [ᖇᏋᎵᏫ](https://github.com/legendx22/LEGEND-BOT)\n"   
