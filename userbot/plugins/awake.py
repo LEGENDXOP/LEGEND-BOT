@@ -3,6 +3,7 @@
 """
 #make by @LEGENDX22 don't kang this plugin
 # if you kang then keep credits
+#cReDiTs - @ProgrammingError
 import os
 import time
 import asyncio
@@ -28,22 +29,24 @@ if ALIVE_PHOTTO is None:
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
 
 global ghanti
-tag = borg.uid
-ALIVE_MESSAGE= " ⚡ LEGEND BOT ⚡  IS ON 🔥 FIRE ⚜️ \n\n"
-ALIVE_MESSAGE += "🔱 SYSTEM STATUS🔱\n"
-ALIVE_MESSAGE += "🔱TELETHON VERSION🔱 : 6.0.9\n⭕ Python: 3.7.4\n"
-ALIVE_MESSAGE += "🔱DATABASE STATUS🔱 : Functional\n"
-ALIVE_MESSAGE += "🔱Current Branch🔱 : Master\n"
-ALIVE_MESSAGE += "🔱LEGEND OS🔱 :   `2.2.5`\n"
-#op Bolte uptime add krna h
-ALIVE_MESSAGE += f"⚜️ MY BOSS ⚜️: [{DEFAULTUSER}](tg://user?id={tag})\n"
-ALIVE_MESSAGE += "⚜️MADE BY⚜️ 😎 : [LEGEND X](https://t.me/legendx22)\n\n"
-ALIVE_MESSAGE += ":⚜️Deploy⚜️ **LEGEND BOT** : [ᖇᏋᎵᏫ](https://github.com/legendx22/LEGEND-BOT)\n"           
+        
 #make by LEGEND X bht mehnat lag gayi yrr but banhi gaya 😅           
 #@command(outgoing=True, pattern="^.awake$")
 @borg.on(admin_cmd(pattern=r"awake"))
 async def amireallyalive(awake):
    """ For .awake command, check if the bot is running.  """
+   tag = borg.uid
+   uptm = await legend.get_readable_time((time.time() - StartTime))
+   ALIVE_MESSAGE= " ⚡ LEGEND BOT ⚡  IS ON 🔥 FIRE ⚜️ \n\n"
+   ALIVE_MESSAGE += "🔱 SYSTEM STATUS🔱\n"
+   ALIVE_MESSAGE += "🔱TELETHON VERSION🔱 : 6.0.9\n⭕ Python: 3.7.4\n"
+   ALIVE_MESSAGE += "🔱DATABASE STATUS🔱 : Functional\n"
+   ALIVE_MESSAGE += "🔱Current Branch🔱 : Master\n"
+   ALIVE_MESSAGE += "🔱OS🔱 :   `2.2.5`\n"
+   ALIVE_MESSAGE += f"🔱UPTIME🔱 : {uptm}"
+   ALIVE_MESSAGE += f"⚜️ MY BOSS ⚜️: [{DEFAULTUSER}](tg://user?id={tag})\n"
+   ALIVE_MESSAGE += "⚜️MADE BY⚜️ 😎 : [LEGEND X](https://t.me/legendx22)\n\n"
+   ALIVE_MESSAGE += ":⚜️Deploy⚜️ **LEGEND BOT** : [ᖇᏋᎵᏫ](https://github.com/legendx22/LEGEND-BOT)\n"   
    await awake.delete() 
    await borg.send_file(awake.chat_id, ALIVE_PHOTTO,caption=ALIVE_MESSAGE)
 
