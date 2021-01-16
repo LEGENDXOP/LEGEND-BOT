@@ -1,5 +1,5 @@
 #Ported to @LEGEND_USERBOT_SUPPORT
-#Made by @Kraken_The_BadASS
+#Made by@LEGENDX22
 #ISKO BHI LELE MADARCHOD. KHUD APNI MAA CHUDWATE REHTE HO.....
 
 import asyncio

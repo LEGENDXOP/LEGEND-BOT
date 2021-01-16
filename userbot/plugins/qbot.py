@@ -1,4 +1,4 @@
-#port to Hêllẞø† by @Kraken_The_BadASS
+#port to Hêllẞø† by@LEGENDX22
 
 import datetime
 from telethon import events
