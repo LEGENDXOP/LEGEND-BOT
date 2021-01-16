@@ -30,6 +30,7 @@ if ALIVE_PHOTTO is None:
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
 
 global ghanti
+Lodu = OP
         
 #make by LEGEND X bht mehnat lag gayi yrr but banhi gaya 😅           
 #@command(outgoing=True, pattern="^.awake$")
@@ -43,7 +44,7 @@ async def amireallyalive(awake):
    ALIVE_MESSAGE += "🔱TELETHON VERSION🔱 : 6.0.9\n⭕ Python: 3.7.4\n"
    ALIVE_MESSAGE += "🔱DATABASE STATUS🔱 : Functional\n"
    ALIVE_MESSAGE += "🔱Current Branch🔱 : Master\n"
-   ALIVE_MESSAGE += "🔱 GROUP🔱 :   {OP}\n"
+   ALIVE_MESSAGE += "🔱 GROUP🔱 :   {Lodu}\n"
    ALIVE_MESSAGE += f"🔱UPTIME🔱 : `{uptm}`\n"
    ALIVE_MESSAGE += f"⚜️ MY BOSS ⚜️: [{DEFAULTUSER}](tg://user?id={tag})\n"
    ALIVE_MESSAGE += "⚜️MADE BY⚜️ 😎 : [LEGEND X](https://t.me/legendx22)\n\n"
