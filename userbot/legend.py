@@ -3,6 +3,12 @@
 #okay to ab isme cheeze bharte h 
 #if you read only this then okay else
 #chala jaa bhosdike 
+from userbot import ALIVE_NAME 
+MASTER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
+
+PHOTO = Config.ALIVE_PHOTTO
+if ALIVE_PHOTTO is None:
+  ALIVE_PHOTTO = "https://telegra.ph/file/0e36b02061064b7229e3b.jpg"
 
 LEGENDX22 = "[LEGEND X](https://t.me/legendx22)"
 OP = "[LEGEND BOT](https://github.com/legendx22/LEGEND-BOT)"
