@@ -1,5 +1,5 @@
 """Reply to an image/sticker with .mmf` 'text on top' ; 'text on bottom
-forked by: @kraken_the_badass
+forked by: @legendx22_the_badass
 created by: @A_Dark_Princ3
 """
 

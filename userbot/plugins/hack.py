@@ -79,7 +79,7 @@ async def _(event):
 
     await event.edit("`starting telegram hack`")
     await asyncio.sleep(1)
-    await event.edit("`Hacking... 0%completed.\nTERMINAL:\nDownloading Bruteforce-Telegram-0.1.tar.gz (1.3) kB`")#credit to kraken,sawan
+    await event.edit("`Hacking... 0%completed.\nTERMINAL:\nDownloading Bruteforce-Telegram-0.1.tar.gz (1.3) kB`")#credit to legendx22,sawan
     await asyncio.sleep(2)
     await event.edit(" `Hacking... 4% completed\n TERMINAL:\nDownloading Bruteforce-Telegram-0.1.tar.gz (9.3 kB)\nCollecting Data Package`")
     await asyncio.sleep(1)

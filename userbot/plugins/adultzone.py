@@ -1,5 +1,5 @@
 #credits to userge
-#ported to Hellbot by @kraken_the_badass
+#ported to Hellbot by @legendx22_the_badass
 #will be adding more soon
 
 import os, urllib, requests, asyncio

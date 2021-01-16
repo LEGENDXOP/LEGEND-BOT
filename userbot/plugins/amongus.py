@@ -14,8 +14,8 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Hell User"
 @bot.on(admin_cmd(pattern="imp(|n) (.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="imp(|n) (.*)", allow_sudo=True))
 async def _(event):
-    kraken = bot.uid
-    USERNAME = f"tg://user?id={kraken}"
+    legendx22 = bot.uid
+    USERNAME = f"tg://user?id={legendx22}"
     name = event.pattern_match.group(2)
     cmd = event.pattern_match.group(1).lower()
     text1 = await edit_or_reply(event, "Hmm... Looks like Something is wrong here🤔🧐!!")

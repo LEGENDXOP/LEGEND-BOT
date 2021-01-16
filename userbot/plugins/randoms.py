@@ -7,7 +7,7 @@ Sing credits :By @PhycoNinja13b
 No Logic Pligon for @PepeBot
 \nCoding by Legend @NeoMatrix90
 \nType .logic to see many logical fact
-merged by @kraken_the_badass
+merged by @legendx22_the_badass
 """
 
 import random

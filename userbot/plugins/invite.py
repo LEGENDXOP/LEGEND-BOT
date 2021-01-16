@@ -1,5 +1,5 @@
 #Originally made by @rekcah for @javes05
-#porting to hellbot by @kraken_the_badass...
+#porting to hellbot by @legendx22_the_badass...
 #i asked rekcah before porting...not like other kangers....
 #keep credit if u wanna kang...
 #else u are a gay...no doubt in that....
@@ -83,13 +83,13 @@ async def get_users(event):
         hell = await event.reply("`processing...`")
     else:
     	hell = await event.edit("`processing...`")
-    kraken = await get_chatinfo(event) ; chat = await event.get_chat()
+    legendx22 = await get_chatinfo(event) ; chat = await event.get_chat()
     if event.is_private:
               return await hell.edit("`Sorry, Can add users here`")    
     s = 0 ; f = 0 ; error = 'None'   
   
     await hell.edit("**TerminalStatus**\n\n`Collecting Users.......`")
-    async for user in event.client.iter_participants(kraken.full_chat.id):
+    async for user in event.client.iter_participants(legendx22.full_chat.id):
                 try:
                     if error.startswith("Too"):
                         return await hell.edit(f"**Terminal Finished With Error**\n(`May Got Limit Error from telethon Please try agin Later`)\n**Error** : \n`{error}`\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people")
