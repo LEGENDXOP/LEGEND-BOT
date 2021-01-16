@@ -11,6 +11,7 @@ from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
 from userbot import ALIVE_NAME, StartTime, CMD_HELP
 from . import legend
+from userbot.legend import OP
 from userbot.utils import admin_cmd
 from telethon import version
 from math import ceil
@@ -42,8 +43,8 @@ async def amireallyalive(awake):
    ALIVE_MESSAGE += "🔱TELETHON VERSION🔱 : 6.0.9\n⭕ Python: 3.7.4\n"
    ALIVE_MESSAGE += "🔱DATABASE STATUS🔱 : Functional\n"
    ALIVE_MESSAGE += "🔱Current Branch🔱 : Master\n"
-   ALIVE_MESSAGE += "🔱VERSION🔱 :   `2.2.5`\n"
-   ALIVE_MESSAGE += f"🔱UPTIME🔱 : `{uptm}`"
+   ALIVE_MESSAGE += "🔱 GROUP🔱 :   {OP}\n"
+   ALIVE_MESSAGE += f"🔱UPTIME🔱 : `{uptm}`\n"
    ALIVE_MESSAGE += f"⚜️ MY BOSS ⚜️: [{DEFAULTUSER}](tg://user?id={tag})\n"
    ALIVE_MESSAGE += "⚜️MADE BY⚜️ 😎 : [LEGEND X](https://t.me/legendx22)\n\n"
    ALIVE_MESSAGE += ":⚜️Deploy⚜️ **LEGEND BOT** : [ᖇᏋᎵᏫ](https://github.com/legendx22/LEGEND-BOT)\n"   
