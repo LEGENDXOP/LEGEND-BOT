@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "legendx22_the_badass"
+          find: "@HellBot_Official"
 
-          replace: "legendx22"
+          replace: "@LEGEND_USERBOT_SUPPORT"
 
       - name: Create Pull Request
 
