@@ -18,7 +18,7 @@ jobs:
 
         with:
 
-          find: "kraken"
+          find: "legendx22_the_badass"
 
           replace: "legendx22"
 
