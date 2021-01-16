@@ -120,7 +120,7 @@ async def _(event):
     )
     stdout, stderr = await process.communicate()
     o = stdout.decode()
-    OUTPUT = f"**[Hêllẞø†'s](tg://need_update_for_some_feature/) PLUGINS:**\n{o}\n\n**HELP:** __If you want to know the commands for a plugin, do:-__ \n `.help <plugin name>` **without the < > brackets.**\n__All plugins might not work directly. Visit__ @HellBot_Official __for assistance.__"
+    OUTPUT = f"**[Hêllẞø†'s](tg://need_update_for_some_feature/) PLUGINS:**\n{o}\n\n**HELP:** __If you want to know the commands for a plugin, do:-__ \n `.help <plugin name>` **without the < > brackets.**\n__All plugins might not work directly. Visit__ @LEGEND_USERBOT_SUPPORT __for assistance.__"
     if len(OUTPUT) > Config.MAX_MESSAGE_SIZE_LIMIT:
         with io.BytesIO(str.encode(OUTPUT)) as out_file:
             out_file.name = "env.text"

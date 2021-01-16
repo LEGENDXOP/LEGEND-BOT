@@ -1,5 +1,5 @@
     
-#Credit To @legendx22 . Keep credit if you are going to edit it. Join @HellBot_Official
+#Credit To @legendx22 . Keep credit if you are going to edit it. Join @LEGEND_USERBOT_SUPPORT
 
 
 import random, re

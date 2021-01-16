@@ -1,4 +1,4 @@
-#Ported to @HellBot_Official
+#Ported to @LEGEND_USERBOT_SUPPORT
 #Made by @Kraken_The_BadASS
 #ISKO BHI LELE MADARCHOD. KHUD APNI MAA CHUDWATE REHTE HO.....
 
