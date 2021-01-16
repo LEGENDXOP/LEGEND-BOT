@@ -1,4 +1,4 @@
-#credits to @legendx22_the_badass#beautification credits to @sensei_nex for @LEGENDX22
+#credits to @legendx22#beautification credits to @sensei_nex for @LEGENDX22
 
 #IMG CREDITS: @WhySooSerious
 import asyncio
