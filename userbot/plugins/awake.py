@@ -29,7 +29,6 @@ if ALIVE_PHOTTO is None:
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
 
 global ghanti
-Lodu = OP
         
 #make by LEGEND X bht mehnat lag gayi yrr but banhi gaya 😅           
 #@command(outgoing=True, pattern="^.awake$")
