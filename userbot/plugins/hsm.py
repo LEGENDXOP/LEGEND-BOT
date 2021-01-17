@@ -126,8 +126,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
             tw = mio["views"]
             kekme = f"https://img.youtube.com/vi/{fridayz}/hqdefault.jpg"
             okayz = f"**Title :** `{thum}` \n**Link :** {mo} \n**Channel :** `{thums}` \n**Views :** `{tw}` \n**Duration :** `{td}`"
-            hmmkek = f"Channel : {thums} \nDuration : {td} \nViews : {tw}"
-".            results.append(
+            hmmkek = f"Channel : {thums} \nDuration : {td} \nViews : {tw}"          results.append(
                 await event.builder.article(
                     title=thum,
                     description=hmmkek,
