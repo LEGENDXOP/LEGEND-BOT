@@ -6,7 +6,7 @@
 from userbot import ALIVE_NAME 
 MASTER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
 
-*Op 
+#op
 
 LEGENDX22 = "[LEGEND X](https://t.me/legendx22)"
 OP = "[LEGEND BOT](https://github.com/legendx22/LEGEND-BOT)"
