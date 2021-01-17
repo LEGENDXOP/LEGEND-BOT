@@ -17,9 +17,9 @@ jobs:
         uses: jacobtomlinson/gha-find-replace@master
 
            
-          find: "event.from_id"
+          find: "event.sender_id"
 
-          replace: "event.sender_id"
+          replace: "event.from_id"
 
       - name: Create Pull Request
 
