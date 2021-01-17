@@ -16,11 +16,10 @@ jobs:
 
         uses: jacobtomlinson/gha-find-replace@master
 
-        with:
+           
+          find: "event.from_id"
 
-          find: " @Kraken_The_BadASS"
-
-          replace: "@LEGENDX22"
+          replace: "event.sender_id"
 
       - name: Create Pull Request
 
