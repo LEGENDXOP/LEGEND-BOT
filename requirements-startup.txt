@@ -21,6 +21,8 @@ dnspython
 emoji
 gTTS-token>=1.1.3
 opencv-python--headless
+youtube_search
+pornhub_api
 gTTS>=2.0.1
 opencv-python--headless
 scapy
