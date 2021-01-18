@@ -7,10 +7,10 @@ from . import legend
 import time
 from userbot import ALIVE_NAME 
 MASTER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
-async def uptime():
-  uptime = await legend.get_readable_time((time.time() - StartTime))
+async def time():
+  tim = await legend.get_readable_time((time.time() - StartTime))
 #op 
-
+uptime = tim
 LEGENDX22 = "[LEGEND X](https://t.me/legendx22)"
 OP = "[LEGEND BOT](https://github.com/legendx22/LEGEND-BOT)"
 OKAY = "[SUPPORT GROUP](https://t.me/LEGEND_USERBOT_SUPPORT)"
