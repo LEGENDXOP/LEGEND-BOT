@@ -7,7 +7,8 @@ from . import legend
 import time
 from userbot import ALIVE_NAME 
 MASTER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
-uptime = await legend.get_readable_time((time.time() - StartTime))
+async def uptime():
+  uptime = await legend.get_readable_time((time.time() - StartTime))
 #op 
 
 LEGENDX22 = "[LEGEND X](https://t.me/legendx22)"
