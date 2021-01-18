@@ -3,9 +3,11 @@
 #okay to ab isme cheeze bharte h 
 #if you read only this then okay else
 #chala jaa bhosdike 
+from . import legend
+import time
 from userbot import ALIVE_NAME 
 MASTER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
-
+uptime = await legend.get_readable_time((time.time() - StartTime))
 #op 
 
 LEGENDX22 = "[LEGEND X](https://t.me/legendx22)"
