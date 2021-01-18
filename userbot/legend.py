@@ -7,7 +7,7 @@ from userbot.helpers.functions import get_readable_time
 import time
 from userbot import ALIVE_NAME, StartTime
 MASTER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
-tim = await get_readable_time((time.time() - StartTime))
+tim = get_readable_time((time.time() - StartTime))
 #op 
 uptime = tim
 LEGENDX22 = "[LEGEND X](https://t.me/legendx22)"
