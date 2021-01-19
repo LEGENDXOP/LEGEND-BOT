@@ -1,4 +1,6 @@
-# By dark cobra for Dark cobra with logger support
+# By LEGENDX22 🔥 
+
+#credits dc
 # Kang with credits..
 
 import asyncio
