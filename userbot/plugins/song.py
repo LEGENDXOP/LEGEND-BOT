@@ -689,7 +689,7 @@ async def lightning_pugins_query_hndlr(lightning):
 
            lightning_is_best = lightning_help_strin 
 
-           lightning_is_best += "\n\n**In Case Any Problem @lightningsupport** ".format(light_pulu_name)
+           lightning_is_best += "\n\n**In Case Any Problem @teamishere** ".format(light_pulu_name)
 
         
 
@@ -721,7 +721,7 @@ async def lightning_pugins_query_hndlr(lightning):
 
                 for i in CMD_LIST[light_pulu_name]:
 
-                    lightning_help_strin  = f"**ðº NAME ðº :** `{light_pulu_name}` \n\n `{CMD_LIST[light_pulu_name]}\n`**Details**- Not Yetðð\n\n**Ask at @lightningsupport"
+                    lightning_help_strin  = f"**ðº NAME ðº :** `{light_pulu_name}` \n\n `{CMD_LIST[light_pulu_name]}\n`**Details**- Not Yetðð\n\n**Ask at @teamishere"
 
                     lightning_help_strin += "\n    " + i
 
@@ -731,17 +731,17 @@ async def lightning_pugins_query_hndlr(lightning):
 
     else:
 
-           lightning_help_strin  = f"**ðº NAME ðº :** `{light_pulu_name}` \n\n`{CMD_LIST[light_pulu_name]}`\n**Details** - Not Yetðð\n\n**Ask at @lightningsupport"
+           lightning_help_strin  = f"**ðº NAME ðº :** `{light_pulu_name}` \n\n`{CMD_LIST[light_pulu_name]}`\n**Details** - Not Yetðð\n\n**Ask at @teamishere"
 
            lightning_is_best = lightning_help_strin 
 
-           lightning_is_best += "\n\n**In Case Any Problem @lightningsupport** ".format(light_pulu_name)
+           lightning_is_best += "\n\n**In Case Any Problem @teamishere** ".format(light_pulu_name)
 
-    lightning_help_strin = f"**ðº NAME ðº :** `{light_pulu_name}` \n\n`{CMD_LIST[light_pulu_name]}`\n**Details** - Not Yetðð\n\n**Ask at @lightningsupport"
+    lightning_help_strin = f"**ðº NAME ðº :** `{light_pulu_name}` \n\n`{CMD_LIST[light_pulu_name]}`\n**Details** - Not Yetðð\n\n**Ask at @teamishere"
 
     lightning_is_best = lightning_help_strin 
 
-    lightning_is_best += "\n\n**In Case Any Problem @lightningsupport** ".format(light_pulu_name)    
+    lightning_is_best += "\n\n**In Case Any Problem @teamishere** ".format(light_pulu_name)    
 
     if len(lightning_is_best) >= 4096:
 
@@ -1241,7 +1241,7 @@ async def ho(event):
 
     ho = f"""Black Lightning Is Here With Stunning Help !\n
 
-In Case Any Problem @lightningsupport \nTottal Plugs( Í¡ð¥â¯ÍÊ Í¡ð¥): {len(CMD_LIST)}"""
+In Case Any Problem @teamishere \nTottal Plugs( Í¡ð¥â¯ÍÊ Í¡ð¥): {len(CMD_LIST)}"""
 
     await event.edit(message=ho, buttons=buttons)
 
