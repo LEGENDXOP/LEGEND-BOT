@@ -5,10 +5,15 @@
 #chala jaa bhosdike 
 from userbot.helpers.functions import get_readable_time
 import time
+import os
 import datetime
 from userbot import ALIVE_NAME, StartTime
 MASTER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
 tim = get_readable_time((time.time() - StartTime))
+#pic 👇
+PIC = os.environ.get("ALIVE_PIC")
+#photo 
+PHOTO = os.environ.get("ALIVE_PHOTTO")
 #op 
 uptime = tim
 #time = date + time okay
