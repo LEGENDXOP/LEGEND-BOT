@@ -30,10 +30,6 @@
 
 import asyncio
 
-import me
-
-import them
-
 
 
 from telethon import events, functions
