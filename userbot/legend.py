@@ -3,11 +3,24 @@
 #okay to ab isme cheeze bharte h 
 #if you read only this then okay else
 #chala jaa bhosdike 
+#import krte h pehle 👇
+import asyncio
+from telethon import events
+from telethon.tl.types import ChannelParticipantsAdmins
+from userbot import ALIVE_NAME, legendversion, StartTime
+from userbot.utils import admin_cmd
+from telethon import version
+from math import ceil
+import json
+import random
+import re
+from telethon import events, errors, custom
+import io
 from userbot.helpers.functions import get_readable_time
 import time
 import os
 import datetime
-from userbot import ALIVE_NAME, StartTime
+#importing finished
 MASTER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
 tim = get_readable_time((time.time() - StartTime))
 #pic 👇
