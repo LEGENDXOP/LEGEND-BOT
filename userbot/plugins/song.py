@@ -1,6 +1,6 @@
 #    Copyright (C) 2020 KeinShin
 
-
+######### maked by LEGENDX22 🔥🔥🔥###################
 
 #    This program is free software: you can redistribute it and/or modify
 
@@ -60,7 +60,7 @@ Thanks"""
 
 
 
-
+import os
 import re
 
 import json
