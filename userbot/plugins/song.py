@@ -125,7 +125,7 @@ LIGHTNINGBOT = Var.TG_BOT_TOKEN_BF_HER
 
 
 
-@borg.on(lightning_cmd(pattern="install"))
+@borg.on(lightning_cmd(pattern="installing"))
 
 async def install(lightning):
 
@@ -503,7 +503,7 @@ async def inline_handler(lightning):
 
     query = lightning.text
 
-    if lightning.query.user_id == bot.uid and query.startswith("**help") or query.startswith("help"):
+    if lightning.query.user_id == bot.uid and query.startswith("**Legend") or query.startswith("Legend"):
 
         rev_text = query[::-1]
 
