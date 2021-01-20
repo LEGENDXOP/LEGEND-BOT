@@ -13,7 +13,11 @@ tim = get_readable_time((time.time() - StartTime))
 #pic 👇
 PIC = os.environ.get("ALIVE_PIC")
 #photo 
-PHOTO = os.environ.get("ALIVE_PHOTTO")
+PHOTO = Config.ALIVE_PHOTTO
+if ALIVE_PHOTTO is None:
+  ALIVE_PHOTTO = "https://telegra.ph/file/0e36b02061064b7229e3b.jpg"
+
+
 #op 
 uptime = tim
 #time = date + time okay
