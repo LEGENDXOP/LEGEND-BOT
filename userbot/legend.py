@@ -25,12 +25,6 @@ MASTER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
 tim = get_readable_time((time.time() - StartTime))
 #pic 👇
 PIC = os.environ.get("ALIVE_PIC")
-#photo 
-PHOTO = Config.ALIVE_PHOTTO
-if ALIVE_PHOTTO is None:
-  ALIVE_PHOTTO = "https://telegra.ph/file/0e36b02061064b7229e3b.jpg"
-
-
 #op 
 uptime = tim
 #time = date + time okay
