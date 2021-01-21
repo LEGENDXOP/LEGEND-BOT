@@ -3,7 +3,6 @@ designed By @Krishna_Singhal in userge
 ported to telethon by @mrconfused and @sandy1709
 """
 import asyncio
-import them
 import shlex
 from PIL import Image 
 from userbot import LOGS , CMD_HELP
