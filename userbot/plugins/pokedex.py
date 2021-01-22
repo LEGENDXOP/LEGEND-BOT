@@ -1,4 +1,4 @@
-#make by @LEGENDX22
+#full credits friday ot thanks friday bot ⚡
 #kang with credits else gay
 
 from pokedex import pokedex
