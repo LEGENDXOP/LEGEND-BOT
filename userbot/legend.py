@@ -7,7 +7,7 @@
 import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
-from userbot import ALIVE_NAME, legendversion, StartTime
+from userbot import ALIVE_NAME, StartTime
 from userbot.utils import admin_cmd
 from telethon import version
 from math import ceil
