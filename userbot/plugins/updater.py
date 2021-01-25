@@ -1,3 +1,8 @@
+# make by LEGENDX22 🔥🔥
+# MAKE BY LEGEND X
+#make for LEGEND BOT
+# KANG KRNA H TO CREDITS DEDENA 
+
 from datetime import datetime
 from random import randint
 from asyncio import sleep
@@ -211,7 +216,7 @@ async def upstream(ups):
             remove("output.txt")
         else:
             await ups.edit(changelog_str)
-        await ups.respond('`do \".update now\" to update`')
+        await ups.respond('do \"`.update now`\" to update')
         return
 
     if force_update:
@@ -276,3 +281,4 @@ async def upstream(ups):
         return
 
 
+#maked by LEGENDX22 🔥🔥🔥⚡⚡⚡⚡
