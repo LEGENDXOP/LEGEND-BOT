@@ -25,12 +25,12 @@ from telethon.tl.types import (ChannelParticipantsAdmins, ChatAdminRights,
 from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, bot
 from userbot.utils import register, errors_handler
 from userbot.utils import admin_cmd
-from userbot.legend import MASTER
+from userbot.legend import NAME
 # =================== CONSTANT ===================
-PP_TOO_SMOL = "`The image is too small`"
+PP_TOO_SMOL = "`The image is too small`
 PP_ERROR = "`Failure while processing the image`"
-NO_ADMIN = "`I am not an admin!! Chutiya Sala`"
-NO_PERM = "`I don't have sufficient permissions! Ask The Owner To gibe me Rights😞`"
+NO_ADMIN = "`I am not an admin!! @admins or @admin please make me admin i am very cool boy`"
+NO_PERM = "`I don't have permission this grp owner is very rude😕`"
 NO_SQL = "`Running on Non-SQL mode!`"
 
 CHAT_PP_CHANGED = "`Chat Picture Changed`"
@@ -143,7 +143,7 @@ async def promote(promt):
     try:
         await promt.client(
             EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await promt.edit(f"`THIS USER SUCCESSFULLY PROMOTED BY {MASTER} ⚡`")
+        await promt.edit(f"`THIS USER SUCCESSFULLY PROMOTED BY {NAME} ⚡`")
 
     # If Telethon spit BadRequestError, assume
     # we don't have Promote permission
@@ -200,7 +200,7 @@ async def demote(dmod):
     except BadRequestError:
         await dmod.edit(NO_PERM)
         return
-    await dmod.edit(f"`THIS USER SUCCESSFULLY DEMOTED BY {MASTER} ⚡⚡`")
+    await dmod.edit(f"`THIS USER SUCCESSFULLY DEMOTED BY {NAME} ⚡⚡`")
 
     # Announce to the logging group if we have demoted successfully
     if BOTLOG:
@@ -220,7 +220,7 @@ async def ban(bon):
     admin = chat.admin_rights
     creator = chat.creator
 
-    # Well
+    
     if not admin and not creator:
         await bon.edit(NO_ADMIN)
         return
