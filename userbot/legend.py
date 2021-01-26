@@ -21,8 +21,6 @@ import time
 import os
 import datetime
 #importing finished
-global ghanti
-x = borg.uid
 MASTER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
 tim = get_readable_time((time.time() - StartTime))
 #pic 👇
@@ -42,6 +40,5 @@ OKAY = "[SUPPORT GROUP](https://t.me/LEGEND_USERBOT_SUPPORT)"
 ALIVE = "LEGEND BOT IS ON 🔥 FIRE 🔥" #make by LEGENDX22
 BOT = " HELLO MASTER MY NAME IS LEGEND BOT I AM A BEST USERBOT 💝"
 EMOJI = "🔥"
- [{MASTER}](tg://user?id={X})
 #yrr isko apne bot me aply krne se pehle mere se pooch lena ok
 #aur aage add kruga abhi busy okay 🤔
