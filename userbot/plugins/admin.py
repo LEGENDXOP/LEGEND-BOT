@@ -5,7 +5,7 @@
 """
 Userbot module to help you manage a group
 """
-
+#credits LEGENDX22
 from asyncio import sleep
 from os import remove
 
@@ -29,8 +29,8 @@ from userbot.utils import admin_cmd
 # =================== CONSTANT ===================
 PP_TOO_SMOL = "`The image is too small`"
 PP_ERROR = "`Failure while processing the image`"
-NO_ADMIN = "`I am not an admin nub nibba!`"
-NO_PERM = "`I don't have sufficient permissions! This is so sed. Alexa play Tera Baap Aaya`"
+NO_ADMIN = "`I am not an admin!! Chutiya Sala`"
+NO_PERM = "`I don't have sufficient permissions! Ask The Owner To gibe me Rights😞`"
 NO_SQL = "`Running on Non-SQL mode!`"
 
 CHAT_PP_CHANGED = "`Chat Picture Changed`"
@@ -133,7 +133,7 @@ async def promote(promt):
     await promt.edit("`Promoting...`")
     user, rank = await get_user_from_event(promt)
     if not rank:
-        rank = "DARK COBRA"  # Just in case.
+        rank = "Sarkar Jii"  # Just in case.
     if user:
         pass
     else:
@@ -143,7 +143,7 @@ async def promote(promt):
     try:
         await promt.client(
             EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await promt.edit("`Promoted Successfully! Now gib Party 🥳`")
+        await promt.edit("`Promoted Successfully! Abb Nacho Bencho 💃🕺`")
 
     # If Telethon spit BadRequestError, assume
     # we don't have Promote permission
@@ -338,7 +338,7 @@ async def spider(spdr):
 
     if user.id == self_user.id:
         await spdr.edit(
-            "`Hands too short, can't duct tape myself...\n(ヘ･_･)ヘ┳━┳`")
+            "`Hands too short, can't duct tape myself...\n(ãƒ˜ï½¥_ï½¥)ãƒ˜â”³â”â”³`")
         return
 
     # If everything goes well, do announcing and mute
@@ -635,43 +635,51 @@ async def get_admin(show):
 
 
 #@register(outgoing=True, pattern="^.pin(?: |$)(.*)")
-@bot.on(admin_cmd(pattern="pin($| (.*))", command="pin"))
+@borg.on(admin_cmd(pattern=r"pin(?: |$)(.*)"))
 @errors_handler
 async def pin(msg):
-    if msg.fwd_from:
+    """ For .pin command, pins the replied/tagged message on the top the chat. """
+    # Admin or creator check
+    chat = await msg.get_chat()
+    admin = chat.admin_rights
+    creator = chat.creator
+
+    # If not admin and not creator, return
+    if not admin and not creator:
+        await msg.edit(NO_ADMIN)
         return
-    if not msg.is_private:
-        chat = await msg.get_chat()
-        admin = chat.admin_rights
-        creator = chat.creator
-        if not admin and not creator:
-            return await edit_delete(msg, NO_ADMIN, 5)
+
     to_pin = msg.reply_to_msg_id
+
     if not to_pin:
-        return await edit_delete(msg, "`Reply to a message to pin it.`", 5)
+        await msg.edit("`Reply to a message to pin it.`")
+        return
+
     options = msg.pattern_match.group(1)
-    is_silent = False
-    if options == "loud":
-        is_silent = True
+
+    is_silent = True
+
+    if options.lower() == "loud":
+        is_silent = False
+
     try:
-        await msg.client.pin_message(msg.chat_id, to_pin, notify=is_silent)
+        await msg.client(
+            UpdatePinnedMessageRequest(msg.to_id, to_pin, is_silent))
     except BadRequestError:
-        return await edit_delete(msg, NO_PERM, 5)
-    except Exception as e:
-        return await edit_delete(msg, f"`{str(e)}`", 5)
-    await edit_delete(msg, "`Pinned Successfully..!`", 3)
-    user = await get_user_from_id(msg.sender_id, msg)
-    if BOTLOG and not msg.is_private:
-        try:
-            await msg.client.send_message(
-                BOTLOG_CHATID,
-                "#PINNED\n"
-                f"ADMIN: [{user.first_name}](tg://user?id={user.id})\n"
-                f"CHAT: {msg.chat.title}(`{msg.chat_id}`)\n"
-                f"LOUD: {is_silent}",
-            )
-        except:
-            pass
+        await msg.edit(NO_PERM)
+        return
+
+    await msg.edit("`Pinned Successfully!`")
+
+    user = await get_user_from_id(msg.from_id, msg)
+
+    if BOTLOG:
+        await msg.client.send_message(
+            BOTLOG_CHATID, "#PIN\n"
+            f"ADMIN: [{user.first_name}](tg://user?id={user.id})\n"
+            f"CHAT: {msg.chat.title}(`{msg.chat_id}`)\n"
+            f"LOUD: {not is_silent}")
+
 
 #@register(outgoing=True, pattern="^.kick(?: |$)(.*)")
 @borg.on(admin_cmd(pattern=r"kick(?: |$)(.*)"))
@@ -765,7 +773,7 @@ async def get_user_from_event(event):
     extra = None
     if event.reply_to_msg_id:
         previous_message = await event.get_reply_message()
-        user_obj = await event.client.get_entity(previous_message.sender_id)
+        user_obj = await event.client.get_entity(previous_message.from_id)
         extra = event.pattern_match.group(1)
     elif args:
         user = args[0]
@@ -809,30 +817,30 @@ async def get_user_from_id(user, event):
     return user_obj
 
 
-
 CMD_HELP.update({
-    "admin":".promote <username/reply> <custom rank (optional)>\
-\nUsage Provides admin rights to the person in the chat.\
+    "admin":
+    ".promote <username/reply> <custom rank (optional)>\
+\nUsage: Provides admin rights to the person in the chat.\
 \n\n.demote <username/reply>\
-\nUsage Revokes the person's admin permissions in the chat.\
+\nUsage: Revokes the person's admin permissions in the chat.\
 \n\n.ban <username/reply> <reason (optional)>\
-\nUsage Bans the person off your chat.\
+\nUsage: Bans the person off your chat.\
 \n\n.unban <username/reply>\
-\nUsage Removes the ban from the person in the chat.\
+\nUsage: Removes the ban from the person in the chat.\
 \n\n.mute <username/reply> <reason (optional)>\
-\nUsage Mutes the person in the chat, works on admins too.\
+\nUsage: Mutes the person in the chat, works on admins too.\
 \n\n.unmute <username/reply>\
-\nUsage Removes the person from the muted list.\
+\nUsage: Removes the person from the muted list.\
 \n\n.gmute <username/reply> <reason (optional)>\
-\nUsage Mutes the person in all groups you have in common with them.\
+\nUsage: Mutes the person in all groups you have in common with them.\
 \n\n.ungmute <username/reply>\
-\nUsage Reply someone's message with .ungmute to remove them from the gmuted list.\
+\nUsage: Reply someone's message with .ungmute to remove them from the gmuted list.\
 \n\n.delusers\
-\nUsage Searches for deleted accounts in a group. Use .delusers clean to remove deleted accounts from the group.\
+\nUsage: Searches for deleted accounts in a group. Use .delusers clean to remove deleted accounts from the group.\
 \n\n.admins\
-\nUsage Retrieves a list of admins in the chat.\
+\nUsage: Retrieves a list of admins in the chat.\
 \n\n.users or .users <name of member>\
-\nUsage Retrieves all (or queried) users in the chat.\
+\nUsage: Retrieves all (or queried) users in the chat.\
 \n\n.setgppic <reply to image>\
-\nUsage Changes the group's display picture."
+\nUsage: Changes the group's display picture."
 })
