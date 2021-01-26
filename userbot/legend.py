@@ -26,6 +26,8 @@ tim = get_readable_time((time.time() - StartTime))
 #pic 👇
 PIC = os.environ.get("ALIVE_PIC")
 #op 
+global ghanti 
+X = borg.uid
 uptime = tim
 #time = date + time okay
 TIME = time.asctime(time.localtime())
@@ -40,5 +42,6 @@ OKAY = "[SUPPORT GROUP](https://t.me/LEGEND_USERBOT_SUPPORT)"
 ALIVE = "LEGEND BOT IS ON 🔥 FIRE 🔥" #make by LEGENDX22
 BOT = " HELLO MASTER MY NAME IS LEGEND BOT I AM A BEST USERBOT 💝"
 EMOJI = "🔥"
+NAME = [{MAATER}](tg://user?id={X})
 #yrr isko apne bot me aply krne se pehle mere se pooch lena ok
 #aur aage add kruga abhi busy okay 🤔
