@@ -21,13 +21,11 @@ import time
 import os
 import datetime
 #importing finished
-MASTER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
+NAME = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
 tim = get_readable_time((time.time() - StartTime))
 #pic 👇
 PIC = os.environ.get("ALIVE_PIC")
 #op 
-global ghanti 
-X = borg.uid
 uptime = tim
 #time = date + time okay
 TIME = time.asctime(time.localtime())
@@ -35,13 +33,13 @@ TIME = time.asctime(time.localtime())
 LEGENDX22 = "[LEGEND X](https://t.me/legendx22)"
 #my bots repo 👇
 OP = "[LEGEND BOT](https://github.com/legendx22/LEGEND-BOT)"
-#grpup👇
+#grpup👇NAME = "[{MAATER}](tg://user?id={X})"
+#yrr isko apne bot me aply krne se pehle mere se pooch lena ok
+#aur aage add kruga abhi busy okay 🤔
+
 OKAY = "[SUPPORT GROUP](https://t.me/LEGEND_USERBOT_SUPPORT)"
 #itna test h aur aage krte h
 #test successful raha ab aage 
 ALIVE = "LEGEND BOT IS ON 🔥 FIRE 🔥" #make by LEGENDX22
 BOT = " HELLO MASTER MY NAME IS LEGEND BOT I AM A BEST USERBOT 💝"
 EMOJI = "🔥"
-NAME = "[{MAATER}](tg://user?id={X})"
-#yrr isko apne bot me aply krne se pehle mere se pooch lena ok
-#aur aage add kruga abhi busy okay 🤔
