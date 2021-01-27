@@ -27,7 +27,7 @@ from userbot.utils import register, errors_handler
 from userbot.utils import admin_cmd
 from userbot.legend import NAME
 # =================== CONSTANT ===================
-PP_TOO_SMOL = "`The image is too small`
+PP_TOO_SMOL = "`The image is too small`"
 PP_ERROR = "`Failure while processing the image`"
 NO_ADMIN = "`I am not an admin!! @admins or @admin please make me admin i am very cool boy`"
 NO_PERM = "`I don't have permission this grp owner is very rude😕`"
