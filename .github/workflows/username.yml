@@ -1,4 +1,4 @@
-name: Legendx22
+name: legend x
 
 on: push
 
@@ -16,10 +16,11 @@ jobs:
 
         uses: jacobtomlinson/gha-find-replace@master
 
-                 
-          find: "HellBot"
+        with:
 
-          replace: "LEGEND-BOT"
+          find: "Hellbot"
+
+          replace: "LEGENDBOT"
 
       - name: Create Pull Request
 
@@ -27,12 +28,13 @@ jobs:
 
         with:
 
-          commit_message: 'Akull on the beat'
+          commit_message: 'ok'
 
           commit_options: '--no-verify'
 
           repository: .
 
-          commit_user_name: legendx22
+          commit_user_name: LEGENDXOP
+
 
           commit_user_email: legendxx0837@gmail.com
