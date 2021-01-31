@@ -1,4 +1,4 @@
-from userbot.legend import MASTER
+
 #Thanks Friday bot
 #credits all credits is Friday bot🥰
 #ported by LEGENDX22
