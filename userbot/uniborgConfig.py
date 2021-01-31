@@ -152,6 +152,7 @@ if ENV:
         if FBAN_GROUP_ID:
             FBAN_GROUP_ID = int(FBAN_GROUP_ID)
         EXCLUDE_FED = os.environ.get("EXCLUDE_FED", None)
+        FBAN_GROUP = int(os.environ.get("FBAN_GROUP", False))
 else:
     class Config(object):
         DB_URI = None
