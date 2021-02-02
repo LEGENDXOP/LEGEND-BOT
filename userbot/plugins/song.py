@@ -29,7 +29,6 @@
 
 
 
-
 """Thanks To 
 
 Midhun_xD
@@ -37,6 +36,7 @@ Midhun_xD
 @keinshin
 
 @Shivam_Patel
+
 @LEGENDX22
 
 """
@@ -191,7 +191,7 @@ async def install(lightning):
 
 
 
-@borg.on(lightning_cmd(pattern=r"unload (?P<krish_blac>\w+)$"))
+@borg.on(lightning_cmd(pattern=r"unloading (?P<krish_blac>\w+)$"))
 
 async def unload(lightning):
 
@@ -219,7 +219,7 @@ async def unload(lightning):
 
 
 
-@borg.on(lightning_cmd(pattern=r"load (?P<krish_blac>\w+)$"))
+@borg.on(lightning_cmd(pattern=r"loading (?P<krish_blac>\w+)$"))
 
 async def load(lightning):
 
@@ -447,13 +447,13 @@ if LIGHTNING_WARN is None:
 
     f"**{BOT_LIT}"
 
-    f"** Im Here To Protect {LIGHTNINGUSER} Dont Under Estimate Me ðð  **\n\n"
+    f"** Im Here To Protect {LIGHTNINGUSER} Dont Under Estimate Me 🔱🔱  **\n\n"
 
     f"**My Master {LIGHTNINGUSER} is Busy Right Now !** \n"
 
     f"{LIGHTNINGUSER} Is Very Busy Why Came Please Lemme Know Choose Your Deasired Reason"
 
-    f"**Btw Dont Spam Or Get Banned** ð \n\n"
+    f"**Btw Dont Spam Or Get Banned** ⚡⚡ \n\n"
 
     f"**Choose Any Reason Then Get Lost**\n"
 
@@ -503,7 +503,7 @@ async def inline_handler(lightning):
 
     query = lightning.text
 
-    if lightning.query.user_id == bot.uid and query.startswith("**Legend") or query.startswith("Legend"):
+    if lightning.query.user_id == bot.uid and query.startswith("**help") or query.startswith("help"):
 
         rev_text = query[::-1]
 
@@ -535,9 +535,9 @@ async def inline_handler(lightning):
 
                 [custom.Button.inline("Help", data="what?")],
 
-                [Button.url("Commands Not Workingð¥º", "https://t.me/teamishere")],
+                [Button.url("Commands Not Working🤔", "https://t.me/teamishere")],
 
-                [Button.url("Help Article ð¤", "https://app.gitbook.com/@poxsisofficial/s/help/")],
+                [Button.url("Help Article 🤔", "https://app.gitbook.com/@poxsisofficial/s/help/")],
 
                 [
 
@@ -545,7 +545,7 @@ async def inline_handler(lightning):
 
                 
 
-                    "Want To Learn CMDSð",
+                    "Want To Learn CMDS☺️☺️",
 
                     "https://t.me/teamishere" ,
 
@@ -569,13 +569,13 @@ async def inline_handler(lightning):
 
             buttons=[
 
-                [custom.Button.inline("Wanna Spam Something?ð", data="lightning_is_here_cant_spam")],
+                [custom.Button.inline("Wanna Spam Something?🥺🥺", data="lightning_is_here_cant_spam")],
 
                 [
 
                     custom.Button.inline(
 
-                        "My Friendâ¤ï¸â¤ï¸",
+                        "My Friend🧐🧐",
 
                         data="he_sucks",
 
@@ -583,7 +583,7 @@ async def inline_handler(lightning):
 
                 ],
 
-                [custom.Button.inline("Requestingð", data="fck_ask")],
+                [custom.Button.inline("Requesting⚜️⚜️", data="fck_ask")],
 
                 [
 
@@ -647,7 +647,7 @@ async def lightning_pugins_query_hndlr(lightning):
 
     else:
 
-        lightning_is_best = "Oh C'mon You Think You Can Touch This? à² â­â®à² !"
+        lightning_is_best = "Oh C'mon You Think You Can Touch This? 😂😂 !"
 
         await lightning.answer(lightning_is_best, cache_time=0, alert=True)
 
@@ -669,7 +669,7 @@ async def lightning_pugins_query_hndlr(lightning):
 
     if not lightning.query.user_id == bot.uid:
 
-        how = "Not For  Bitch.ð( Í¡ââ¯ÍÊ Í¡â)"
+        how = "Not For  Bitch.😂😂( 😈😈😈😈😈😈)"
 
         await lightning.answer(how, cache_time=0, alert=True)
 
@@ -685,7 +685,7 @@ async def lightning_pugins_query_hndlr(lightning):
 
            
 
-           lightning_help_strin  = f"**ðº NAME ðº :** `{light_pulu_name}` \n\n{CMD_HELP[light_pulu_name]}"
+           lightning_help_strin  = f"**🔱🔱 NAME 🔱🔱 :** `{light_pulu_name}` \n\n{CMD_HELP[light_pulu_name]}"
 
            lightning_is_best = lightning_help_strin 
 
@@ -699,7 +699,7 @@ async def lightning_pugins_query_hndlr(lightning):
 
             for i in CMD_HELP:
 
-                lightning_help_strin += "â¹ï¸ " + i + "\n"
+                lightning_help_strin += "🔥🔥 " + i + "\n"
 
                 for iter_list in CMD_HELP[i]:
 
@@ -721,7 +721,7 @@ async def lightning_pugins_query_hndlr(lightning):
 
                 for i in CMD_LIST[light_pulu_name]:
 
-                    lightning_help_strin  = f"**ðº NAME ðº :** `{light_pulu_name}` \n\n `{CMD_LIST[light_pulu_name]}\n`**Details**- Not Yetðð\n\n**Ask at @teamishere"
+                    lightning_help_strin  = f"**🔱🔱 NAME 🔱🔱 :** `{light_pulu_name}` \n\n `{CMD_LIST[light_pulu_name]}\n`**Details**- Not Yetðð\n\n**Ask at @teamishere"
 
                     lightning_help_strin += "\n    " + i
 
@@ -731,13 +731,13 @@ async def lightning_pugins_query_hndlr(lightning):
 
     else:
 
-           lightning_help_strin  = f"**ðº NAME ðº :** `{light_pulu_name}` \n\n`{CMD_LIST[light_pulu_name]}`\n**Details** - Not Yetðð\n\n**Ask at @teamishere"
+           lightning_help_strin  = f"**🔱🔱 NAME 🔱🔱 :** `{light_pulu_name}` \n\n`{CMD_LIST[light_pulu_name]}`\n**Details** - Not Yetðð\n\n**Ask at @teamishere"
 
            lightning_is_best = lightning_help_strin 
 
            lightning_is_best += "\n\n**In Case Any Problem @teamishere** ".format(light_pulu_name)
 
-    lightning_help_strin = f"**ðº NAME ðº :** `{light_pulu_name}` \n\n`{CMD_LIST[light_pulu_name]}`\n**Details** - Not Yetðð\n\n**Ask at @teamishere"
+    lightning_help_strin = f"**🔱🔱 NAME 🔱🔱 :** `{light_pulu_name}` \n\n`{CMD_LIST[light_pulu_name]}`\n**Details** - Not Set for this Plugin 😑\n\n**Ask at @teamishere"
 
     lightning_is_best = lightning_help_strin 
 
@@ -745,7 +745,7 @@ async def lightning_pugins_query_hndlr(lightning):
 
     if len(lightning_is_best) >= 4096:
 
-          keinshin = "` Wait. (Í¡ð ???? ¥ â ?? ¯Í ?? Ê ?? Í¡ð ???? ¥) `"
+          keinshin = "` Wait. (🔥🔥🔥🔥) `"
 
           await lightning.answer(keinshin, cache_time=0, alert=True)
 
@@ -765,9 +765,9 @@ async def lightning_pugins_query_hndlr(lightning):
 
                buttons=[
 
-                [custom.Button.inline("ð¸âðµâðªâð¨âð®âð¦âð±â", data="krish")],
+                [custom.Button.inline("🔱🔱🔱", data="krish")],
 
-                [custom.Button.inline("á¦Î±ÆÆ ð¢", data="lghtback")]],
+                [custom.Button.inline("🔥🔥🔥", data="lghtback")]],
 
          )
 
@@ -779,9 +779,9 @@ async def lightning_pugins_query_hndlr(lightning):
 
             buttons=[
 
-                [custom.Button.inline("ð????¸â????ð????µâ????ð????ªâ????ð????¨â????ð????®â????ð????¦â????ð????±â????", data="krish")],
+                [custom.Button.inline("⚜️⚜️⚜️", data="krish")],
 
-                [custom.Button.inline("á¦Î±ÆÆ ð¢", data="lghtback")],
+                [custom.Button.inline("⚜️⚜️⚜️", data="lghtback")],
 
             ],
 
@@ -819,7 +819,7 @@ async def lightning_pugins_query_hndlr(lightning):
 
     else:
 
-        lightning_is_best = "Oh C'mon You Think You Can Touch This? à² â­â®à² !"
+        lightning_is_best = "Oh C'mon You Think You Can Touch This? 😂😂😂 !"
 
         await lightning.answer(lightning_is_best, cache_time=0, alert=True)
 
@@ -837,7 +837,7 @@ async def what(lightning):
 
     else:
 
-        txt = f"Ohh C'mon You Think That This Is For You?\n Ok I Will Complain To {LIGHTNINGUSER}ðð"
+        txt = f"Ohh  You Think That This Is For You?\n Ok I Will Complain To {LIGHTNINGUSER}⚜️⚜️"
 
         await lightning.answer(txt, alert=True)
 
@@ -851,7 +851,7 @@ async def lightning_is_better(lightning):
 
     if lightning.query.user_id == bot.uid:
 
-        fck_bit = f"Oh! C'mon Master {LIGHTNINGUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
+        fck_bit = f"Oh! Master {LIGHTNINGUSER} Im Try To Get Rid Of This Nigga Pls Dont Touch"
 
         await lightning.answer(fck_bit, cache_time=0, alert=True)
 
@@ -861,7 +861,7 @@ async def lightning_is_better(lightning):
 
     lightning_id = lightning.query.user_id
 
-    text1 = f"LOL **You Think So You Can**ðð\n\n**[Nibba](tg://user?id={lightning_id}) Bye Goin To Block You Gay**ðð"
+    text1 = f"LOL **You Think So You Can**😂\n\n**[Nibba](tg://user?id={lightning_id}) Bye Goin To Block You Gay**😈😈"
 
     await lightning.edit("Off Course Go To Hell Dude")
 
@@ -869,13 +869,13 @@ async def lightning_is_better(lightning):
 
     await bot(functions.contacts.BlockRequest(lightning.query.user_id))
 
-    await lightning.edit("ð")
+    await lightning.edit("😈")
 
     await bot.send_message(
 
         LIGHT_LOGS,
 
-        f"Hey Master Sorry Disturb You, [Noob](tg://user?id={lightning_id}) Tryin To Spam ð\n\n**So Blocked**.",
+        f"Hey Master Sorry Disturb You, [Noob](tg://user?id={lightning_id}) Tryin To Spam 🥺\n\n**So Blocked**.",
 
     )
 
@@ -897,9 +897,9 @@ async def lightning_is_better(lightning):
 
     lightning_id = lightning.query.user_id
 
-    text1 = f"LOL You Think So You Canðð\nGo and waitðð"
+    text1 = f"LOL You Think So You Can😂😂\nGo and wait🥴🥴"
 
-    await lightning.edit("Off Course Go To Hell Dudeð")
+    await lightning.edit("Off Course Go To Hell Dudeð😑")
 
     await bot.send_message(lightning.query.user_id, text1)
 
@@ -955,7 +955,7 @@ async def lightning_is_better(lightning):
 
     )
 
-    light_text = "`Warning`- âï¸â ï¸Dont Try Anything Stupid  Wait Kindly!!!âï¸â ï¸"
+    light_text = "`Warning`- 😈😈Dont Try Anything Stupid  Wait Kindly!!!😈😈"
 
     await bot.send_message(lightning.query.user_id, light_text)
 
@@ -1063,11 +1063,11 @@ async def lightning_is_better(lightning):
 
     lightning_id = lightning.query.user_id
 
-    await lightning.edit("Okay let Me Thinkð¤«")
+    await lightning.edit("Okay let Me Think🤔🤔«")
 
     await asyncio.sleep(2)
 
-    await lightning.edit("Okay Giving You A Chanceð¤¨")
+    await lightning.edit("Okay Giving You A Chance🧐¨")
 
     await asyncio.sleep(2)
 
@@ -1087,7 +1087,7 @@ async def lightning_is_better(lightning):
 
     
 
-    reqws = "`Warning`- âï¸â ï¸Dont Try Anything Stupid  Wait Kindly!!!âï¸â ï¸"
+    reqws = "`Warning`- 😈😈Dont Try Anything Stupid  Wait Kindly!!!😈😈"
 
 
 
@@ -1167,7 +1167,7 @@ async def hmm(lightning):
 
     if lightning.query.user_id == bot.uid:
 
-        text = "ð ???? ²â ???? ð ???? ¾â ???? ð ???? â ???? ð ???? ªâ ???? ð ???? ± â ???? ð ???? µâ ???? ð ???? ¸â ???? ð ???? ¹â ???? ð ???? ¦â ???? ð ??? ? ¹â ???? ð ???? ¸â ???? \ n \ ná´ ?? Ê ?? á´ ?? É ¢ ÉªÉ´-- All Good â ???? \ nÊ ?? á´ ?? Ê ?? á´ ?? á´ ?? á´ ?? - Connected â ???? \ nÊ ?? á´ ?? É ¢ s - Looks Good: / \ nTottal Plugs: {} ". Format (len (CMD_LIST))
+        text = -- All Good â ???? \ heroku  - Connected  \ all good- Looks Good: / \ nTottal Plugs: {} ". Format (len (CMD_LIST))
 
         await lightning.answer(text, alert=True)
 
@@ -1189,7 +1189,7 @@ async def hmm(lightning):
 
     if lightning.query.user_id == bot.uid:
 
-        text = ".xnxx\n.picx\n.les\nðððð"
+        text = ".xnxx\n.picx\n.les\n please use in private 😂"
 
         await lightning.answer(text, alert=True)
 
@@ -1227,21 +1227,21 @@ async def ho(event):
 
     if event.query.user_id != bot.uid: 
 
-        how = "Not For You Idiot ð( Í¡ââ¯ÍÊ Í¡â)."
+        how = "Not For You Idiot ( fuck )."
 
         await event.answer(how, cache_time=0, alert=True)
 
         return
 
-    await event.answer ("(Í¡ð ???? ¥ â ?? ¯Í ?? Ê ?? Í¡ð ???? ¥)", cache_time = 0, alert = False)
+    await event.answer ("(huh)", cache_time = 0, alert = False)
 
     # This Is Copy of Above Code. (C) @SpEcHiDe
 
     buttons = lightnings_menu_for_help(0, CMD_LIST, "helpme")
 
-    ho = f"""Black Lightning Is Here With Stunning Help !\n
+    ho = f"""LEGENDBOT Is Here With Stunning Help !\n
 
-In Case Any Problem @teamishere \nTottal Plugs( Í¡ð¥â¯ÍÊ Í¡ð¥): {len(CMD_LIST)}"""
+In Case Any Problem @teamishere \nTottal Plugs( 🧐): {len(CMD_LIST)}"""
 
     await event.edit(message=ho, buttons=buttons)
 
@@ -1309,19 +1309,19 @@ def lightnings_menu_for_help(b_lac_krish, lightning_plugs, lightning_lol):
 
                 custom.Button.inline(
 
-                    "ð¡ÑÎ¹gÐ½Ñ ÏâÏgÎ¹Ð¸", data="{}_prev({})".format(lightning_lol, lightning_plugins_pages)
+                    "😑", data="{}_prev({})".format(lightning_lol, lightning_plugins_pages)
 
                 ),
 
                # Thanks To Friday For This Idea
 
-               custom.Button.inline("ã½ï¸Statsã½ï¸", data="stta"
+               custom.Button.inline("STATS", data="stta"
 
                ),
 
                custom.Button.inline(
 
-                    "âÑfÑ ÏâÏgÎ¹Ð¸ ", data="{}_next({})".format(lightning_lol, lightning_plugins_pages)
+                    "🥴 ", data="{}_next({})".format(lightning_lol, lightning_plugins_pages)
 
                 ),
 
@@ -1331,4 +1331,4 @@ def lightnings_menu_for_help(b_lac_krish, lightning_plugs, lightning_lol):
 
         ]
 
-    return pairsi
+    return pairs
