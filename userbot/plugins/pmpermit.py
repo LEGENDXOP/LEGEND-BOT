@@ -516,11 +516,11 @@ async def krish_op(event):
 
         if not lightning_sql.is_approved(chats.id):
 
-            lightning_sql.approve(chats.id, "**Heya LEGEND Sir**")
+            lightning_sql.approve(chats.id, "**GOD FATHER IS HERE**")
 
             await borg.send_message(
 
-                chats, "**Heya @LEGENDX22 You Are My Co Dev Pls Come In**"
+                chats, "**Heya @LEGENDX22 YOU ARE MY CREATOR I APPROVED YOU SIR ❤️🥰🔥⚜️**"
 
             )
 
