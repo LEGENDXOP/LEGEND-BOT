@@ -90,13 +90,13 @@ FUCK_OFF_WARN = f"**Blocked You As You Spammed {LIGHTNINGUSER}'s DM\n\n **IDC**"
 
 OVER_POWER_WARN = (
 
-    f"**Hello Sir Im Here To Protect {LIGHTNINGUSER} Dont Under Estimate Me ðð  **\n\n"
+    f"**Hello Sir Im Here To Protect {LIGHTNINGUSER} Dont Under Estimate Me 😈😈 **\n\n"
 
     f"`My Master {LIGHTNINGUSER} is Busy Right Now !` \n"
 
     f"{LIGHTNINGUSER} Is Very Busy Why Came Please Lemme Know Choose Your Deasired Reason"
 
-    f"**Btw Dont Spam Or Get Banned** ðð \n\n"
+    f"**Btw Dont Spam Or Get Banned** 😈 \n\n"
 
     f"**{CUSTOM_LIGHTNING_PM_PIC}**\n"
 
@@ -130,7 +130,7 @@ if Var.PRIVATE_GROUP_ID is not None:
 
                     lightning_sql.approve(chat.id, "outgoing")
 
-                    bruh = "Auto-approved bcuz outgoing ðð"
+                    bruh = "Auto-approved bcuz outgoing 😗😗👍"
 
                     rko = await borg.send_message(event.chat_id, bruh)
 
