@@ -1167,7 +1167,7 @@ async def hmm(lightning):
 
     if lightning.query.user_id == bot.uid:
 
-        text = -- All Good â ???? \ heroku  - Connected  \ all good- Looks Good: / \ nTottal Plugs: {} ". Format (len (CMD_LIST))
+        text = "-- All Good â ???? \ heroku  - Connected  \ all good- Looks Good: \nTottal Plugs: {} ". Format (len (CMD_LIST))
 
         await lightning.answer(text, alert=True)
 
