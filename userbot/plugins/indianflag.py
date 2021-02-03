@@ -1,5 +1,5 @@
 # Coded by @CyberBoyAyush
-# For HellBot : https://github.com/HellBoy-OP/HellBot
+# For HellBot : https://github.com/LEGENDXOP/LEGEND-BOT
 
 
 from telethon import events
