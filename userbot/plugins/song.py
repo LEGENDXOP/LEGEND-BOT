@@ -313,7 +313,7 @@ async def _(event):
 
         if response.text.startswith("I can't find that"):
 
-            await event.edit("ð")
+            await event.edit("🤔")
 
         else:
 
@@ -1279,7 +1279,7 @@ def lightnings_menu_for_help(b_lac_krish, lightning_plugs, lightning_lol):
 
         custom.Button.inline(
 
-            "{} {} {}".format("â¨µ", x, "â¨µ"), data="_lightning_plugins_{}".format(x)
+            "{} {} {}".format("⚡", x, "🔥"), data="_lightning_plugins_{}".format(x)
 
         )
 
