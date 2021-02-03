@@ -1,70 +1,62 @@
-import asyncio
-import io
-from asyncio import sleep
-from datetime import datetime
-from math import sqrt
+PORN-HUB SEARCH 
+Video title : BLACKED Kali Rose Gets Passed Around By Six BBCs 
+Video link : https://www.pornhub.com/view_video.php?viewkey=ph5c4589656f404
 
-from emoji import emojize
-from telethon.errors import (
-    ChannelInvalidError,
-    ChannelPrivateError,
-    ChannelPublicGroupNaError,
-    ChatAdminRequiredError,
-    UserAdminInvalidError,
-)
-from telethon.tl import functions
-from telethon.tl.functions.channels import GetFullChannelRequest, GetParticipantsRequest
-from telethon.tl.functions.messages import GetFullChatRequest, GetHistoryRequest
-from telethon.tl.types import (
-    ChannelParticipantAdmin,
-    ChannelParticipantCreator,
-    ChannelParticipantsAdmins,
-    ChannelParticipantsBots,
-    ChannelParticipantsKicked,
-    ChatBannedRights,
-    MessageActionChannelMigrateFrom,
-    UserStatusEmpty,
-    UserStatusLastMonth,
-    UserStatusLastWeek,
-    UserStatusOffline,
-    UserStatusOnline,
-    UserStatusRecently,
-)
-from telethon.utils import get_input_location
-from userbot import CMD_HELP
-from ..utils import admin_cmd, edit_or_reply, sudo_cmd
+import os
+import re
+import urllib
+from math import ceil
+from re import findall
+from youtube_search import YoutubeSearch
+from search_engine_parser import GoogleSearch
 
 
-@bot.on(admin_cmd(pattern="unbanall ?(.*)"))
-@bot.on(sudo_cmd(pattern="unbanall ?(.*)", allow_sudo=True))
-async def _(event):
-    if event.fwd_from:
+from urllib.parse import quote
+import requests
+from telethon import Button, custom, events, functions
+from youtubesearchpython import VideosSearch
+
+
+from pornhub_api import PornhubApi
+
+
+
+
+
+    
+@tgbot.on(events.InlineQuery(pattern=r"ph (.*)"))
+async def inline_id_handler(event: events.InlineQuery.Event):
+    builder = event.builder
+    if event.query.user_id != bot.uid:
+        resultm = builder.article(
+            title="- NIKAL LAWDE -",
+            text=f"You Can't Use This Bot. \nDeploy LEGEND BOTTo Get Your Own BOT Repo Link [HERE](https://github.com/legendxop/legend-bot)",
+        )
+        await event.answer([resultm])
         return
+    results = []
     input_str = event.pattern_match.group(1)
-    if input_str:
-        logger.info("TODO: Not yet Implemented")
-    else:
-        if event.is_private:
-            return False
-        et = await edit_or_reply(event, "Searching Participant Lists.")
-        p = 0
-        async for i in bot.iter_participants(
-            event.chat_id, filter=ChannelParticipantsKicked, aggressive=True
-        ):
-            rights = ChatBannedRights(until_date=0, view_messages=False)
-            try:
-                await bot(
-                    functions.channels.EditBannedRequest(event.chat_id, i, rights)
+    api = PornhubApi()
+    data = api.search.search(
+    input_str,
+    ordering="mostviewed"
+    )
+    ok = 1
+    oik = ""
+    for vid in data.videos:
+      if ok <= 5:
+        lul_m = (f"PORN-HUB SEARCH \nVideo title : {vid.title} \nVideo link : https://www.pornhub.com/view_video.php?viewkey={vid.video_id}")
+        results.append(
+                await event.builder.article(
+                    title=vid.title,
+                    text=lul_m,
+                    buttons=[
+                        Button.switch_inline(
+                            "Search Again", query="ph ", same_peer=True
+                        )
+                    ],
                 )
-            except FloodWaitError as ex:
-                logger.warn("sleeping for {} seconds".format(ex.seconds))
-                await asyncio.sleep(ex.seconds)
-            except Exception as ex:
-                await et.edit(str(ex))
-            else:
-                p += 1
-        await et.edit("{}: {} unbanned".format(event.chat_id, p))
-CMD_HELP.update({
-    "hsh":"this is unban all plugin use .unbanall to unbanall banned members "})
-
-
+            )
+      else:
+        pass
+    await event.answer(results)
