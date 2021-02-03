@@ -1,6 +1,3 @@
-# fixed by TEAM LEGEND
-
-
 from re import findall
 
 from search_engine_parser import GoogleSearch
@@ -17,7 +14,7 @@ async def gsearch(q_event):
     match = q_event.pattern_match.group(1)
     page = findall(r"page=\d+", match)
     try:
-        page = page0]
+        page = page[0]
         page = page.replace("page=", "")
         match = match.replace("page=" + page[0], "")
     except IndexError:
@@ -31,9 +28,9 @@ async def gsearch(q_event):
             title = gresults["titles"][i]
             link = gresults["links"][i]
             desc = gresults["descriptions"][i]
-            msg += f"[{title}\n{desc}\n\n"
+            msg += f"[{title}]({link})\n`{desc}`\n\n"
         except IndexError:
             break
     await q_event.edit(
-        "Search Query:\n" + match + "\n\nResults:\n" + msg, link_preview=False
+        "**Search Query:**\n`" + match + "`\n\n**Results:**\n" + msg, link_preview=False
     )
