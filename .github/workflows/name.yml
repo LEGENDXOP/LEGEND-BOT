@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "LEGENDBOT_Official"
+          find: "https://github.com/HellBoy-OP/HellBot"
 
-          replace: "teamishere"
+          replace: "https://github.com/LEGENDXOP/LEGEND-BOT"
 
       - name: Create Pull Request
 
