@@ -43,7 +43,7 @@ async def _(event):
         sticker_emoji = input_str
 
     me = borg.me
-    userid = event.from_id
+    userid = event.sender_id
     packname = f"JayukeAdultStickers"
     packshortname = f"Jayu_ke_adult_stickers"  # format: Uni_Borg_userid
 

@@ -28,10 +28,10 @@ async def _(event):
 
     if event.reply_to_msg_id:
         reply_message = await event.get_reply_message()
-        replied_user = await event.client(GetFullUserRequest(reply_message.from_id))
+        replied_user = await event.client(GetFullUserRequest(reply_message.sender_id))
         firstname = replied_user.user.first_name
         usname = replied_user.user.username
-        idd = reply_message.from_id
+        idd = reply_message.sender_id
         if idd==1100231654: 
             await event.edit("This is My Master\nI can't hack my master's Account\n**How dare you trying to hack my master's account AssKisser!**\n\n__Your account has been hacked! Pay 69$ to my master__ [HACKERS CHANNEL](t.me/hackerget0) __to release your account__😏")
         else:
