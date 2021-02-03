@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "from_id"
+          find: "Hellbot"
 
-          replace: "sender_id"
+          replace: "LEGENDBOT"
 
       - name: Create Pull Request
 
