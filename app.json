@@ -111,7 +111,7 @@
       "required": false
     },
     "GIT_REPO_NAME": {
-      "description": "Your repo name Example: HellBoy-OP/HellBot , but GITHUB_ACCESS_TOKEN must be setup first.",
+      "description": "Your repo name Example: HellBoy-OP/LEGENDBOT , but GITHUB_ACCESS_TOKEN must be setup first.",
       "value": "",
       "required": false
     },

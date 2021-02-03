@@ -64,13 +64,13 @@ async def _(event):
 #@register(outgoing=True, pattern="^.source$")
 async def source(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("/HellBoy-OP/HellBot")
+        await e.edit("/HellBoy-OP/LEGENDBOT")
 
 @borg.on(admin_cmd("readme$"))
 #@register(outgoing=True, pattern="^.readme$")
 async def reedme(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("/HellBoy-OP/HellBot/blob/master/README.md")
+        await e.edit("/HellBoy-OP/LEGENDBOT/blob/master/README.md")
 
 
 @borg.on(admin_cmd(pattern="evil ?(.*)"))
