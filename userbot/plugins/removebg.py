@@ -74,7 +74,7 @@ async def _(event):
         ms = (end - start).seconds
         await event.edit("Removed dat annoying Backgroup in {} seconds, powered by @LEGEND_USERBOT_SUPPORT ©™".format(ms))
     else:
-        await event.edit("ReMove.BG API returned Errors. Please report to @LEGENDBOT_Official\n`{}".format(output_file_name.content.decode("UTF-8")))
+        await event.edit("ReMove.BG API returned Errors. Please report to @LEGEND_USERBOT_SUPPORT\n`{}".format(output_file_name.content.decode("UTF-8")))
 
 
 # this method will call the API, and return in the appropriate format
