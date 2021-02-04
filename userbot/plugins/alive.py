@@ -1,10 +1,10 @@
 # modify by LEGENDX22
 # Kang with credits else gay.
 """ 
-Original Plugin By Darkcobra and Godhackerzuserbot
+Original Plugin By Darkcobra and LEGEND BOT
 Gv Credits Else Gey 
 """
-import asyncio
+import asyncio 
 import os
 import requests
 import time
@@ -20,20 +20,14 @@ from telethon.tl.types import ChannelParticipantsAdmins
 # 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND SAR"
 ALIVE_PHOTTO = os.environ.get("ALIVE_PHOTTO" , None)
-
-# Thanks to Sipak bro and Raganork.. 
-# animation Idea by @NOOB_GUY_OP (Sipakisking)
-# Made by @hellboi_atul ....and thanks to @Crackexy for the logos...
-# Kang with credits else gay...
-# alive.py for DC(DARK COBRA)
 global ghanti
 ghanti = borg.uid
 edit_time = 5
 """ =======================CONSTANTS====================== """
-file1 = "https://telegra.ph/file/a44f1363bddbba84a2b98.jpg"
-file2 = "https://telegra.ph/file/b635b26bcb08c7fe705c9.jpg"
-file3 = "https://telegra.ph/file/e027c90d03bae039ab58e.jpg"
-file4 = "https://telegra.ph/file/21e8ba90ef8b22fa6a864.jpg"
+file1 = "https://telegra.ph/file/da4e65a8e61c53e6d6986.jpg"
+file2 = "https://telegra.ph/file/ce5229362d0075924428d.jpg"
+file3 = "https://telegra.ph/file/e893e80e6e8d76acdd750.jpg"
+file4 = "https://telegra.ph/file/a44f1363bddbba84a2b98.jpg"
 """ =======================CONSTANTS====================== """
 pm_caption = " LEGEND BOT IS ONLINE\n\n"
 pm_caption += "Yes Master, Am Alive And Systems Are Working Perfectly As It Should Be...\n\n"
@@ -121,14 +115,14 @@ async def amireallyalive(alive):
         pm_caption += "𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙲𝙷𝙰𝙽𝙽𝙴𝙻         : [ᴊᴏɪɴ](https://t.me/teamishere)\n"
         pm_caption += "𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝙶𝚁𝙾𝚄𝙿           : [ᴊᴏɪɴ](https://t.me/teamishere)\n"
         pm_caption += "𝘾𝙊𝙋𝙔𝙍𝙄𝙂𝙃𝙏 𝘽𝙔            : [ LEGEND X](https://t.me/legendx22)\n"
-        pm_caption += "[┏┓━┏┓━━━━┏┓━┏┓━━━━━\n ┃┃━┃┃━━━━┃┃━┃┃━━━━━\n ┃┗━┛┃┏━━┓┃┃━┃┃━┏━━┓\n ┃┏━┓┃┃┏┓┃┃┃━┃┃━┃┏┓┃ \n ┃┃━┃┃┃┃━┫┃┗┓┃┗┓┃┗┛┃ \n ┗┛━┗┛┗━━┛┗━┛┗━┛┗━━┛](https://t.me/Dark_cobra_support_group)"
+        pm_caption += "[┏┓━┏┓━━━━┏┓━┏┓━━━━━\n ┃┃━┃┃━━━━┃┃━┃┃━━━━━\n ┃┗━┛┃┏━━┓┃┃━┃┃━┏━━┓\n ┃┏━┓┃┃┏┓┃┃┃━┃┃━┃┏┓┃ \n ┃┃━┃┃┃┃━┫┃┗┓┃┗┓┃┗┛┃ \n ┗┛━┗┛┗━━┛┗━┛┗━┛┗━━┛](https://t.me/teamishere)"
         chat = await alive.get_chat()
         await alive.delete()
         """ For .allive command, check if the bot is running.  """
         await borg.send_file(alive.chat_id, ALIVE_PHOTTO,caption=pm_caption, link_preview = False)
         await allive.delete()
         return
-    req = requests.get("https://telegra.ph/file/6d067b1a626a25735f5ed.png")
+    req = requests.get("https://telegra.ph/file/a44f1363bddbba84a2b98.jpg")
     req.raise_for_status()
     file = BytesIO(req.content)
     file.seek(0)
