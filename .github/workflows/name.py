@@ -18,7 +18,7 @@ jobs:
 
         with:
 
-          find: "hellbot"
+          find: "LEGENDX22"
 
           replace: "LEGENDBOT"
 
