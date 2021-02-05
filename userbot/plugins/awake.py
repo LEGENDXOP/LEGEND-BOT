@@ -3,7 +3,6 @@
 """
 #make by @LEGENDX22 don't kang this plugin
 # if you kang then keep credits
-#cReDiTs - @ProgrammingError
 import os
 import time
 import asyncio
