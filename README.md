@@ -35,7 +35,7 @@ This is the one and only official LEGEND BOT Userbot made by [@LEGENDX22](https:
 
 # Credits👀
 ### • [LEGEND BOT](https://github.com/TeamLEGENDX/LegendBOT)
-[LEGENDBOT](https://t.me/hellbot_Official)
+[LEGENDBOT](https://t.me/LEGENDBOT_Official)
 ### [DARK COBRA](https://t.me/dark_cobra_support)
 ## One and only. Others with some misfuntioning brain stay out from this SUPER POWERFULL BOT😏
 
