@@ -40,10 +40,10 @@ async def amireallyalive(awake):
    ALIVE_MESSAGE= " ⚡ LEGEND BOT ⚡  IS ON 🔥 FIRE 🔥 \n\n"
    ALIVE_MESSAGE += "🔱 SYSTEM STATUS🔱\n"
    ALIVE_MESSAGE += "🔱TELETHON VERSION🔱 : 6.0.9\n"
-   ALIVE_MESSAGE += "🔱 Legend Version🔱 :   2.0\n"
+   ALIVE_MESSAGE += "🔱LEGEND VERSION🔱 :   2.5\n"
    ALIVE_MESSAGE += f"🔱UPTIME🔱 : `{uptm}`\n"
    ALIVE_MESSAGE += f"⚜️ MY BOSS ⚜️: [{DEFAULTUSER}](tg://user?id={tag})\n"
-   ALIVE_MESSAGE += "⚜️MADE BY⚜️ 😎 : [LEGEND X](https://t.me/legendx22)\n\n"
+   ALIVE_MESSAGE += "⚜️GROUP⚜️ : [SUPPORT](https://t.me/LEGEND_USERBOT_SUPPORT)\n\n"
    ALIVE_MESSAGE += ":⚜️Deploy⚜️ **LEGEND BOT** : [ᖇᏋᎵᏫ](https://github.com/legendx22/LEGEND-BOT)\n"   
    await awake.delete() 
    await borg.send_file(awake.chat_id, ALIVE_PHOTTO,caption=ALIVE_MESSAGE)
