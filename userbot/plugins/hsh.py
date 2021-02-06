@@ -1,4 +1,6 @@
-# made by shivam and  LEGENDX22
+# ported  by shivam and  LEGENDX22
+#own Friday 
+# bekar plugin h kaam ni krta kisi ksi ka chalta h bas
 # KEEP CREDITS
 
 import os
