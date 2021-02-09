@@ -93,6 +93,10 @@
       "description": "create a private channel and then type .get_id add that value here for save messages",
       "value": ""
     },
+    "FBAN_GROUP_ID": {
+      "description": "Go to your group add rose bot type /id and paste here",
+      "value": ""
+    },
     "PRIVATE_GROUP_ID": {
       "description": "Create a private group add rose bot then type /id. PLUGIN_CHANNEL and PRIVATE_GROUP_ID both values should be same",
       "value": ""
