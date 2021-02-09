@@ -6,7 +6,7 @@ from userbot.utils import admin_cmd
 # By (@proboy22), and (@LEGENDX22)
 from userbot import bot
 
-@bot.on(admin_cmd(pattern=r"superfban))
+@bot.on(admin_cmd("superfban ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -141,7 +141,7 @@ async def _(event):
 # By @HeisenbergTheDanger, @its_xditya
 
 
-@bot.on(admin_cmd(pattern=r"superunfban"))
+@bot.on(admin_cmd("superunfban ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
