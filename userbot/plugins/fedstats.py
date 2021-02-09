@@ -3,13 +3,12 @@ import asyncio
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot.legend import NAME
 from userbot import CMD_HELP, bot
-from userbot.utils import admin_cmd, sudo_cmd
+from userbot.utils import admin_cmd
 
 bot = "@MissRose_bot"
 LEGENDX = NAME
 
-@bot.on(admin_cmd(pattern="fstat ?(.*)"))
-@bot.on(sudo_cmd(pattern="fstat ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd("fstat ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
