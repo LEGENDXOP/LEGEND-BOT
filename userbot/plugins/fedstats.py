@@ -40,7 +40,7 @@ async def _(event):
                     await telebot.send_file(
                         event.chat_id,
                         audio,
-                        caption=f"List of feds {user} has been banned in.\n\nFSTATS COLLECTED BY{LEGENDX}\n\nCollected by LEGEND BOT.",
+                        caption=f"List of feds {user} has been banned in.\n\nFSTATS CHECKED BY{LEGENDX}\n\nCollected by LEGEND BOT.",
                     )
                 else:
                     await borg.send_message(event.chat_id, audio.text)
