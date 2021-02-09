@@ -2,7 +2,8 @@ import asyncio
 # made by telebot
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot.legend import NAME
-from userbot import CMD_HELP, bot
+from userbot import CMD_HELP
+from userbot import bot
 from userbot.utils import admin_cmd
 
 bot = "@MissRose_bot"
@@ -49,8 +50,8 @@ async def _(event):
                 await ok.edit("**Error**\n `Unblock` @MissRose_Bot `and try again!")
 
 
-@bot.on(admin_cmd(pattern="fedinfo ?(.*)"))
-@bot.on(sudo_cmd(pattern="fedinfo ?(.*)", allow_sudo=True))
+
+@borg.on(admin_cmd(pattern="fedinfo ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
