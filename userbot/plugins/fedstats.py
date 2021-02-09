@@ -2,13 +2,14 @@ import asyncio
 # made by telebot
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot.legend import NAME
-from userbot import CMD_HELP, bot
+from userbot import CMD_HELP
 from userbot.utils import admin_cmd
 
 bot = "@MissRose_bot"
 LEGENDX = NAME
 
-@bot.on(admin_cmd("fstat ?(.*)"))
+
+@borg.on(admin_cmd("fstat ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
