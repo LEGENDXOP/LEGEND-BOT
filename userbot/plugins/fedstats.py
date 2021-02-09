@@ -8,8 +8,8 @@ from userbot.utils import admin_cmd
 bot = "@MissRose_bot"
 LEGENDX = NAME
 
-@telebot.on(admin_cmd(pattern="fstat ?(.*)"))
-@telebot.on(sudo_cmd(pattern="fstat ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="fstat ?(.*)"))
+@bot.on(sudo_cmd(pattern="fstat ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
