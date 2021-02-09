@@ -38,7 +38,7 @@ async def _(event):
                     await audio.click(0)
                     await asyncio.sleep(2)
                     audio = await conv.get_response()
-                    await bot.send_file(
+                    await borg.send_file(
                         event.chat_id,
                         audio,
                         caption=f"List of feds {user} has been banned in.\n\nFSTATS CHECKED BY{LEGENDX}\n\nCollected by LEGEND BOT.",
