@@ -90,7 +90,7 @@ async def _(event):
                     else:
                         return
                 if len(fedList) == 0:
-                    await event.edit(f"Something went wrong. Retrying ({a+1}/3)...")
+                    await event.edit(f"WAIT MASTER I AM CHECKING {PRO} ALL FEDS GIVE ME TIME ({a+1}/3)...")
                 else:
                     break
         else:
@@ -114,7 +114,7 @@ async def _(event):
         if len(fedList) == 0:
             await event.edit("Something went wrong.")
             return
-    await event.edit(f"Fbaning in {len(fedList)} feds.")
+    await event.edit(f"FBANNING IN {len(fedList)} BY {PRO} 🔥.")
     try:
         await bot.send_message(chat, f"/start")
     except BaseException:
@@ -180,7 +180,7 @@ async def _(event):
                 else:
                     return
                 if len(fedList) == 0:
-                    await event.edit(f"Something went wrong. Retrying ({a+1}/3)...")
+                    await event.edit(f"FINDING {PRO} ALL FEDS GIVE ME SOME TIME({a+1}/3)...")
                 else:
                     break
     else:
@@ -202,7 +202,7 @@ async def _(event):
         elif In:
             tempFedId += x
 
-    await event.edit(f"UnFbaning in {len(fedList)} feds.")
+    await event.edit(f"UNFBANNING IN {len(fedList)} FEDS BY {PRO}.")
     try:
         await bot.send_message(chat, f"/start")
     except BaseException:
@@ -214,7 +214,7 @@ async def _(event):
         await asyncio.sleep(5)
         await bot.send_message(chat, f"/unfban {FBAN}")
         await asyncio.sleep(5)
-    await event.edit(f"SuperUnFBan Completed. Affected {len(fedList)} feds.\n#TB")
+    await event.edit(f"SuperUnFBan Completed. Affected {len(fedList)} Feds by {PRO}.\n#LEGENDBOT")
 
 
 # By TEAMLEGEND
