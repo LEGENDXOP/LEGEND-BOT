@@ -14,7 +14,7 @@ LEGENDX = NAME
 async def _(event):
     if event.fwd_from:
         return
-    ok = await event.edit(f"**CHECKING BY {LEGENDX}...")
+    ok = await event.edit(f"**CHECKING BY {LEGENDX}**...")
     if event.reply_to_msg_id:
         previous_message = await event.get_reply_message()
         sysarg = str(previous_message.sender_id)
@@ -41,7 +41,7 @@ async def _(event):
                     await borg.send_file(
                         event.chat_id,
                         audio,
-                        caption=f"List of feds {user} has been banned in.\n\nFSTATS CHECKED BY{LEGENDX}\n\nCollected by LEGEND BOT.",
+                        caption=f"List of feds {user} has been banned in.\n\nFSTATS CHECKED BY {LEGENDX} 🔥\n\nCollected by LEGEND BOT.",
                     )
                 else:
                     await borg.send_message(event.chat_id, audio.text)
