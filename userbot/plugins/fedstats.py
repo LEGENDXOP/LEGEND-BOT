@@ -2,7 +2,7 @@ import asyncio
 # made by telebot
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from userbot.legend import NAME
-from userbot import CMD_HELP
+from userbot import CMD_HELP, bot
 from userbot.utils import admin_cmd
 
 bot = "@MissRose_bot"
@@ -37,7 +37,7 @@ async def _(event):
                     await audio.click(0)
                     await asyncio.sleep(2)
                     audio = await conv.get_response()
-                    await telebot.send_file(
+                    await bot.send_file(
                         event.chat_id,
                         audio,
                         caption=f"List of feds {user} has been banned in.\n\nFSTATS CHECKED BY{LEGENDX}\n\nCollected by LEGEND BOT.",
@@ -49,8 +49,8 @@ async def _(event):
                 await ok.edit("**Error**\n `Unblock` @MissRose_Bot `and try again!")
 
 
-@telebot.on(admin_cmd(pattern="fedinfo ?(.*)"))
-@telebot.on(sudo_cmd(pattern="fedinfo ?(.*)", allow_sudo=True))
+@bot.on(admin_cmd(pattern="fedinfo ?(.*)"))
+@bot.on(sudo_cmd(pattern="fedinfo ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
@@ -62,7 +62,7 @@ async def _(event):
             await conv.get_response()
             await conv.send_message("/fedinfo " + sysarg)
             audio = await conv.get_response()
-            await ok.edit(audio.text + "\n\nFedInfo Excracted by TeleBot")
+            await ok.edit(audio.text + "\n\nFedInfo Excracted by LEGENDBOT")
         except YouBlockedUserError:
             await ok.edit("**Error**\n `Unblock` @MissRose_Bot `and try again!")
 
