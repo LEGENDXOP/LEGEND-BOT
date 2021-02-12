@@ -1,5 +1,6 @@
 # make by @LEGENDX22
 # inline alive
+# modify by proboy22
 import asyncio
 import os
 import requests
@@ -20,7 +21,7 @@ ok = borg.uid
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
 ALIVE_PHOTTO = os.environ.get("ALIVE_PHOTTO", None)
 
-dc_text=(f"**LEGEND BOT IS ON FIRE **\n\n**Yes Master, Am Alive And Systems Are Working Perfectly As It Should Be...**\n\n🔥 About My System 🔥\n\n➾ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ** ☞ 1.17.5\n➾ **ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ** ☞ [ᴊᴏɪɴ](https://t.me/hackerget0)\n➾ **ʟɪᴄᴇɴꜱᴇ**  ☞ [LEGEND BOT](https://github.com/legendx22)\n➾ **ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ** ☞ [LEGEND-BOT](https://github.com/legendx22/LEGEND-BOT)\n\n➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [{DEFAULTUSER}](tg://user?id={ok})\n")
+pro_text=(f"**LEGEND BOT IS ON FIRE **\n\n**Yes Master, Am Alive And Systems Are Working Perfectly As It Should Be...**\n\n🔥 About My System 🔥\n\n➾ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ** ☞ 1.17.5\n➾ **ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ** ☞ [ᴊᴏɪɴ](https://t.me/hackerget0)\n➾ **ʟɪᴄᴇɴꜱᴇ**  ☞ [LEGEND BOT](https://github.com/legendx22)\n➾ **ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ** ☞ [LEGEND-BOT](https://github.com/legendx22/LEGEND-BOT)\n\n➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [{DEFAULTUSER}](tg://user?id={ok})\n")
 TG_BOT_USER_NAME_BF_HER = os.environ.get("ALIVE_PHOTTO", None)
 if TG_BOT_USER_NAME_BF_HER is not None:
     @tgbot.on(events.InlineQuery)
@@ -38,10 +39,10 @@ if TG_BOT_USER_NAME_BF_HER is not None:
                     Button.url("Channel", "https://t.me/hackerget0"),
                 ]
             ]
-            if ALIVE_PHOTTO and ALIVE_PHOTTO.endswith((".jpg", ".png")):
+            if ALIVE_PHOTTO and ALIVE_PHOTTO.endswith((".jpg", ".png", "gif", "mp4")):
                 result = builder.photo(
                     ALIVE_PHOTTO,
-                    text=dc_text,
+                    text=pro_text,
                     buttons=buttons,
                     link_preview=False
                 )
@@ -49,14 +50,14 @@ if TG_BOT_USER_NAME_BF_HER is not None:
                 result = builder.document(
                     ALIVE_PHOTTO,
                     title="LEGEND BOT",
-                    text=legend_text,
+                    text=pro_text,
                     buttons=buttons,
                     link_preview=False,
                 )
             else:
                 result = builder.article(
                     title="LEGEND BOT",
-                    text=legend_text,
+                    text=pro_text,
                     buttons=buttons,
                     link_preview=False,
                 )
