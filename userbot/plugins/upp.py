@@ -20,7 +20,7 @@ IS_SELECTED_DIFFERENT_BRANCH = (
 OFFICIAL_UPSTREAM_REPO = "https://github.com/LEGENDXOP/LEGEND-BOT"
 BOT_IS_UP_TO_DATE = "âLegendBOT is up-to-date!â"
 NEW_BOT_UP_DATE_FOUND = (
-    f"**{BOT}  Update Found For** {branch_name}\n"
+    "**LEGEND BOT  Update Found For** {branch_name}\n"
     "\n\n{changelog}\n"
     "Pulling Updates !!"
 )
