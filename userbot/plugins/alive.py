@@ -13,6 +13,7 @@ from . import legend
 from io import BytesIO
 from datetime import datetime
 import random
+from userbot.legend import *
 from telethon import events
 from userbot.utils import admin_cmd, sudo_cmd
 from userbot import ALIVE_NAME, StartTime
@@ -29,12 +30,12 @@ file2 = "https://telegra.ph/file/ce5229362d0075924428d.jpg"
 file3 = "https://telegra.ph/file/e893e80e6e8d76acdd750.jpg"
 file4 = "https://telegra.ph/file/a44f1363bddbba84a2b98.jpg"
 """ =======================CONSTANTS====================== """
-pm_caption = " LEGEND BOT IS ONLINE\n\n"
+pm_caption = f" {BOT IS ONLINE\n\n"
 pm_caption += "Yes Master, Am Alive And Systems Are Working Perfectly As It Should Be...\n\n"
 pm_caption += "✘ About My System ✘\n\n"
 pm_caption += "➾ ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ ☞ 1.18.2\n"
 pm_caption += "➾ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ ☞ [ᴊᴏɪɴ](https://t.me/hackerget0)\n"
-pm_caption += "➾ ʟɪᴄᴇɴꜱᴇ  ☞ [TEAM LEGEND](https://github.com/legendx22)\n"
+pm_caption += "➾ ʟɪᴄᴇɴꜱᴇ  ☞ [TEAM LEGEND](https://github.com/legendxop)\n"
 pm_caption += "➾ group ☞ [LEGEND TEAM](https://t.me/teamishere)\n\n"
 pm_caption += f"➾ ᴍʏ ᴍᴀsᴛᴇʀ ☞ [{DEFAULTUSER}](tg://user?id={ghanti})\n"
 
