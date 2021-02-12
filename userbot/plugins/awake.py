@@ -10,6 +10,7 @@ from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
 from userbot import ALIVE_NAME, legendversion, StartTime, CMD_HELP
 from . import legend
+from userbot.legend import *
 from userbot.utils import admin_cmd
 from telethon import version
 from math import ceil
@@ -36,7 +37,7 @@ async def amireallyalive(awake):
    """ For .awake command, check if the bot is running.  """
    tag = borg.uid
    uptm = await legend.get_readable_time((time.time() - StartTime))
-   ALIVE_MESSAGE= " ⚡ LEGEND BOT ⚡  IS ON 🔥 FIRE 🔥 \n\n"
+   ALIVE_MESSAGE= f" ⚡ {BOT} ⚡  IS ON 🔥 FIRE 🔥 \n\n"
    ALIVE_MESSAGE += "🔱 SYSTEM STATUS🔱\n"
    ALIVE_MESSAGE += "🔱TELETHON VERSION🔱 : 6.0.9\n"
    ALIVE_MESSAGE += "🔱LEGEND VERSION🔱 :   2.5\n"
