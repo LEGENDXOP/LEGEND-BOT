@@ -36,7 +36,8 @@ OP = "[LEGEND BOT](https://github.com/legendx22/LEGEND-BOT)"
 #grpup👇NAME = "[{MAATER}](tg://user?id={X})"
 #yrr isko apne bot me aply krne se pehle mere se pooch lena ok
 #aur aage add kruga abhi busy okay 🤔
-
+X= borg.uid
+MASTER = f"[{NAME}](tg://user?id={X})"
 OKAY = "[SUPPORT GROUP](https://t.me/LEGEND_USERBOT_SUPPORT)"
 #itna test h aur aage krte h
 #test successful raha ab aage 
