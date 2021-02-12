@@ -22,6 +22,8 @@ import time
 import os
 import datetime
 #importing finished
+from userbot import botnickname 
+BOT = str(botnickname) if botnickname else "LEGEND BOT"
 NAME = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
 tim = get_readable_time((time.time() - StartTime))
 #pic 👇
@@ -31,18 +33,18 @@ uptime = tim
 #time = date + time okay
 TIME = time.asctime(time.localtime())
 #my name 👇
-LEGENDX22 = "[LEGEND X](https://t.me/legendx22)"
+LEGENDX = "[LEGEND X](https://t.me/legendx22)"
 #my bots repo 👇
-OP = "[LEGEND BOT](https://github.com/legendx22/LEGEND-BOT)"
+REPO = "[LEGEND BOT](https://github.com/legendx22/LEGEND-BOT)"
 #grpup👇NAME = "[{MAATER}](tg://user?id={X})"
 #yrr isko apne bot me aply krne se pehle mere se pooch lena ok
 #aur aage add kruga abhi busy okay 🤔
 global ghanti
 X = bot.uid
 MASTER = f"[{NAME}](tg://user?id={X})"
-OKAY = "[SUPPORT GROUP](https://t.me/LEGEND_USERBOT_SUPPORT)"
+GROUP = "[SUPPORT GROUP](https://t.me/LEGEND_USERBOT_SUPPORT)"
 #itna test h aur aage krte h
 #test successful raha ab aage 
 ALIVE = "LEGEND BOT IS ON 🔥 FIRE 🔥" #make by LEGENDX22
-BOT = " HELLO MASTER MY NAME IS LEGEND BOT I AM A BEST USERBOT 💝"
+OP = " HELLO MASTER MY NAME IS LEGEND BOT I AM A BEST USERBOT 💝"
 EMOJI = "🔥"
