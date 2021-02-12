@@ -3,6 +3,7 @@
 # modify by proboy22
 import asyncio
 import os
+from userbot.legend import *
 import requests
 import time
 from PIL import Image
@@ -21,7 +22,7 @@ ok = borg.uid
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
 ALIVE_PHOTTO = os.environ.get("ALIVE_PHOTTO", None)
 
-pro_text=(f"**LEGEND BOT IS ON FIRE **\n\n**Yes Master, Am Alive And Systems Are Working Perfectly As It Should Be...**\n\n🔥 About My System 🔥\n\n➾ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ** ☞ 1.17.5\n➾ **ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ** ☞ [ᴊᴏɪɴ](https://t.me/hackerget0)\n➾ **ʟɪᴄᴇɴꜱᴇ**  ☞ [LEGEND BOT](https://github.com/legendx22)\n➾ **ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ** ☞ [LEGEND-BOT](https://github.com/legendx22/LEGEND-BOT)\n\n➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [{DEFAULTUSER}](tg://user?id={ok})\n")
+pro_text=(f"**{BOT} IS ON FIRE **\n\n**Yes Master, Am Alive And Systems Are Working Perfectly As It Should Be...**\n\n🔥 About My System 🔥\n\n➾ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ** ☞ 1.17.5\n➾ **ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ** ☞ [ᴊᴏɪɴ](https://t.me/hackerget0)\n➾ **ʟɪᴄᴇɴꜱᴇ**  ☞ [LEGEND BOT](https://github.com/legendx22)\n➾ **ᴄᴏᴘʏʀɪɢʜᴛ ʙʏ** ☞ [LEGEND-BOT](https://github.com/legendx22/LEGEND-BOT)\n\n➾ **ᴍʏ ᴍᴀsᴛᴇʀ** ☞ [{DEFAULTUSER}](tg://user?id={ok})\n")
 TG_BOT_USER_NAME_BF_HER = os.environ.get("ALIVE_PHOTTO", None)
 if TG_BOT_USER_NAME_BF_HER is not None:
     @tgbot.on(events.InlineQuery)
