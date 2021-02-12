@@ -9,6 +9,7 @@ from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
 from userbot import ALIVE_NAME, StartTime
 from userbot.utils import admin_cmd
+from userbot import bot
 from telethon import version
 from math import ceil
 import json
@@ -37,7 +38,7 @@ OP = "[LEGEND BOT](https://github.com/legendx22/LEGEND-BOT)"
 #yrr isko apne bot me aply krne se pehle mere se pooch lena ok
 #aur aage add kruga abhi busy okay 🤔
 global ghanti
-X = borg.uid
+X = bot.uid
 MASTER = f"[{NAME}](tg://user?id={X})"
 OKAY = "[SUPPORT GROUP](https://t.me/LEGEND_USERBOT_SUPPORT)"
 #itna test h aur aage krte h
