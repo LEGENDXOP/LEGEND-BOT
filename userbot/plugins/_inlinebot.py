@@ -5,7 +5,7 @@ from userbot import ALIVE_NAME
 from userbot.utils import admin_cmd, sudo_cmd
 
 from platform import uname
-from userbot.legend import BOT
+
 import sys
 
 from telethon import events, functions, version
@@ -62,7 +62,7 @@ async def cmd_list(event):
 
                         allow_cache=False,
 
-                        caption=f"COMMANDS In {BOT}",
+                        caption="COMMANDS In LEGEND BOT",
 
                         reply_to=reply_to_id
 
@@ -94,9 +94,9 @@ async def cmd_list(event):
 
         else:
 
-            help_string = f""" {BOT} Helper.. Provided by {DEFAULTUSER}\n
+            help_string = f"""Userbot Helper.. Provided by ð±{DEFAULTUSER}ð± \n
 
-{BOT} Helper to reveal all the commands\nDo .help plugin_name for commands, in case popup doesn't appear."""
+Userbot Helper to reveal all the commands\nDo .help plugin_name for commands, in case popup doesn't appear."""
 
             results = await bot.inline_query(  # pylint:disable=E0602
 
