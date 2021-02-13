@@ -1,7 +1,6 @@
 #code by @LEGENDX22 , If you will change the credits you are the biggest mutherfucked 
 """Update UserBot code
 Syntax: .upp"""
-from userbot.legend import *
 import git
 from contextlib import suppress
 import os
