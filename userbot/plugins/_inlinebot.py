@@ -36,7 +36,7 @@ async def cmd_list(event):
 
             for i in CMD_LIST:
 
-                string += f"THIS IS {BOT} HELP MENU"\n"
+                string += f"THIS IS {BOT} HELP MENU \n"
 
                 for iter_list in CMD_LIST[i]:
 
