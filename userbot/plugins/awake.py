@@ -10,7 +10,7 @@ from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
 from userbot import ALIVE_NAME, legendversion, StartTime, CMD_HELP
 from . import legend
-from userbot.legend import *
+from userbot.legend import BOT
 from userbot.utils import admin_cmd
 from telethon import version
 from math import ceil
@@ -45,7 +45,7 @@ async def amireallyalive(awake):
    ALIVE_MESSAGE += f"🔱UPTIME🔱 : `{uptm}`\n"
    ALIVE_MESSAGE += f"⚜️ MY BOSS ⚜️: [{DEFAULTUSER}](tg://user?id={tag})\n"
    ALIVE_MESSAGE += "⚜️GROUP⚜️ : [SUPPORT](https://t.me/LEGEND_USERBOT_SUPPORT)\n\n"
-   ALIVE_MESSAGE += ":⚜️Deploy⚜️ **LEGEND BOT** : [ᖇᏋᎵᏫ](https://github.com/legendx22/LEGEND-BOT)\n"   
+   ALIVE_MESSAGE += f":⚜️DEPLOY⚜️ **{BOT}** : [ᖇᏋᎵᏫ](https://github.com/legendx22/LEGEND-BOT)\n"   
    await awake.delete() 
    await borg.send_file(awake.chat_id, ALIVE_PHOTTO,caption=ALIVE_MESSAGE)
 
