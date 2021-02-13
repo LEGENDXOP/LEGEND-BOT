@@ -1,5 +1,5 @@
 from userbot import CMD_LIST
-
+from userbot.legend import BOT
 from userbot import ALIVE_NAME
 
 from userbot.utils import admin_cmd, sudo_cmd
@@ -36,7 +36,7 @@ async def cmd_list(event):
 
             for i in CMD_LIST:
 
-                string += "â¡ï¸" + i + "\n"
+                string += f"THIS IS {BOT} HELP MENU"\n"
 
                 for iter_list in CMD_LIST[i]:
 
@@ -62,7 +62,7 @@ async def cmd_list(event):
 
                         allow_cache=False,
 
-                        caption="**COMMANDS** In LEGEND BOT",
+                        caption=f"**COMMANDS** In {BOT}",
 
                         reply_to=reply_to_id
 
@@ -94,9 +94,9 @@ async def cmd_list(event):
 
         else:
 
-            help_string = f"""Userbot Helper.. Provided by ð±{DEFAULTUSER}ð± \n
+            help_string = f""" {BOT} Help Menu.. Provided by {DEFAULTUSER} \n
 
-`Userbot Helper to reveal all the commands`\n__Do .help plugin_name for commands, in case popup doesn't appear.__"""
+`{BOT} Helper to reveal all the commands`\n__Do .help plugin_name for commands, in case popup doesn't appear.__"""
 
             results = await bot.inline_query(  # pylint:disable=E0602
 
