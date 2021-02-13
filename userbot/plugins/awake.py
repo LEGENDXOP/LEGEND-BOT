@@ -2,7 +2,7 @@
 
 """
 '"'
-make by @LEGENDX22 don't kang this plugin
+make by @LEGENDX22 dont kang this plugin
 CREDITS = LEGENDX22 PROBOY22 alain_champion
 Special thanks alain_champion for this modified version
 if you kang then keep credits
