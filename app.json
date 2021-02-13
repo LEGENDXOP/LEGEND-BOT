@@ -9,8 +9,8 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/legendx22/LEGEND-BOT/",
-  "website": "https://github.com/legendx22/LEGEND-BOT/",
+  "repository": "https://github.com/legendxop/LEGEND-BOT/",
+  "website": "https://github.com/legendxop/LEGEND-BOT/",
   "success_url": "https://t.me/teamishere",
   "env": {
     "ENV": {
@@ -24,6 +24,11 @@
     },
     "F_BAN_LOGGER_GROUP": {
       "description": "Put Group id Same As PRIVATE_GROUP_ID.",
+      "value": "",
+      "required": false
+    },
+    "BOT_NICK_NAME": {
+      "description": "YOU CAN SET HERE YOUR BOT CUSTOM NAME LIKE PRO BOT SUPER BOT etc..",
       "value": "",
       "required": false
     },
