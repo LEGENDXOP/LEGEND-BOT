@@ -1,14 +1,14 @@
 from userbot import CMD_LIST
-from userbot.legend import BOT
+
 from userbot import ALIVE_NAME
 
 from userbot.utils import admin_cmd, sudo_cmd
 
 from platform import uname
-
+from userbot.legend import BOT
 import sys
 
-from telethon import events, functions, __version__
+from telethon import events, functions, version
 
 
 
@@ -36,11 +36,11 @@ async def cmd_list(event):
 
             for i in CMD_LIST:
 
-                string += f"THIS IS {BOT} HELP MENU \n"
+                string += "â¡ï¸" + i + "\n"
 
                 for iter_list in CMD_LIST[i]:
 
-                    string += "    `" + str(iter_list) + "`"
+                    string += "    " + str(iter_list) + ""
 
                     string += "\n"
 
@@ -62,7 +62,7 @@ async def cmd_list(event):
 
                         allow_cache=False,
 
-                        caption=f"**COMMANDS** In {BOT}",
+                        caption=f"COMMANDS In {BOT}",
 
                         reply_to=reply_to_id
 
@@ -94,9 +94,9 @@ async def cmd_list(event):
 
         else:
 
-            help_string = f""" {BOT} Help Menu.. Provided by {DEFAULTUSER} \n
+            help_string = f""" {BOT} Helper.. Provided by {DEFAULTUSER}\n
 
-`{BOT} Helper to reveal all the commands`\n__Do .help plugin_name for commands, in case popup doesn't appear.__"""
+{BOT} Helper to reveal all the commands\nDo .help plugin_name for commands, in case popup doesn't appear."""
 
             results = await bot.inline_query(  # pylint:disable=E0602
 
@@ -170,15 +170,15 @@ async def _(event):
 
     if plugin_name in CMD_LIST:
 
-        help_string = CMD_LIST[plugin_name].__doc__
+        help_string = CMD_LIST[plugin_name].doc
 
-        unload_string = f"Use `.unload {plugin_name}` to remove this plugin.\n           Â© LEGEND BOT"
+        unload_string = f"Use .unload {plugin_name} to remove this plugin.\n           Â© LEGEND BOT"
 
         
 
         if help_string:
 
-            plugin_syntax = f"Syntax for plugin **{plugin_name}**:\n\n{help_string}\n{unload_string}"
+            plugin_syntax = f"Syntax for plugin {plugin_name}:\n\n{help_string}\n{unload_string}"
 
         else:
 
@@ -188,7 +188,7 @@ async def _(event):
 
 
 
-        plugin_syntax = "Enter valid **Plugin** name.\nDo `.plinfo` or `.help` to get list of valid plugin names."
+        plugin_syntax = "Enter valid Plugin name.\nDo .plinfo or .help to get list of valid plugin names."
 
 
 
