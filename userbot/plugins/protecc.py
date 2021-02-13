@@ -68,6 +68,7 @@ async def _(event):
         ms = (end - start).seconds
         OUTPUT_STR = """/protecc {prs_text}""".format(
             **locals())
+    await event.delete()
     await event.reply(OUTPUT_STR, parse_mode="HTML", link_preview=False)
 
 CMD_HELP.update(
