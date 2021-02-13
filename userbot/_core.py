@@ -2,7 +2,7 @@ import asyncio
 import os
 from datetime import datetime
 from pathlib import Path
-from userbot.legend import *
+
 from userbot import ALIVE_NAME
 from userbot import bot 
 from userbot.utils import admin_cmd, load_module, remove_plugin, sudo_cmd
@@ -10,7 +10,7 @@ from userbot.utils import edit_or_reply as eor
 
 DELETE_TIMEOUT = 3
 thumb_image_path = "./Resources/IMG_20201211_144821_071.jpg"
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOT"
 
 
 @bot.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
@@ -37,12 +37,12 @@ async def send(event):
         time_taken_in_ms = (end - start).seconds
         await eor(
             pro,
-            f"**==> Plugin name:** `{input_str}`\n**==> Uploaded in {time_taken_in_ms} seconds only.**\n**==> Uploaded by:** [{DEFAULTUSER}](tg://user?id={hmm})\n",
+            f"==> Plugin name: {input_str}\n==> Uploaded in {time_taken_in_ms} seconds only.\n==> Uploaded by: {DEFAULTUSER}\n",
         )
         await asyncio.sleep(DELETE_TIMEOUT)
-        await event.edit("__sent!!__") #only italic if loaded markdown else it doesn't look grp
+        await event.edit("sent!!") #only italic if loaded markdown else it doesn't look grp
     else:
-        await eor(event, "**sorry**: __File Not Found__")
+        await eor(event, "sorry: File Not Found")
 
 
 @bot.on(admin_cmd(pattern="install"))
@@ -64,7 +64,7 @@ async def install(event):
                 load_module(shortname.replace(".py", ""))
                 await eor(
                     event,
-                    "Plugin successfully installed\n `{}`".format(
+                    "Plugin successfully installed\n {}".format(
                         os.path.basename(downloaded_file_name)
                     ),
                 )
@@ -72,7 +72,7 @@ async def install(event):
                 os.remove(downloaded_file_name)
                 await eor(
                     event,
-                    "**Error!**\nPlugin cannot be installed!\n Or may have been pre-installed.",
+                    "Error!\nPlugin cannot be installed!\n Or may have been pre-installed.",
                 )
         except Exception as e:  # pylint:disable=C0103,W0703
             await eor(event, str(e))
@@ -111,5 +111,5 @@ async def load(event):
         qwe = await eor(event, f"Successfully loaded {shortname}")
     except Exception as e:
         await qwe.edit(
-            "LEGEND BOT could not load {shortname} because of the following error.\n{str(e)}"
+            f"LEGEND BOT could not load {shortname} because of the following error.\n{str(e)}"
         )
