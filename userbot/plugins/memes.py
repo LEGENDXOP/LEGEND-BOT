@@ -21,7 +21,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 
 from cowpy import cow
-
+from userbot import bot
 from userbot import CMD_HELP,YOUTUBE_API_KEY
 from userbot.utils import register,admin_cmd
 
@@ -847,12 +847,17 @@ async def vapor(vpr):
         await vpr.edit("".join(reply_text))
 
 			  
-@register(outgoing=True, pattern="^.repo$")
-async def source(e):
-    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("Click [here](https://github.com/legendx22/LEGEND-BOT) to open this 🔥**Lit AF!!**🔥 __LEGEND BOT__ Repo.. Join group :- @teamishere")
-			  
-			  
+@bot.on(admin_cmd(outgoing=True, pattern="repo"))
+async def repo(event):
+    if event.fwd_from:
+        return
+    LEGENDX = Var.TG_BOT_USER_NAME_BF_HER
+    if event.reply_to_msg_id:
+        await event.get_reply_message()
+    response = await bot.inline_query(LEGENDX, "repo")
+    await response[0].click(event.chat_id)
+    await event.delete()
+
 @register(outgoing=True, pattern="^.str(?: |$)(.*)")
 async def stretch(stret):
     """ Stretch it."""
