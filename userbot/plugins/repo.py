@@ -10,7 +10,7 @@ from userbot.legend import BOT
 import os,re
 from telethon.tl.custom import Button 
 from telethon import events, errors, custom, functions
-@tgbot.on(events.InlineQuery(pattern=r"userbot"))
+@tgbot.on(events.InlineQuery(pattern=r"repo"))
 async def inline_id_handler(event: events.InlineQuery.Event):
  LEGEND = event.builder
  X= [[custom.Button.inline("Click ME",data="obhai")]]
