@@ -7,19 +7,18 @@
 
 from telethon import events, Button, custom
 from userbot.legend import BOT
-
-@tgbot.on(events.InlineQuery)
-async def inline_handler(event):
+import os,re
+from telethon.tl.custom import Button 
+from telethon import events, errors, custom, functions
+@tgbot.on(events.InlineQuery(pattern=r"userbot"))
+async def inline_id_handler(event: events.InlineQuery.Event):
  LEGEND = event.builder
- X= [[Button.url(f"⚜️ {BOT} REPO ⚜️", "https://github.com/LEGENDXOP/LEGEND-BOT"),Button.url("🔥SUPPORT 🔥", "https://t.me/LEGEND_USERBOT_SUPPORT")]]
+ X= [[custom.Button.inline("Click ME",data="obhai")]]
  query = event.text
- me = await borg.get_me()
- if query.startswith("repo") and event.query.user_id == me.id:
-  PROBOY = LEGEND.article(
-                           title=f"{BOT} REPO",
-                           text=f"{BOT} REPO AND GROUP LINK",
-                      buttons=X,
-               )
-  await event.answer([PROBOY])
- else:
-  return
+ result = LEGEND.article("LEGEND",text="REPO AND SUPPORT",buttons=X,link_preview=False)
+ await event.answer([result])
+@tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"obhai")))
+async def callback_query_handler(event):
+
+# inline by LEGENDX22 and PROBOY22 🔥
+  await event.edit(text=f"{BOT} REPO AND GROUP LINK",buttons=[[Button.url(f"{BOT} REPO", url="https://github.com/LEGENDXOP/LEGEND-BOT"), Button.url(f"{BOT} SUPPORT", url="https://t.me/LEGEND_USERBOT_SUPPORT")]])
