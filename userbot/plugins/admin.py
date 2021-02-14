@@ -25,11 +25,11 @@ from telethon.tl.types import (ChannelParticipantsAdmins, ChatAdminRights,
 from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, bot
 from userbot.utils import register, errors_handler
 from userbot.utils import admin_cmd
-from userbot.legend import NAME
+from userbot.legend import NAME, MASTER, BOT
 # =================== CONSTANT ===================
 PP_TOO_SMOL = "`The image is too small`"
 PP_ERROR = "`Failure while processing the image`"
-NO_ADMIN = "`I am not an admin!! @admins or @admin please make me admin i am very cool boy`"
+NO_ADMIN = "I am not an admin!! @admins or @admin please make me admin i am very cool boy"
 NO_PERM = "`I don't have permission this grp owner is very rude😕`"
 NO_SQL = "`Running on Non-SQL mode!`"
 
@@ -133,7 +133,7 @@ async def promote(promt):
     await promt.edit("`Promoting...`")
     user, rank = await get_user_from_event(promt)
     if not rank:
-        rank = "Sarkar Jii"  # Just in case.
+        rank = "LEGEND BOY"  # Just in case.
     if user:
         pass
     else:
@@ -143,7 +143,7 @@ async def promote(promt):
     try:
         await promt.client(
             EditAdminRequest(promt.chat_id, user.id, new_rights, rank))
-        await promt.edit(f"THIS USER SUCCESSFULLY PROMOTED BY {NAME} ⚡")
+        await promt.edit(f"THIS USER SUCCESSFULLY PROMOTED BY {BOT} ⚡\n MY OWNER IS {MASTER} 🔥")
 
     # If Telethon spit BadRequestError, assume
     # we don't have Promote permission
@@ -200,7 +200,7 @@ async def demote(dmod):
     except BadRequestError:
         await dmod.edit(NO_PERM)
         return
-    await dmod.edit(f"THIS USER SUCCESSFULLY DEMOTED BY {NAME} ⚡⚡")
+    await dmod.edit(f"THIS USER SUCCESSFULLY DEMOTED BY {BOT} ⚡⚡\n MY MASTER IS {MASTER} 🔥")
 
     # Announce to the logging group if we have demoted successfully
     if BOTLOG:
@@ -232,7 +232,7 @@ async def ban(bon):
         return
 
     # Announce that we're going to whack the pest
-    await bon.edit("`Whacking the pest!`")
+    await bon.edit("`BANNING THIS MADARCHOD`")
 
     try:
         await bon.client(EditBannedRequest(bon.chat_id, user.id,
@@ -253,7 +253,7 @@ async def ban(bon):
     # is done gracefully
     # Shout out the ID, so that fedadmins can fban later
     if reason:
-        await bon.edit(f"Loser `{str(user.id)}` was banned !!\nReason: {reason}")
+        await bon.edit(f"BANNED 🔥`{str(user.id)}` was banned by {BOT} My Master {MASTER}  !!\n\nReason: {reason}")
     else:
         await bon.edit(f"Bitch `{str(user.id)}` was banned !!")
     # Announce to the logging group if we have banned the person
@@ -293,7 +293,7 @@ async def nothanos(unbon):
     try:
         await unbon.client(
             EditBannedRequest(unbon.chat_id, user.id, UNBAN_RIGHTS))
-        await unbon.edit("```Unbanned Successfully. Granting another chance.```")
+        await unbon.edit(f"```Unbanned Successfully.\n By {BOT} My Master {MASTER}```")
 
         if BOTLOG:
             await unbon.client.send_message(
