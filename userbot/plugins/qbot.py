@@ -7,8 +7,7 @@ from telethon.tl.functions.account import UpdateNotifySettingsRequest
 from userbot import bot, CMD_HELP
 from userbot.utils import admin_cmd
 
-#@register(outgoing=True, pattern="^.q(?: |$)(.*)")
-@borg.on(admin_cmd(pattern=q"(?: |$)(.*)"))
+@borg.on(admin_cmd("qbot ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return 
