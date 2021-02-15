@@ -1,4 +1,4 @@
-#port to Hêllẞø† by@LEGENDX22
+#port to Legend Bot by@LEGENDX22
 
 import datetime
 from telethon import events
@@ -7,8 +7,8 @@ from telethon.tl.functions.account import UpdateNotifySettingsRequest
 from userbot import bot, CMD_HELP
 from userbot.utils import admin_cmd
 
-#@register(outgoing=True, pattern="^.ss(?: |$)(.*)")
-@borg.on(admin_cmd(pattern=r"ss(?: |$)(.*)"))
+#@register(outgoing=True, pattern="^.q(?: |$)(.*)")
+@borg.on(admin_cmd(pattern=q"(?: |$)(.*)"))
 async def _(event):
     if event.fwd_from:
         return 
