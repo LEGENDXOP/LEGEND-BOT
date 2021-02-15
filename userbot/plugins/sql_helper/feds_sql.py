@@ -1,43 +1,109 @@
-#all credits friday bot thanks
-from sqlalchemy import Column, UnicodeText
+try:
+    from . import BASE, SESSION
+except ImportError:
+    raise AttributeError
 
-from userbot.plugins.sql_helper import BASE, SESSION
-
-
-class Fed(BASE):
-    tablename = "fed"
-    feds = Column(UnicodeText, primary_key=True)
-
-    def init(self, feds):
-        self.feds = feds
+from sqlalchemy import BigInteger, Column, Numeric, String, UnicodeText
 
 
-Fed.table.create(checkfirst=True)
+class Joinwafu(BASE):
+    tablename = "wafuautoproceta"
+    chat_id = Column(String(14), primary_key=True)
+    previous_wafu = Column(BigInteger)
+    reply = Column(UnicodeText)
+    f_mesg_id = Column(Numeric)
+
+    def init(self, chat_id, previous_wafu, reply, f_mesg_id):
+        self.chat_id = str(chat_id)
+        self.previous_wafu = previous_wafu
+        self.reply = reply
+        self.f_mesg_id = f_mesg_id
 
 
-def add_fed(feds):
-    feddy = Fed(feds)
-    SESSION.add(feddy)
-    SESSION.commit()
+Joinwafu.table.create(checkfirst=True)
 
-
-def rmfed(feds):
-    rmfeddy = SESSION.query(Fed).get(feds)
-    if rmfeddy:
-        SESSION.delete(rmfeddy)
-        SESSION.commit()
-
-
-def get_all_feds():
-    stark = SESSION.query(Fed).all()
-    SESSION.close()
-    return stark
-
-
-def is_fed_indb(feds):
+def get_wafu(chat_id):
     try:
-        return SESSION.query(Fed).filter(Fed.feds == feds).one()
-    except:
+        return SESSION.query(Joinwafu).get(str(chat_id))
+    finally:
+        SESSION.close()
+def getwafu(chat_id):
+    try:
+        return SESSION.query(Joinwafu).get(str(chat_id))
+    finally:
+        SESSION.close()
+
+def get_current_wafu_settings(chat_id):
+    try:
+        return (
+            SESSION.query(Joinwafu).filter(Joinwafu.chat_id == str(chat_id)).one()
+        )
+    except BaseException:
         return None
     finally:
         SESSION.close()
+def getcurrent_wafu_settings(chat_id):
+    try:
+        return (
+            SESSION.query(Joinwafu).filter(Joinwafu.chat_id == str(chat_id)).one()
+        )
+    except BaseException:
+        return None
+    finally:
+        SESSION.close()
+def add_wafu_setting(chat_id, previous_wafu, reply, f_mesg_id):
+    to_check = getwafu(chat_id)
+    if not to_check:
+        adder = Joinwafu(chat_id, previous_wafu, reply, f_mesg_id)
+        SESSION.add(adder)
+        SESSION.commit()
+        return True
+    rem = SESSION.query(Joinwafu).get(str(chat_id))
+    SESSION.delete(rem)
+    SESSION.commit()
+    adder = Joinwafu(chat_id, previous_wafu, reply, f_mesg_id)
+    SESSION.commit()
+    return False
+
+def addwafu_setting(chat_id, previous_wafu, reply, f_mesg_id):
+    to_check = getwafu(chat_id)
+    if not to_check:
+        adder = Joinwafu(chat_id, previous_wafu, reply, f_mesg_id)
+        SESSION.add(adder)
+        SESSION.commit()
+        return True
+    rem = SESSION.query(Joinwafu).get(str(chat_id))
+    SESSION.delete(rem)
+    SESSION.commit()
+    adder = Joinwafu(chat_id, previous_wafu, reply, f_mesg_id)
+    SESSION.commit()
+    return False
+
+def rm_wafu_setting(chat_id):
+    try:
+        rem = SESSION.query(Joinwafu).get(str(chat_id))
+        if rem:
+            SESSION.delete(rem)
+            SESSION.commit()
+            return True
+    except BaseException:
+        return False
+
+def rmwafu_setting(chat_id):
+    try:
+        rem = SESSION.query(Joinwafu).get(str(chat_id))
+        if rem:
+            SESSION.delete(rem)
+            SESSION.commit()
+            return True
+    except BaseException:
+        return False
+
+def update_previous_wafu(chat_id, previous_wafu):
+    row = SESSION.query(Joinwafu).get(str(chat_id))
+    row.previous_wafu = previous_wafu
+    SESSION.commit()
+def updateprevious_wafu(chat_id, previous_wafu):
+    row = SESSION.query(Joinwafu).get(str(chat_id))
+    row.previous_wafu = previous_wafu
+    SESSION.commit()
