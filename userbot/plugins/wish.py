@@ -34,3 +34,12 @@ async def LEGENDBOT(event):
             result = f"🦋 Yᴏᴜʀ ᴡɪsʜ ʜᴀs ʙᴇᴇɴ ᴄᴀsᴛᴇᴅ 🦋\
                   \n\n🔥𝙲𝙷𝙰𝙽𝙲𝙴 𝙾𝙵 𝚂𝚄𝙲𝙲𝙴𝚂𝚂 : {PROBOY}%"
     await edit_or_reply(event, reslt)
+
+CMD_HELP.update(
+    {
+        "wish": "**Plugin : **`wish`\
+    \n\n**Syntax : **`.wish <your wish>`\
+    \n**Function : **wish plug-in like .wish i am pro"
+    }
+)
+
