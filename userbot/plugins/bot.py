@@ -3,7 +3,7 @@
 # modify by proboy22
 import asyncio
 import os
-from userbot.legend import *
+from userbot.legend import BOT
 import requests
 import time
 from PIL import Image
@@ -34,10 +34,10 @@ if TG_BOT_USER_NAME_BF_HER is not None:
         if query.startswith("alive") and event.query.user_id == me.id:
             buttons = [
                 [
-                    Button.url("Repo", "https://github.com/legendx22/LEGEND-BOT"),
+                    Button.url("Repo", "https://github.com/LEGENDXOP/LEGEND-BOT"),
                     Button.url("Deploy", "https://heroku.com/deploy?template=https://github.com/legendx22/LEGEND-BOT/blob/master")],
                     [Button.url("String", "https://repl.it/legendx22/LEGEND-BOT#main.py"),
-                    Button.url("Channel", "https://t.me/hackerget0"),
+                    Button.url("Channel", "https://t.me/teamishere"),
                 ]
             ]
             if ALIVE_PHOTTO and ALIVE_PHOTTO.endswith((".jpg", ".png", "gif", "mp4")):
@@ -63,3 +63,19 @@ if TG_BOT_USER_NAME_BF_HER is not None:
                     link_preview=False,
                 )
             await event.answer([result] if result else None)
+
+
+from userbot.utils import admin_cmd
+from userbot import bot
+
+
+@bot.on(admin_cmd(outgoing=True, pattern="alive"))
+async def repo(event):
+    if event.fwd_from:
+        return
+    LEGENDX = Var.TG_BOT_USER_NAME_BF_HER
+    if event.reply_to_msg_id:
+        await event.get_reply_message()
+    response = await bot.inline_query(LEGENDX, "alive")
+    await response[0].click(event.chat_id)
+    await event.delete()
