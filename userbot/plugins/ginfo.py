@@ -1,7 +1,15 @@
-# made by @LEGENDX22
-# credits TEAMLEGEND
-# idea by @Alain_Champion 
-# ((((((((((((((((((((((((( @LEGENDX22 AND @PROBOY22)))))))))))))))))))))))))))
+"""
+(((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
+(((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
+(((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
+(((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
+
+
+                  made by @LEGENDX22
+                  credits TEAMLEGEND
+                  idea by @Alain_Champion 
+ ((((((((((((((((((((((((( @LEGENDX22 AND @PROBOY22)))))))))))))))))))))))))))
+"""
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
 from userbot import CMD_HELP
