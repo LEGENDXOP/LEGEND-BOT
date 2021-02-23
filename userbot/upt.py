@@ -1,5 +1,5 @@
 import time
 import datetime
 from . import legend
-async def uptm(event):
+def upt():
    uptm = await legend.get_readable_time((time.time() - StartTime))
