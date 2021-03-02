@@ -1,7 +1,14 @@
-# MADE BY LEGENDX22
-# IDEA BY PROBOY22
-# CREDITS TEAMLEGEND
-# PLEASE KEEP CREDITS 🥺
+"""
+(((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
+(((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
+(((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
+(((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
+
+                 MADE BY LEGENDX22
+                 IDEA BY PROBOY22
+                 CREDITS TEAMLEGEND
+                 PLEASE KEEP CREDITS 🥺
+"""
 
 
 

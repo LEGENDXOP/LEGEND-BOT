@@ -1,12 +1,13 @@
-"""Check if userbot awake or not . 
-
 """
-
-# make by @LEGENDX22 dont kang this plugin
-# CREDITS = LEGENDX22 PROBOY22 alain_champion
-# Special thanks alain_champion for this modified version
-# if you kang then keep credits
-
+(((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
+(((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
+(((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
+(((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
+MADE BY @LEGENDX22 dont kang this plugin
+CREDITS = @LEGENDX22 @PROBOY22 @alain_champion
+Special thanks @alain_champion for this modified version
+if you kang then keep credits
+"""
 import os
 import time
 import asyncio

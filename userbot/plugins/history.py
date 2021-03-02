@@ -35,7 +35,7 @@ async def _(event):
             await event.reply("```Please unblock @sangmatainfo_bot and try again```")
             return
          if response.text.startswith("Forward"):
-            await event.edit("```This user had disabled their forward privacy... Ask him to enable🥺```")
+            await event.edit("```This user had disabled their forward privacy... Just tag and type .sg```")
          else: 
             await event.edit(f"{response.message.message}")
 CMD_HELP.update(
