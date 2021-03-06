@@ -8,7 +8,7 @@
                   made by @LEGENDX22
                   credits TEAMLEGEND
                   idea by @Alain_Champion 
- ((((((((((((((((((((((((( @LEGENDX22 AND @PROBOY22)))))))))))))))))))))))))))
+ ((((((((((((((((((((((((( @LEGENDX22 AND @PROBOYX)))))))))))))))))))))))))))
 """
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
