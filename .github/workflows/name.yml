@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "https://github.com/HellBoy-OP/HellBot"
+          find: "PROBOY22"
 
-          replace: "https://github.com/LEGENDXOP/LEGEND-BOT"
+          replace: "PROBOYX"
 
       - name: Create Pull Request
 
