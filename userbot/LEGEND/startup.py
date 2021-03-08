@@ -1,13 +1,32 @@
-# HELLO THIS IS 1ST VIDEO 
+# HELLO THIS IS 1ST TUTORIAL
+
+# for ultroid
 import asyncio
 @ultroid_cmd(pattern="hi")
 async def legendx(event):
-  await event.edit("hello this is my first code")
+  await event.edit("HELLO MY CODE IS RUNNING")
   await asyncio.sleep(5)
-  await event.reply("HII SUBSCRIBE LEGENDX ☺️☺️")
+  await event.reply("YEAH WORKING")
   await asyncio.sleep(5)
-  await bot.send_message(event.chat_id, "Helo")
+  await bot.send_message(event.chat_id, "HELLO THIS IS ALSO RUNNING")
   await asyncio.sleep(5)
-  await bot.send_message('LEGENDX22', "hello bro me aapka code use krraha hu aur seekhrHa hu")
+  await bot.send_message("@LEGENDX22", "HELLO VRO YOUR CODE IS WORKING")
   await asyncio.sleep(5)
-  await bot.send_message(1100231654, "bro aur videos daalna please 😉")
+  await bot.send_message(1100231654, "ID TRICK ALSO WORKING")
+ 
+
+# for grand official
+import asyncio
+from LEGEND import telethn as bot 
+from LEGEND.events import register
+@register(pattern="/hi")
+async def hehe(event):
+  await event.edit("HELLO MY CODE IS RUNNING")
+  await asyncio.sleep(5)
+  await event.reply("YEAH WORKING")
+  await asyncio.sleep(5)
+  await bot.send_message(event.chat_id, "HELLO THIS IS ALSO RUNNING")
+  await asyncio.sleep(5)
+  await bot.send_message("@LEGENDX22", "HELLO VRO YOUR CODE IS WORKING")
+  await asyncio.sleep(5)
+  await bot.send_message(1100231654, "ID TRICK ALSO WORKING")
