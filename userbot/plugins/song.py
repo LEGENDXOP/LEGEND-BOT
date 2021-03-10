@@ -59,7 +59,7 @@ Thanks"""
 
 
 
-
+'''
 import os
 import re
 
@@ -1332,3 +1332,4 @@ def lightnings_menu_for_help(b_lac_krish, lightning_plugs, lightning_lol):
         ]
 
     return pairs
+'''
