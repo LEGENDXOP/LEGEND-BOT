@@ -31,7 +31,7 @@ import os
 import asyncio
 
 
-
+'''
 from telethon import events, functions
 
 from telethon.tl.functions.users import GetFullUserRequest
@@ -641,3 +641,4 @@ async def krish_op(event):
             )               
 
             print("Dev Here")
+'''
