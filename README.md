@@ -28,7 +28,7 @@ This is the one and only official LEGEND BOT Userbot made by [@LEGENDX22](https:
 
 ## FOR DEPLOY BOT 
 
-[![DEPLOY TO HEROKU](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LEGENDXOP/LEGEND-BOT)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FLEGENDXOP%2Flegendpack&template=https%3A%2F%2Fgithub.com%2FLEGENDXOP%2Flegendpack)
 
 ------------------------------------------------
 
