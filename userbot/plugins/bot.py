@@ -68,18 +68,6 @@ if TG_BOT_USER_NAME_BF_HER is not None:
             await event.answer([result] if result else None)
 
 
-@borg.on(admin_cmd(pattern=r"alive"))
-async def hehe(event):
-    alive = requests.get("https://telegra.ph/file/b4290942faf5be36dffc0.png")
-    alive.raise_for_status()
-    LEGENDX = BytesIO(alive.content)
-    LEGENDX.seek(0)
-    img = Image.open(LEGENDX)
-    with BytesIO() as sticker:
-        img.save(sticker, "webp")
-        sticker.name = "sticker.webp"
-        sticker.seek(0)
-        await borg.send_file(event.chat_id, file=sticker)
 
 from userbot import bot
 
