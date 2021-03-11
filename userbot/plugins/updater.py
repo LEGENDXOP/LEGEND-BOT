@@ -2,7 +2,7 @@
 # MAKE BY LEGEND X
 #make for LEGEND BOT
 # KANG KRNA H TO CREDITS DEDENA 
-
+'''
 from datetime import datetime
 from random import randint
 from asyncio import sleep
@@ -280,5 +280,9 @@ async def upstream(ups):
         execle(sys.executable, *args, environ)
         return
 
-
+'''
+from userbot.utils import admin_cmd
+@borg.on(admin_cmd(pattern="update|update now"))
+async def hehe (event):
+  await event.edit("want to update your bot ?\nnow not use update now use \n`.restart` only")
 #maked by LEGENDX22 🔥🔥🔥⚡⚡⚡⚡
