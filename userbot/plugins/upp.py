@@ -8,7 +8,7 @@ import sys
 import asyncio
 from userbot import CMD_HELP
 from userbot.utils import admin_cmd
-
+'''
 # -- Constants -- #
 IS_SELECTED_DIFFERENT_BRANCH = (
     "looks like a custom branch {branch_name} "
@@ -144,6 +144,13 @@ async def deploy_start(bot, message, refspec, remote):
     await message.edit("**ââUpdating LegendBOTtââ** \n**Version** : `2.0` \n**Telethon** : `1.15.0` \n**Branch** : `âMasterâ` \n**Status** : `âUpdating & Restarting` \n__You Can Do__ `.alive` __To Check If I am Alive !__â")
     remote.push(refspec=refspec)
     await bot.disconnect()
+'''
+from userbot.utils import admin_cmd
+@borg.on(admin_cmd(pattern="upp"))
+async def hehe (event):
+  await event.edit("want to update your bot ?\nnow not use update now use \n`.restart` only")
+#maked by LEGENDX22 🔥🔥🔥⚡⚡⚡⚡
+
     os.execl(sys.executable, sys.executable, *sys.argv)
 CMD_HELP.update(
     {
