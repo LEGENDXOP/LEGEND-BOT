@@ -18,7 +18,7 @@ This is the one and only official LEGEND BOT Userbot made by [@LEGENDX22](https:
 
 
 # STRING SESSION:-
-### [String Session](https://repl.it/@legendx22/LEGEND-BOT#main.py)
+## [String Session](https://repl.it/@legendx22/LEGEND-BOT#main.py)
 
 # FORK AT YOUR OWN RISK
 ## Installing
