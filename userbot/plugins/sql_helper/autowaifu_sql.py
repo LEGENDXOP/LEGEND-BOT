@@ -7,7 +7,7 @@ from sqlalchemy import BigInteger, Column, Numeric, String, UnicodeText
 
 
 class Joinwafu(BASE):
-    tablename = "wafuautoproceta"
+    __tablename__ = "wafuautoproceta"
     chat_id = Column(String(14), primary_key=True)
     previous_wafu = Column(BigInteger)
     reply = Column(UnicodeText)
