@@ -1,7 +1,7 @@
 import asyncio
 # made by telebot
 from telethon.errors.rpcerrorlist import YouBlockedUserError
-from userbot.legend import NAME
+from LEGENDX import NAME
 from userbot import CMD_HELP
 from userbot import bot
 from userbot.utils import admin_cmd

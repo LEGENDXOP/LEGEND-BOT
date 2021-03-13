@@ -25,7 +25,7 @@ from telethon.tl.types import (ChannelParticipantsAdmins, ChatAdminRights,
 from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, bot
 from userbot.utils import register, errors_handler
 from userbot.utils import admin_cmd
-from userbot.legend import NAME, MASTER, BOT
+from LEGENDX import NAME, MASTER, BOT
 # =================== CONSTANT ===================
 PP_TOO_SMOL = "`The image is too small`"
 PP_ERROR = "`Failure while processing the image`"

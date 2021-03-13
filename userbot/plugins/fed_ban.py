@@ -2,7 +2,7 @@
 #CREDITS TELEBOT
 # KEEP CREDITS PLEASE 🥺
 import asyncio
-from userbot.legend import NAME
+from LEGENDX import NAME
 from userbot import CMD_HELP
 from userbot.utils import admin_cmd
 # By (@proboy22), and (@LEGENDX22)

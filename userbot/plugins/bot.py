@@ -3,7 +3,7 @@
 # modify by proboy22
 import asyncio
 import os
-from userbot.legend import BOT
+from LEGENDX import BOT
 import requests
 import time
 from PIL import Image
