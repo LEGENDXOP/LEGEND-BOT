@@ -15,7 +15,7 @@ from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
 from userbot import ALIVE_NAME, legendversion, StartTime, CMD_HELP
 from . import legend
-from LEGENDX import BOT
+from LEGENDX import BOT, PHOTO
 from userbot.utils import admin_cmd
 from telethon import version
 from math import ceil
@@ -25,10 +25,6 @@ import re
 from telethon import events, errors, custom
 import io
 from platform import python_version, uname
-
-ALIVE_PHOTTO = Config.ALIVE_PHOTTO
-if ALIVE_PHOTTO is None:
-  ALIVE_PHOTTO = "https://telegra.ph/file/0e36b02061064b7229e3b.jpg"
 
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
@@ -52,7 +48,7 @@ async def amireallyalive(awake):
    ALIVE_MESSAGE += "🔰 𝙶𝚁𝙾𝚄𝙿 🔰 : [SUPPORT](https://t.me/LEGEND_USERBOT_SUPPORT)\n\n"
    ALIVE_MESSAGE += f"💠 [𝙳𝙴𝙿𝙻𝙾𝚈](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FLEGENDXOP%2FLEGEN-BOT&template=https%3A%2F%2Fgithub.com%2FLEGENDXOP%2FLEGEND-ROBOT) 𝚈𝙾𝚄𝚁 𝙾𝚆𝙽 𝙾𝙿 [{BOT}](http://github.com/legendxop/legend-bot)  💠\n"   
    await awake.delete() 
-   await borg.send_file(awake.chat_id, ALIVE_PHOTTO,caption=ALIVE_MESSAGE)
+   await borg.send_file(awake.chat_id, PHOTO,caption=ALIVE_MESSAGE)
 
 CMD_HELP.update(
     {
