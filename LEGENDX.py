@@ -13,7 +13,7 @@ from userbot import bot as LEGENDX22
 from telethon import events, custom, Button
 import time
 import os
-from userbot import botnickname, ALIVE_NAME
+from userbot import botnickname, ALIVE_NAME, bot
 
 BOT = str(botnickname) if botnickname else "LEGEND BOT"
 NAME = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
