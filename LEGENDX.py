@@ -17,7 +17,7 @@ from userbot import botnickname
 
 BOT = str(botnickname) if botnickname else "LEGEND BOT"
 NAME = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
-PHOTTO = os.environ.get("ALIVE_PHOTTO", "https://telegra.ph/file/00353e01b4e05d26568fc.jpg")
+PHOTO = os.environ.get("ALIVE_PHOTTO", "https://telegra.ph/file/00353e01b4e05d26568fc.jpg")
 LEGENDX = "[LEGEND X](https://t.me/LEGENDX22)"
 REPO = "[LEGEND BOT](https://github.com/LEGENDXOP/LEGEND-BOT)"
 PRO = bot.uid
