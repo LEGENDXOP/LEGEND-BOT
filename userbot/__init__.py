@@ -7,7 +7,7 @@ from telethon import TelegramClient
 from userbot.helpers import functions as simpdef
 from userbot.uniborgConfig import Config
 from var import Var
-
+legendversion = "3.0"
 StartTime = time.time()
 
 os.system("pip install --upgrade pip")
