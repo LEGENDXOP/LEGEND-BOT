@@ -15,7 +15,7 @@ import time
 import os
 from userbot import botnickname, ALIVE_NAME, bot
 token = os.environ.get("TG_BOT_TOKEN_BF_HER", None)
-xbot = TelegramClient("legend", API_ID, API_HASH).start(bot_token=token)
+xbot = TelegramClient("legend", APP_ID, API_HASH).start(bot_token=token)
 xbot.start()
 x.run_until_disconnected()
 BOT = str(botnickname) if botnickname else "LEGEND BOT"
