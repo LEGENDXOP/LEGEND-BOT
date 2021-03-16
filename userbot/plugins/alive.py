@@ -15,7 +15,7 @@ from telethon import events, Button, custom
 import re, os
 from LEGENDX import PHOTO, xbot, BOT
 from userbot import bot
-@xbot.on(events.NewMessage(pattern="/alive"))
+@xbot.on(events.NewMessage(pattern=("/alive|/start")))
 async def awake(event):
   LEGENDX = f"ʜᴇʟʟᴏ ᴛʜɪs ɪs  {BOT}\n\n"
   LEGENDX += "ᴀʟʟ sʏsᴛᴇᴍ ɪs ᴡᴏʀᴋɪɴɢ ᴘʀᴏᴘᴇʀʟʏ\n\n"
