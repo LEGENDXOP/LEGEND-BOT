@@ -60,4 +60,4 @@ async def callback_query_handler(event):
 
 @xbot.on(events.NewMessage(pattern=("/repo|#repo")))
 async def repo(event):
-  await tbot.send_message(event.chat, "ʀᴇᴘᴏ ᴏғ ʟᴇɢᴇɴᴅ-ʙᴏᴛ", buttons=[[Button.url("⚜️ ʀᴇᴘᴏ ⚜️", "https://github.com/LEGENDXOP/LEGEND-BOT")]])
+  await xbot.send_message(event.chat, "ʀᴇᴘᴏ ᴏғ ʟᴇɢᴇɴᴅ-ʙᴏᴛ", buttons=[[Button.url("⚜️ ʀᴇᴘᴏ ⚜️", "https://github.com/LEGENDXOP/LEGEND-BOT")]])
