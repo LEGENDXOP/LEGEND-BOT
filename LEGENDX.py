@@ -10,10 +10,10 @@
 import asyncio
 import os
 try:
-  from pyrogram import Client
+  from pyrogram import Client, idle
 except:
   os.system("pip install pyrogram>=1.1.13")
-  from pyrogram import Client
+  from pyrogram import Client, idle
 
 
 from userbot.utils import admin_cmd as legendx
@@ -37,5 +37,6 @@ GROUP = "[SUPPORT GROUP](https://t.me/LEGEND_USERBOT_SUPPORT)"
 if __name__=="__main__":
   xbot.start()
   pbot.start()
-  pbot.run()
+  pbot.run
+  pbot.idle
   xbot.run_until_disconnected()
