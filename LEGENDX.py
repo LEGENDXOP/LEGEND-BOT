@@ -9,9 +9,15 @@
 # MY IDEA H YRR DONT KANG THIS PLEASE
 import asyncio
 import os
+try:
+  from pyrogram import Client
+except:
+  os.system("pip install pyrogram>=1.1.13")
+  from pyrogram import Client
+
+
 from userbot.utils import admin_cmd as legendx
 from userbot import bot as LEGENDX22
-from pyrogram import Client
 API_ID = os.environ.get("APP_ID", None)
 API_HASH = os.environ.get("API_HASH", None)
 from telethon import events, custom, Button, TelegramClient
