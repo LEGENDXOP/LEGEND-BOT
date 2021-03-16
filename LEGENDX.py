@@ -36,5 +36,8 @@ MASTER = f"[{NAME}](tg://user?id={PRO})"
 GROUP = "[SUPPORT GROUP](https://t.me/LEGEND_USERBOT_SUPPORT)"
 if __name__=="__main__":
   xbot.start()
-  pbot.run()
   xbot.run_until_disconnected()
+
+
+if __name__=="__main__":
+   pbot.run()
