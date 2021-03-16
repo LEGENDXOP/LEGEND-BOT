@@ -3,7 +3,7 @@ PyGithub
 pygifsicle
 PyDictionary
 PyPDF2
-pyrogram
+pyrogram>=1.1.13
 pygments
 pymediainfo
 aiofiles
