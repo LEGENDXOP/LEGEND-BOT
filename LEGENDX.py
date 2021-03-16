@@ -15,7 +15,7 @@ except:
   os.system("pip install pyrogram>=1.1.13")
   from pyrogram import Client, idle
 
-
+import asyncio
 from userbot.utils import admin_cmd as legendx
 from userbot import bot as LEGENDX22
 API_ID = os.environ.get("APP_ID", None)
@@ -38,6 +38,5 @@ if __name__=="__main__":
   xbot.start()
   xbot.run_until_disconnected()
 
-
 if __name__=="__main__":
-   pbot.run()
+   await pbot.run()
