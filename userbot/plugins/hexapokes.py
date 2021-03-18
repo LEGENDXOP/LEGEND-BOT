@@ -11,7 +11,7 @@ bot = "@hexamonbot"
 
 Pokes = ('**Here Are Your HexaPokes**\n➖➖➖➖➖➖➖➖➖➖➖\n\n')
 
-@borg.on(admin_cmd("mypokes(.*)"))
+@borg.on(admin_cmd("mypokes ?(.*)"))
 async def _(event):
     if event.fwd_from:
         return
