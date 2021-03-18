@@ -9,7 +9,7 @@ naam = str(ALIVE_NAME)
 
 bot = "@hexamonbot"
 
-Pokes = ('**Here Are Your HexaPokes**\n➖➖➖➖➖➖➖➖➖➖➖\n\n')
+Pokes = ('**Here Are Your HexaPokes**\n➖➖➖➖➖➖➖➖➖➖➖\n')
 
 @borg.on(admin_cmd("mypokes ?(.*)"))
 async def _(event):
