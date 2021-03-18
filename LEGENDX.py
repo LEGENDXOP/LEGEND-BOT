@@ -38,6 +38,6 @@ if __name__=="__main__":
   xbot.start()
   xbot.run_until_disconnected()
 
-async def haha(event):
   if __name__=="__main__":
-     await pbot.run()
+    pbot.start()
+    main()
