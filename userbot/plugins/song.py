@@ -132,8 +132,6 @@ LIGHTNINGBOT = Var.TG_BOT_TOKEN_BF_HER
 
 from telethon import events
 
-from telethon.errors.rpcerrorlist import YouBlockedUser
-
 BOT_MSG = os.environ.get("BOT_MSG", None)
 
 if BOT_MSG is None:
