@@ -125,305 +125,14 @@ LIGHTNINGBOT = Var.TG_BOT_TOKEN_BF_HER
 
 
 
-@borg.on(lightning_cmd(pattern="installing"))
 
-async def install(lightning):
 
-    if lightning.fwd_from:
-
-        return
-
-    if lightning.reply_to_msg_id:
-
-        try:
-
-            downloaded_file_name = (
-
-                await lightning.client.download_media(  # pylint:disable=E0602
-
-                    await lightning.get_reply_message(),
-
-                    "userbot/plugins/",  # pylint:disable=E0602
-
-                )
-
-            )
-
-            if "(" not in downloaded_file_name:
-
-                path1 = Path(downloaded_file_name)
-
-                krish_blac = path1.stem
-
-                load_module(krish_blac.replace(".py", ""))
-
-                await lightning.edit(f"Wait Installing.... ")
-
-                await asyncio.sleep(2)
-
-                await lightning.edit(
-
-                    "{}SucessFully Installed ....".format(
-
-                        os.path.basename(downloaded_file_name)
-
-                    )
-
-                )
-
-            else:
-
-                os.remove(downloaded_file_name)
-
-                await lightning.edit("**Master You Already Have This Plugin \nPlz Try `.help <cmd name>` To See.**")
-
-        except Exception as e:  # pylint:disable=C0103,W0703
-
-            await lightning.edit(str(e))
-
-            os.remove(downloaded_file_name)
-
-    await asyncio.sleep(DELETE_TIMEOUT)
-
-    await lightning.delete()
-
-
-
-
-
-@borg.on(lightning_cmd(pattern=r"unloading (?P<krish_blac>\w+)$"))
-
-async def unload(lightning):
-
-    if lightning.fwd_from:
-
-        return
-
-    krish_blac = lightning.pattern_match["krish_blac"]
-
-    try:
-
-        remove_plugin(krish_blac)
-
-        await lightning.edit(f"Successfully unloaded {krish_blac}")
-
-    except Exception as e:
-
-        await lightning.edit(
-
-            "Successfully unloaded {krish_blac}\n{}".format(krish_blac, str(e))
-
-        )
-
-
-
-
-
-@borg.on(lightning_cmd(pattern=r"loading (?P<krish_blac>\w+)$"))
-
-async def load(lightning):
-
-    if lightning.fwd_from:
-
-        return
-
-    krish_blac = lightning.pattern_match["krish_blac"]
-
-    try:
-
-        try:
-
-            remove_plugin(krish_blac)
-
-        except BaseException:
-
-            pass
-
-        load_module(krish_blac)
-
-        await lightning.edit(f"Successfully loaded {krish_blac}")
-
-    except Exception as e:
-
-        await lightning.edit(
-
-            f"Sorry,{krish_blac} can not be loaded\nbecause of the following error.\n{str(e)}"
-
-        )
-
-
-
- # created by @cyper666
-
-"""xoxbot: Avaible commands: .xnxx picx les<link>
-
-"""
-
-
-
+ 
 
 
 from telethon import events
 
-from telethon.errors.rpcerrorlist import YouBlockedUserError
-
-
-
-
-
-
-
-
-
-@borg.on(lightning_cmd(pattern="xnxx?(.*)"))
-
-async def _(event):
-
-    if event.fwd_from:
-
-        return
-
-    input_str = event.pattern_match.group(1)
-
-    await event.get_reply_message()
-
-    chat = "@SeXn1bot"
-
-    await event.edit("```Checking...```")
-
-    async with event.client.conversation(chat) as conv:
-
-        try:
-
-            response = conv.wait_event(
-
-                events.NewMessage(incoming=True, from_users=264121194)
-
-            )
-
-            await event.client.send_message(chat, "ð2016 Videolarð{}".format(input_str))
-
-            response = await response
-
-        except YouBlockedUserError:
-
-            await event.reply("```Unblock @SeXn1bot```")
-
-            return
-
-        if response.text.startswith("I can't find that"):
-
-            await event.edit("🤔")
-
-        else:
-
-            await event.delete()
-
-            await event.client.send_file(event.chat_id, response.message)
-
-
-
-
-
-@borg.on(lightning_cmd(pattern="picx?(.*)"))
-
-async def _(event):
-
-    if event.fwd_from:
-
-        return
-
-    input_str = event.pattern_match.group(1)
-
-    await event.get_reply_message()
-
-    chat = "@SeXn1bot"
-
-    await event.edit("```Checking...```")
-
-    async with event.client.conversation(chat) as conv:
-
-        try:
-
-            response = conv.wait_event(
-
-                events.NewMessage(incoming=True, from_users=264121194)
-
-            )
-
-            await event.client.send_message(chat, "â¨ï¸Old photoð{}".format(input_str))
-
-            response = await response
-
-        except YouBlockedUserError:
-
-            await event.reply("```Unblock @SeXn1bot```")
-
-            return
-
-        if response.text.startswith("I can't find that"):
-
-            await event.edit("ð")
-
-        else:
-
-            await event.delete()
-
-            await event.client.send_file(event.chat_id, response.message)
-
-
-
-
-
-@borg.on(lightning_cmd(pattern="les?(.*)"))
-
-async def _(event):
-
-    if event.fwd_from:
-
-        return
-
-    input_str = event.pattern_match.group(1)
-
-    await event.get_reply_message()
-
-    chat = "@SeXn1bot"
-
-    await event.edit("```Checking...```")
-
-    async with event.client.conversation(chat) as conv:
-
-        try:
-
-            response = conv.wait_event(
-
-                events.NewMessage(incoming=True, from_users=264121194)
-
-            )
-
-            await event.client.send_message(chat, "ðUz_sexâ¨ï¸{}".format(input_str))
-
-            response = await response
-
-        except YouBlockedUserError:
-
-            await event.reply("```Unblock @SeXn1bot```")
-
-            return
-
-        if response.text.startswith("I can't find that"):
-
-            await event.edit("ð")
-
-        else:
-
-            await event.delete()
-
-            await event.client.send_file(event.chat_id, response.message)
-
-
-
-
+from telethon.errors.rpcerrorlist import YouBlockedUser
 
 BOT_MSG = os.environ.get("BOT_MSG", None)
 
@@ -488,10 +197,7 @@ else:
 
 
 
-
-
-
-
+from userbot import CMD_HELP
 
 @tgbot.on(events.InlineQuery)
 
@@ -779,9 +485,9 @@ async def lightning_pugins_query_hndlr(lightning):
 
             buttons=[
 
-                [custom.Button.inline("⚜️⚜️⚜️", data="krish")],
+                [custom.Button.inline("🙂", data="krish")],
 
-                [custom.Button.inline("⚜️⚜️⚜️", data="lghtback")],
+                [custom.Button.inline("BACK", data="lghtback")],
 
             ],
 
@@ -1309,19 +1015,19 @@ def lightnings_menu_for_help(b_lac_krish, lightning_plugs, lightning_lol):
 
                 custom.Button.inline(
 
-                    "😑", data="{}_prev({})".format(lightning_lol, lightning_plugins_pages)
+                    "BACK 🔥", data="{}_prev({})".format(lightning_lol, lightning_plugins_pages)
 
                 ),
 
                # Thanks To Friday For This Idea
 
-               custom.Button.inline("STATS", data="stta"
+               custom.Button.inline("CLOSE🤨", data="close"
 
                ),
 
                custom.Button.inline(
 
-                    "🥴 ", data="{}_next({})".format(lightning_lol, lightning_plugins_pages)
+                    "NEXT⚡ ", data="{}_next({})".format(lightning_lol, lightning_plugins_pages)
 
                 ),
 
