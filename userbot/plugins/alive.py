@@ -13,13 +13,13 @@
 
 from telethon import events, Button, custom
 import re, os
-from LEGENDX import PHOTO, xbot, BOT
+from LEGENDX import PHOTO, xbot, BOT, VERSION
 from userbot import bot
 @xbot.on(events.NewMessage(pattern=("/alive|/start")))
 async def awake(event):
   LEGENDX = f"ʜᴇʟʟᴏ ᴛʜɪs ɪs  {BOT}\n\n"
   LEGENDX += "ᴀʟʟ sʏsᴛᴇᴍ ɪs ᴡᴏʀᴋɪɴɢ ᴘʀᴏᴘᴇʀʟʏ\n\n"
-  LEGENDX += f"{BOT} ᴏs : 3.0 ʟᴀsᴛᴇsᴛ\n\n"
+  LEGENDX += f"{BOT} VERSION : {VERSION} ʟᴀsᴛᴇsᴛ\n\n"
   LEGENDX += f"ᴍʏ ᴍᴀsᴛᴇʀ @{bot.me.username} ☺️\n\n"
   LEGENDX += "ғᴜʟʟʏ ᴜᴘᴅᴀᴛᴇᴅ ʙᴏᴛ\n\n"
   LEGENDX += "ᴛᴇʟᴇᴛʜᴏɴ : 1.20 LATEST\n\n"
@@ -48,7 +48,7 @@ async def callback_query_handler(event):
 # inline by LEGENDX22 and PROBOY22 🔥
   LEGENDX = f"ʜᴇʟʟᴏ ᴛʜɪs ɪs  {BOT}\n\n"
   LEGENDX += "ᴀʟʟ sʏsᴛᴇᴍ ɪs ᴡᴏʀᴋɪɴɢ ᴘʀᴏᴘᴇʀʟʏ\n\n"
-  LEGENDX += f"{BOT} ᴏs : 3.0 ʟᴀsᴛᴇsᴛ\n\n"
+  LEGENDX += f"{BOT} OS : {VERSION} ʟᴀsᴛᴇsᴛ\n\n"
   LEGENDX += f"ᴍʏ ᴍᴀsᴛᴇʀ @{bot.me.username} ☺️\n\n"
   LEGENDX += "ғᴜʟʟʏ ᴜᴘᴅᴀᴛᴇᴅ ʙᴏᴛ\n\n"
   LEGENDX += "ᴛᴇʟᴇᴛʜᴏɴ : 1.20 LATEST\n\n"
