@@ -30,6 +30,7 @@ BOT = str(botnickname) if botnickname else "LEGEND BOT"
 NAME = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
 PHOTO = os.environ.get("ALIVE_PHOTTO", None)
 LEGENDX = "[LEGEND X](https://t.me/LEGENDX22)"
+VERSION = "3.1.5"
 REPO = "[LEGEND BOT](https://github.com/LEGENDXOP/LEGEND-BOT)"
 PRO = bot.uid
 MASTER = f"[{NAME}](tg://user?id={PRO})"
