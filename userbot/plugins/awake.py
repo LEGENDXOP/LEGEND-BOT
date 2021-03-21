@@ -13,7 +13,7 @@ import time
 import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
-from userbot import ALIVE_NAME, legendversion, StartTime, CMD_HELP
+from userbot import ALIVE_NAME, StartTime, CMD_HELP
 from . import legend
 from LEGENDX import BOT, PHOTO
 from userbot.utils import admin_cmd
@@ -29,12 +29,13 @@ from platform import python_version, uname
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
 
-global ghanti
+global kanger #kanger aaya bhaago bc
         
 #make by LEGEND X bht mehnat lag gayi yrr but banhi gaya 😅           
 @borg.on(admin_cmd(pattern=r"awake"))
 async def amireallyalive(awake):
    """ For .awake command, check if the bot is running.  """
+   global PHOTO
    if PHOTO:
      tag = borg.uid
      uptm = await legend.get_readable_time((time.time() - StartTime))
