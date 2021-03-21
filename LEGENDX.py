@@ -28,7 +28,7 @@ xbot = TelegramClient("legend", API_ID, API_HASH).start(bot_token=token)
 pbot = Client("LEGEND", api_id=API_ID, api_hash=API_HASH, bot_token=token)
 BOT = str(botnickname) if botnickname else "LEGEND BOT"
 NAME = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND BOY"
-PHOTO = os.environ.get("ALIVE_PHOTTO", "https://telegra.ph/file/00353e01b4e05d26568fc.jpg")
+PHOTO = os.environ.get("ALIVE_PHOTTO", None)
 LEGENDX = "[LEGEND X](https://t.me/LEGENDX22)"
 REPO = "[LEGEND BOT](https://github.com/LEGENDXOP/LEGEND-BOT)"
 PRO = bot.uid
