@@ -129,7 +129,7 @@ LIGHTNINGBOT = Var.TG_BOT_TOKEN_BF_HER
 
  
 
-
+from LEGENDX import ID
 from telethon import events
 
 BOT_MSG = os.environ.get("BOT_MSG", None)
@@ -211,7 +211,7 @@ async def inline_handler(lightning):
 
         rev_text = query[::-1]
 
-        buttons = lightnings_menu_for_help(0, CMD_LIST, "helpme")
+        buttons = lightnings_menu_for_help(0, CMD_LIST, "helpmepro")
 
         result = builder.article(
 
@@ -327,7 +327,7 @@ async def inline_handler(lightning):
 
     events.callbackquery.CallbackQuery(  # pylint:disable=E0602
 
-        data=re.compile(b"helpme_next\((.+?)\)")
+        data=re.compile(b"helpmenext\((.+?)\)")
 
     )
 
@@ -335,13 +335,13 @@ async def inline_handler(lightning):
 
 async def lightning_pugins_query_hndlr(lightning):
 
-    if lightning.query.user_id == bot.uid:  # pylint:disable=E0602
+    if lightning.query.user_id == bot.uid or lightning.query.user_id == ID:  # pylint:disable=E0602
 
         lightning_page = int(lightning.data_match.group(1).decode("UTF-8"))
 
         buttons = lightnings_menu_for_help(
 
-            lightning_page + 1, CMD_LIST, "helpme"  # pylint:disable=E0602
+            lightning_page + 1, CMD_LIST, "helpmepro"  # pylint:disable=E0602
 
         )
 
@@ -469,9 +469,9 @@ async def lightning_pugins_query_hndlr(lightning):
 
                buttons=[
 
-                [custom.Button.inline("🔱🔱🔱", data="krish")],
+                [custom.Button.inline("😉", data="krish")],
 
-                [custom.Button.inline("🔥🔥🔥", data="lghtback")]],
+                [custom.Button.inline("BACK", data="lghtback")]],
 
          )
 
@@ -499,7 +499,7 @@ async def lightning_pugins_query_hndlr(lightning):
 
     events.callbackquery.CallbackQuery(  # pylint:disable=E0602
 
-        data=re.compile(rb"helpme_prev\((.+?)\)")
+        data=re.compile(rb"helpmeprev\((.+?)\)")
 
     )
 
@@ -507,13 +507,13 @@ async def lightning_pugins_query_hndlr(lightning):
 
 async def lightning_pugins_query_hndlr(lightning):
 
-    if lightning.query.user_id == bot.uid:  # pylint:disable=E0602
+    if lightning.query.user_id == bot.uid or lightning.query.user_id == ID:  # pylint:disable=E0602
 
         lightning_page = int(lightning.data_match.group(1).decode("UTF-8"))
 
         buttons = lightnings_menu_for_help(
 
-            lightning_page - 1, CMD_LIST, "helpme"  # pylint:disable=E0602
+            lightning_page - 1, CMD_LIST, "helpmepro"  # pylint:disable=E0602
 
         )
 
@@ -533,7 +533,7 @@ async def lightning_pugins_query_hndlr(lightning):
 
 async def what(lightning):
 
-    if lightning.query.user_id == bot.uid:
+    if lightning.query.user_id == bot.uid or lightning.query.user_id == ID:
 
         fck_bit = f"{LIGHTNINGUSER}  Use The Buttons Bellow "
 
@@ -929,7 +929,7 @@ import requests
 
 async def ho(event):
 
-    if event.query.user_id != bot.uid: 
+    if event.query.user_id != bot.uid or event.query.user_id == ID: 
 
         how = "Not For You Idiot ( fuck )."
 
@@ -937,11 +937,11 @@ async def ho(event):
 
         return
 
-    await event.answer ("(huh)", cache_time = 0, alert = False)
+    await event.answer ("(DONE)", cache_time = 0, alert = False)
 
     # This Is Copy of Above Code. (C) @SpEcHiDe
 
-    buttons = lightnings_menu_for_help(0, CMD_LIST, "helpme")
+    buttons = lightnings_menu_for_help(0, CMD_LIST, "helpmepro")
 
     ho = f"""LEGENDBOT Is Here With Stunning Help !\n
 
@@ -983,7 +983,7 @@ def lightnings_menu_for_help(b_lac_krish, lightning_plugs, lightning_lol):
 
         custom.Button.inline(
 
-            "{} {} {}".format("⚡", x, "🔥"), data="_lightning_plugins_{}".format(x)
+            "{} {} {}".format("🙂", x, "🙂"), data="_lightning_plugins_{}".format(x)
 
         )
 
@@ -1017,7 +1017,7 @@ def lightnings_menu_for_help(b_lac_krish, lightning_plugs, lightning_lol):
 
                 ),
 
-               # Thanks To Friday For This Idea
+               # Thanks To DC for this idea
 
                custom.Button.inline("CLOSE🤨", data="close"
 
