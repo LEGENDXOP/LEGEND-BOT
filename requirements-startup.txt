@@ -63,7 +63,7 @@ qrcode
 pokedex.py==1.1.2
 wand
 regex
-requests>=2.18.4
+requests==2.25.1
 search-engine-parser>=0.4.2
 spamwatch
 selenium
