@@ -65,7 +65,7 @@ async def amireallyalive(awake):
      await awake.delete() 
      await borg.send_file(awake.chat_id, PHOTO,caption=ALIVE_MESSAGE)
    else:
-     await event.edit("please add right value on ALIVE_PHOTTO var")
+     await awake.edit("please add right value on ALIVE_PHOTTO var")
 
 CMD_HELP.update(
     {
