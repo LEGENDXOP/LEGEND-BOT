@@ -15,10 +15,9 @@ beautifulsoup4
 bs4
 bwb==3.0.0
 cfscrape
-coffeehouse
+coffeehouse==2.2.4
 chromedriver_autoinstaller
 cowpy
-cryptg
 dnspython
 emoji
 gTTS-token>=1.1.3
