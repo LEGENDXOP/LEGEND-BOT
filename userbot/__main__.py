@@ -10,7 +10,7 @@ from userbot import LOAD_PLUG, BOTLOG_CHATID, LOGS
 from pathlib import Path
 import asyncio
 import telethon.utils
-
+os system("pip install telethon==1.19.0")
 async def add_bot(bot_token):
     await bot.start(bot_token)
     bot.me = await bot.get_me() 
