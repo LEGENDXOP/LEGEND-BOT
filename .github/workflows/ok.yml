@@ -1,6 +1,5 @@
 
 name: LEGENDX
-
 on: push
 
 jobs:
