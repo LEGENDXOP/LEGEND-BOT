@@ -21,7 +21,7 @@ jobs:
 
           find: "ULTRAX"
 
-          replace: "TERABAAP"
+          replace: "TERABAAPBOT"
 
       - name: Create Pull Request
 
